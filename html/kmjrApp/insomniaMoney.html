@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>得到的赔付金额</title>
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/app/Public/css/kmjr.app.base.css" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/app/Public/css/kmjr.app.base.css" />
+    <script type="text/javascript" src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div class="downAPPSlider">
+    <a href="#">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_download.png" width="100%">
+    </a>
+</div>
+<div class="insm-body">
+    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_02.jpg" width="100%">
+    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_03.jpg" width="100%">
+    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_04.jpg" width="100%">
+    <!--<div class="insm-btn">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_05.png" width="100%">
+        <span class="insm-btn-content">
+            您的赔付金额:<span class="text-nowarp f24"><span class="text-red">12.8</span>元<br>
+            <span class="f12">累计收益超过8.18%，失眠赔付即可马上到账噢~</span>
+        </span>
+    </div>-->
+
+    <div class="insm-btn insm-btn-money">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_05.png" width="100%">
+        <span class="insm-btn-content">
+             您的赔付金额:<span class="text-nowarp f24"><span class="text-red">12.8</span>元<br>
+            <span class="f12">累计收益超过8.18%，失眠赔付即可马上到账噢~</span>
+    </div>
+
+
+    <div class="text-center padd-l-2em padd-r-2em padd-b-1em padd-t-1em">
+        <div class="bg-yellow padd-t-1em padd-b-1em font-bolder">
+            <span class="f14 ">您的账户累计收益收益：<span class="text-nowarp f20">2.89</span>元</span>
+        </div>
+    </div>
+    <div class="text-align-c marg-b-5">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_underwriting.png" width="50%">
+    </div>
+    <!--到账说明-->
+    <div class="text-white">
+        <h3 class="thumb-header text-align-c"><div class="thumb-header-block"> 到账说明</div></h3>
+        <div class="padd-l-2em padd-r-2em padd-t-1em f14 text-thumb-infop">
+            <p>
+              失眠赔付的金额，只有当您在爱家理财投资后的累计收益超过8.18元时，失眠赔付的钱才会到账。
+            </p>
+            <p>比如：存2000元进入8.18%的爱家宝10天后，即可获得8.96元</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!--活动规则-->
+<div class="openBrowser" id="dialog-rule">
+    <div class="dialog-bg"></div>
+    <div class="padd-2">
+        <h2 class="dialog-headr">活动规则</h2>
+        <p class="dialog-p">
+            1.领取规则：转发链接即可领取失眠保险。凌晨00：00至05：00，再次打开链接就可以领取现金赔付，金额10块至100块不等，随机抽取，每个用户限领一次。同一个手机号、微信号、银行卡号、设备号均视为一个用户。
+        </p>
+        <p class="dialog-p">
+            2.赔付说明：失眠赔付的现金将打入您的爱家宝账户，账户名为您的手机号，您可以通过登入爱家理财APP查看。
+        </p>
+        <p class=" dialog-p">
+            3.奖励机制：您可以邀请您的好友一起领取失眠保险，越多好友通过您分享的链接领取保险，您获得大额赔付的机率也就越高。
+        </p>
+        <p class="dialog-p">
+            4.本活动最终解释权归爱家理财所有。
+        </p>
+        <p class=" dialog-p">
+            5.如有其他问题，请联系爱家客服：400-667-0571
+        </p>
+
+    </div>
+    <div class="text-align-c f18 text-white dialog-bottom">X</div>
+</div>
+
+
+
+
+
+<script>
+    (function(){
+
+        //活动规则
+        dailogRule();
+
+    })(jQuery);
+
+
+
+    //打开活动规则对话框
+    function dailogRule(btn,close){
+        var _btn = btn||$('[btn-name="open-rule"]')||{};//打开窗口句柄
+        var _close = close ||$('#dialog-rule')||{};//打开窗口句柄
+        console.log(_btn)
+        _btn.on('click',function(){
+            $('#dialog-rule').fadeIn(100);
+        });
+        _close.on('click',function(){
+            $('#dialog-rule').fadeOut(100);
+        })
+    }
+
+
+    //微信图像随机显示
+    function imgRandom(){
+        var _temp = Math.random();
+        var _img = ['http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_09.png','http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_10.png','http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/insomnia/insomnia_11.png']
+        var _imgVal;
+        if(_temp*10>6.66){
+            _imgVal=2;
+        }else if(_temp*10>3.33){
+            _imgVal=1;
+        }else{
+            _imgVal=0;
+        }
+        $('#weixinImgs').attr({'src':_img[_imgVal]})
+    }
+
+
+</script>
+</body>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>旅行分期</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="apple-touch-icon-precomposed" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+    <link rel="bookmark" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/kmjrMobile1.0.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/jquery.mobile.icons.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile.structure-1.4.5.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/wap/Public/css/kmjr.mobile.base.css" />
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body class="km-body">
+<!--header-->
+<header data-role="header" class="bg-wihte border-bottom-1-transparent ui-header ui-bar-inherit ui-kmjr">
+    <a href="#" class="ui-btn ui-icon-left ui-icon-carat-l ui-btn-icon-notext ui-btn-corner-all"></a>
+    <h1>旅行分期</h1>
+</header>
+
+<!--alert info-->
+<section class="ui-info-alert">
+    目前仅支持杭州地区，其他地区用户敬请期待
+</section>
+<form>
+    <fieldset>
+        <!--main start-->
+        <section class=" clearfix text-center bg-wihte text-center">
+            <div class="border-top-1-solid">
+                <div class="f16 padding-top-1 text-tips">委托爱家理财代付金额（万元）</div>
+                <div class="range-block-base">
+                    <span class="f2em text-red range-total" id="range-total">1.0</span>
+                </div>
+                <div class="k-range">
+                    <div class="range-scale" id="range-scale" style="left: -5px;" data-balance-max="50" data-balance-min="5" data-default="10"></div>
+                    <input type="hidden" value="" id="range-scale-value">
+                    <div class="range-fixed"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center margin-top-1">
+
+            <div class="padding-1 ui-kmjr-stageGroup">
+                <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <input type="radio" name="place-Selected" id="place-Selected-a" value="0" checked="checked">
+                    <label for="place-Selected-a">是否选定旅游机构</label>
+                    <input type="radio" name="place-Selected" id="place-Selected-b" value="0" checked="checked">
+                    <label for="place-Selected-b">选定旅游机构</label>
+                </div>
+
+                <div class="clearfix ui-kmjr-stageGroup p-relative">
+                    <label for="selectCompanyList" class="ui-hidden-accessible">旅游机构列表</label>
+                    <input name="selectCompanyList" id="selectCompanyList" type="text"  data-mini="true" placeholder="请输入婚宴酒店名称"/>
+                    <a href="http://www.baidu.com" class="stages-contact-href"><img src="http://statics.aijialicai.com.cn/CDN/wap/Public/images/icon-stages-lygs@3x.png" width="18" class="stages-contact"></a>
+                </div>
+            </div>
+
+            <!--分期方式titile-->
+            <div class=" margin-top-1 clearfix ui-grid-a margin-left-1 margin-right-1" data-stage="normal">
+                <div class="ui-block-a text-left lineheight-2">
+                    分期方式
+                </div>
+                <div class="ui-block-b text-right" >
+
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <!--分期方式titile-->
+                <div class="ui-block-a text-center ui-kmjr-stageActive" data-stage-type="3" data-stage-radio="travel">
+                    <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                        <input type="radio" name="type" id="type1" value="1">
+                        <label for="type1">3433.33X3期</label>
+                    </div>
+                </div>
+
+                <div class="ui-block-b text-center ui-kmjr-stageActive" data-stage-type="6" data-stage-radio="travel">
+                    <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                        <input type="radio" name="type" id="type2" value="1">
+                        <label for="type2">1756.66X6期</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="margin-top-2 margin-bottom-2 clearfix ui-grid-d">
+                <a href="javascript:;" class=" ui-btn-stages">提交申请</a>
+            </div>
+        </section>
+    </fieldset>
+</form>
+
+<script src="http://statics.aijialicai.com.cn/CDN/wap/Public/js/kmjr.mobile.config.js"></script>
+<script src="http://statics.aijialicai.com.cn/CDN/wap/Public/js/kmjr.mobile.main.js"></script>
+<script>
+    (function(){
+        //初始化拨盘
+        km.rangeSlide({
+            unit:   'wan',
+            type:1
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

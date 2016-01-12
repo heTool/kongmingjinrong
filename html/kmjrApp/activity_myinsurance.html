@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>爱家理财-我的保险</title>
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/app/Public/css/kmjr.app.activity.min.css" />
+    <!--<link rel="stylesheet" href="../../css/kmjr.app.activity.css" />-->
+    <script type="text/javascript" src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div class="act-body">
+    <!--选项卡-S-->
+        <div class="act-tab">
+            <ul class="clearfix" id="tab-title">
+                <li><a href="javascript:;">保障中</a></li>
+                <li class="active"><a href="javascript:;">已失效</a></li>
+            </ul>
+        </div>
+    <!--选项卡-E-->
+
+    <div class="act-tab-cont fadeOut">
+        <!--选项卡详情-A-S-->
+        <div class="act-tab-cont-list bg-wihte">
+                <!--items-a-->
+                <div class="act-tab-items clearfix">
+                    <div class="act-tab-desp">
+                        <img class="act-tab-img" src="http://www.hightopo.com/blog/wp-content/uploads/2014/09/IMG_10361.jpg">
+                        <div class="act-tab-info">
+                            <div class="f18">失眠险</div>
+                            <div class="f12 text-subtitle"><span>2015-09-14</span> <span>完成赔付</span></div>
+                        </div>
+                    </div>
+                    <div class="act-tab-val f18">免费</div>
+                </div>
+                <!--items-a-->
+                <!--items-a-->
+                <div class="act-tab-items clearfix">
+                    <div class="act-tab-desp">
+                        <img class="act-tab-img" src="http://www.hightopo.com/blog/wp-content/uploads/2014/09/IMG_10361.jpg">
+                        <div class="act-tab-info">
+                            <div class="f18">失眠险</div>
+                            <div class="f12 text-subtitle"><span>2015-09-14</span> <span>完成赔付</span></div>
+                        </div>
+                    </div>
+                    <div class="act-tab-val f18">888.88元</div>
+                </div>
+                <!--items-a-->
+        </div>
+        <!--加载-S-->
+        <div class="act-more text-center text-subtitle lineheight-3" id="act-list-more">
+            正在加载1
+        </div>
+    </div>
+    <!--选项卡详情-A-E-->
+
+
+    <!--选项卡详情-B-S-->
+    <div class="act-tab-cont">
+        <div class="act-tab-cont-list bg-wihte">
+            <!--items-a-->
+            <div class="act-tab-items clearfix">
+                <div class="act-tab-desp">
+                    <img class="act-tab-img" src="http://www.hightopo.com/blog/wp-content/uploads/2014/09/IMG_10361.jpg">
+                    <div class="act-tab-info">
+                        <div class="f18">雾霾险</div>
+                        <div class="f12 text-subtitle"><span>2015-09-14</span> <span>完成赔付</span></div>
+                    </div>
+                </div>
+                <div class="act-tab-val f18">免费</div>
+            </div>
+            <!--items-a-->
+            <!--items-a-->
+            <div class="act-tab-items clearfix">
+                <div class="act-tab-desp">
+                    <img class="act-tab-img" src="http://www.hightopo.com/blog/wp-content/uploads/2014/09/IMG_10361.jpg">
+                    <div class="act-tab-info">
+                        <div class="f18">雾霾险</div>
+                        <div class="f12 text-subtitle"><span>2015-09-14</span> <span>完成赔付</span></div>
+                    </div>
+                </div>
+                <div class="act-tab-val f18">8288.88元</div>
+            </div>
+            <!--items-a-->
+        </div>
+
+        <!--加载-S-->
+        <div class="act-more text-center text-subtitle lineheight-3" id="act-list-more">
+            正在加载2
+        </div>
+    </div>
+    <!--选项卡详情-B-E-->
+</div>
+<script>
+    $(document).ready(function(){
+        var _tabTitle   = $('#tab-title li');
+        var _tabCont    = $('div.act-tab-cont');
+        _tabTitle.on('click',function(){
+            var $this = $(this);
+            _tabTitle.removeClass('active');
+            $this.addClass('active');
+            _tabCont.hide(0,function(){
+                _tabCont.eq($this.index()).show(0);
+            });
+
+        });
+    });
+</script>
+</body>
+</html>

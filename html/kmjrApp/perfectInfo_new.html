@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>完善资料</title>
+    <link rel="stylesheet" href="../../css/kmjr.app.base.css?v=20151019" />
+    <script type="text/javascript" src="../../lib/jquery/jquery-1.11.3.min.js"></script>
+
+    <!--area select plugin-->
+    <link rel="stylesheet" type="text/css" href="../../lib/appSelectArea/mobile-select-area.min.css">
+    <script type="text/javascript" src="../../lib/appSelectArea/zepto.min.js"></script>
+    <script type="text/javascript" src="../../lib/appSelectArea/dialog.min.js"></script>
+    <script type="text/javascript" src="../../lib/appSelectArea/mobile-select-area.min.js"></script>
+    <!--area select plugin-->
+
+</head>
+<body>
+<!--页头-->
+<div class="body" >
+    <div class="title">
+        <h2>资料完善</h2>
+        <div class="progress-loading">
+            <div class="loading-circle loading-circle-55">
+                <b></b>
+            </div>
+        </div>
+        <div class="title_jg fadeOut" id="notice_msg">分期审核过程中，爱家理财不会未经用户许可拨打以上联系人电话！</div>
+    </div>
+
+
+
+    <!--tab1个人信息-->
+    <form id="frmStep1" method="post" action="" class="kmjr-form">
+        <div class="main tab-content" id="tab1" >
+        <h3 class="step-title">个人信息</h3>
+        <ul class="list">
+            <li><label>婚姻状况<span class="list-tab-icon">﹀</span><select name=""><option>已婚</option></select></label></li>
+            <li><label>教育程度<span class="list-tab-icon">﹀</span><select name=""><option>大专</option></select></label></li>
+            <li  class="select-area">
+                <label for="txt_area"> 现居住地址</label>
+                <label class="list-tab-icon" for="txt_area">﹀</label>
+                <div>
+                    <!--<select name="province" id="province"><option>省</option></select>
+                    <select name=""><option>市</option></select>
+                    <select name=""><option>区</option></select>-->
+
+                    <input type="text" id="txt_area" value="" placeholder="选择省市区县" data-value="12,124"/>
+                    <input type="hidden" id="hd_area" value="12,124"/>
+                    <script>
+                        var selectArea = new MobileSelectArea({lavel:2});
+                        selectArea.init({trigger:'#txt_area',value:$('#hd_area').val(),data:'data.json',level:1});
+                    </script>
+                </div>
+            </li>
+            <li class="on"><label><input type="text" name="" placeholder="详细地址"></label></li>
+            <li><label>是否有房<span class="list-tab-icon">﹀</span><select name=""><option>是</option></select></label></li>
+            <li><label>是否有车<span class="list-tab-icon">﹀</span><select name=""><option>是</option></select></label></li>
+            <li><label>是否有欧美日签证<span class="list-tab-icon">﹀</span><select name=""><option>是</option></select></label></li>
+        </ul>
+    </div>
+    </form>
+    <!--tab1-->
+
+    <!--tab2房产信息-->
+    <form id="frmStep2" method="post" action="" class="kmjr-form">
+        <div class="main tab-content" id="tab2" style="display: none; ">
+            <h3 class="step-title">房产信息</h3>
+            <ul class="list">
+                <li  class="select-area">
+                    <label for="province1">房产地址</label>
+                    <label class="list-tab-icon" for="province1">﹀</label>
+                    <div>
+                        <!--<select name="province1" id="province1"><option>省</option></select>
+                        <select name=""><option>市</option></select>
+                        <select name=""><option>区</option></select>-->
+                        <input type="text" id="txt_area1" value="" placeholder="选择省市区县" data-value="12,124,3268"/>
+                        <input type="hidden" id="hd_area1" value="12,124,3268"/>
+                        <script>
+                            var selectArea = new MobileSelectArea();
+                            selectArea.init({trigger:'#txt_area1',value:$('#hd_area1').val(),data:'data.json'});
+                        </script>
+                    </div>
+                </li>
+                <li class="on"><label><input type="text" name="" placeholder="详细地址"></label></li>
+                <li><label>购入价格<span class="list-tab-icon list-tab-icon2">万元</span>
+                    <input type="number"  class="input-inline" placeholder="例如:150.8"> </label></li>
+                <li><label>是否按揭<span class="list-tab-icon">﹀</span><select name=""><option>是</option></select></label></li>
+                <li><label>最近一期按揭还款金额<span class="list-tab-icon">﹀</span><select name=""><option>90万5千</option><option>90万5千</option><option>90万5千</option><option>90万5千</option></select></label></li>
+            </ul>
+        </div>
+    </form>
+    <!--tab2-->
+
+    <!--tab3车辆信息-->
+    <form id="frmStep3" method="post" action="" class="kmjr-form">
+        <div class="main tab-content" id="tab3" style="display: none; ">
+            <h3 class="step-title">车辆信息</h3>
+            <ul class="list">
+                <li><label>车辆品牌型号<input type="text" class="input-inline" placeholder="具体品牌和型号"></label></li>
+                <li><label>车牌号码<input type="text" class="input-inline" placeholder="车牌号码"></label></li>
+                <li><label>购入价格<span class="list-tab-icon list-tab-icon2">万元</span><input type="text" class="input-inline" placeholder="例如:20.8"> </label></label></li>
+                <li><label>是否按揭<span class="list-tab-icon">﹀</span><select name=""><option>是</option><option>否</option></select></label></li>
+                <li><label>最近一期按揭还款金额<span class="list-tab-icon">﹀</span><select name=""><option>90万5千</option><option>90万8千</option></select></label></li>
+            </ul>
+        </div>
+    </form>
+    <!--tab3-->
+
+    <!--tab4工作信息-->
+    <form id="frmStep4" method="post" action="" class="kmjr-form">
+        <div class="main tab-content" id="tab4" style="display: none; ">
+            <h3 class="step-title">工作信息</h3>
+            <ul class="list">
+                <li><label>工作单位<input type="text" class="input-inline" placeholder="单位名称"></label></li>
+                <li><label>单位性质<span class="list-tab-icon">﹀</span><select name=""><option>国企</option><option>政府机关</option><option>事业单位</option><option>民企</option><option>其他</option></select></label></li>
+                <li><label>职位<span class="list-tab-icon">﹀</span><select name=""><option>普通员工</option><option>中层</option><option>高管/股东</option></select></label></li>
+                <li><label>月收入<span class="list-tab-icon">﹀</span><select name=""><option>5K以下</option><option>5K-10K</option><option>10K-15K</option><option>15K-20K</option><option>20K以上</option></select></label></li>
+            </ul>
+        </div>
+    </form>
+    <!--tab4-->
+
+    <!--tab5配偶工作信息-->
+    <form id="frmStep5" method="post" action="" class="kmjr-form">
+        <div class="main tab-content" id="tab5" style="display: none; ">
+            <h3 class="step-title">配偶工作信息</h3>
+            <ul class="list">
+
+                <li><label>配偶工作单位<input type="text" class="input-inline" placeholder="单位名称"></label></li>
+                <li><label>配偶单位性质<span class="list-tab-icon">﹀</span><select name=""><option>国企</option><option>政府机关</option><option>事业单位</option><option>民企</option><option>其他</option></select></label></li>
+                <li><label>职位<span class="list-tab-icon">﹀</span><select name=""><option>普通员工</option><option>中层</option><option>高管/股东</option></select></label></li>
+                <li><label>月收入<span class="list-tab-icon">﹀</span><select name=""><option>5K以下</option><option>5K-10K</option><option>10K-15K</option><option>15K-20K</option><option>20K以上</option></select></label></li>
+            </ul>
+        </div>
+    </form>
+    <!--tab5-->
+
+
+    <!--tab6通讯录-->
+    <form id="frmStep6" method="post" action="" class="kmjr-form">
+        <div id="tab6" class=" tab-content text-align-c" style="display: none;">
+            <div class="msgContact"><img src="../../images/kmjrApp/icon-contact.png" alt="爱家理财" width="28%"></div>
+            <div class="padd-1">分期审查过程中，爱家理财不会未经用户许可以上联系人电话。</div>
+        </div>
+    </form>
+    <!--tab6-->
+
+        <!--tab5通讯录导入成功信息-->
+    <div id="tab7" class=" tab-content text-align-c" style="display: none;">
+        <div class="msgContact"><img src="../../images/kmjrApp/icon-contact-success.png" alt="爱家理财" width="28%"></div>
+        <div class="padd-1">分期审查过程中，爱家理财不会未经用户许可以上联系人电话。</div>
+    </div>
+    <!--tab47-->
+    </form>
+
+
+
+
+    <!--按钮-->
+    <div class="footer button clearfix">
+        <div id="btnTab1">
+            <a href="javascript:void(0);" class="active">下一步</a>
+        </div>
+
+        <div id="btnTab2" class="fadeOut">
+            <a href="javascript:void(0);" class="button-l">上一步</a>
+            <a href="javascript:void(0);" class="button-r active">下一步</a>
+        </div>
+
+        <div id="btnTab3" class="fadeOut">
+            <a href="javascript:void(0);" class="button-l">上一步</a>
+            <a href="javascript:void(0);" class="button-r active">下一步</a>
+        </div>
+
+        <div id="btnTab4" class="fadeOut">
+            <a href="javascript:void(0);" class="button-l">上一步</a>
+            <a href="javascript:void(0);" class="button-r active">下一步</a>
+        </div>
+
+        <div id="btnTab5" class="fadeOut">
+            <a href="javascript:void(0);" class="button-l">上一步</a>
+            <a href="javascript:void(0);" class="button-r active">下一步</a>
+        </div>
+
+        <div id="btnTab6" class="fadeOut">
+            <a href="javascript:void(0);" class="active">访问通讯录</a>
+        </div>
+        <div id="btnTab7" class="fadeOut">
+            <a href="javascript:void(0);" class="active">完成</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+
+        var barNum      = $('.progress-bar-num');
+        var barLoad     = $('.progress-bar-load');
+        var loadCircle  = $('.loading-circle');
+        //var noticeMsg   = $("#notice_msg");
+
+        $('#btnTab1>a').on('click',function(e){
+            tabSwitch(1,1);
+        });
+
+        $('#btnTab2').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(2,0);
+                console.log('TODO');
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(2,1);
+            }
+        });
+
+        $('#btnTab3').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(3,0);
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(3,1);
+            }
+        });
+
+        $('#btnTab4').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(4,0);
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(4,1);
+            }
+        });
+
+        $('#btnTab5').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(5,0);
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(5,1);
+            }
+        });
+        $('#btnTab6').find('a').on('click',function(){
+                //if contact should be get  TODO
+                tabSwitch(6,1);
+        });
+
+
+        function tabSwitch(step,action){
+            //step:第几步
+            //action:1 下一步 action:0 上一步
+            if(action>0){
+                $('.tab-content').css({'display':'none'});
+                $('#tab'+(step+1)).fadeIn(200);
+
+                $('#btnTab'+step).css({'display':'none'});
+               // $('#btnTab'+step).fadeOut(100,function(){
+                    $('#btnTab'+(step+1)).fadeIn(200);
+               // });
+                //进度条更新
+                //pressBar(step);
+                doLoadCircle(step);
+            }else{
+                $('.tab-content').css({'display':'none'});
+                //$('.tab-content').fadeOut(100,function(){
+                    $('#tab'+(step-1)).fadeIn(200);
+               // });
+
+                $('#btnTab'+step).css({'display':'none'});
+               // $('#btnTab'+step).fadeOut(100,function(){
+                    $('#btnTab'+(step-1)).fadeIn(200);
+               // });
+                //进度条更新
+                //pressBar(step-2);
+                doLoadCircle(step-2);
+            }
+
+            //警告框显示
+            //msgShow(step,action);
+        }
+
+
+        //进度条数据显示
+        /*function pressBar(step){
+            barNum.find('span').text(step*20);
+            barLoad.animate({width:step*20+'%'});
+        }*/
+
+        function doLoadCircle(step){
+            if(step<6){
+            loadCircle.removeClass();
+            loadCircle.addClass('loading-circle loading-circle-'+step*20)
+            }
+        }
+        //警告框显示
+       /* function msgShow(step,action){
+            console.log(step);
+            if(step==3&action>0){
+                noticeMsg.fadeIn(100);
+            }else{
+                noticeMsg.fadeOut(100);
+            }
+        }*/
+
+
+    });
+</script>
+</body>
+</html>

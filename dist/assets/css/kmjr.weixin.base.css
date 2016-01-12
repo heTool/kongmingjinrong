@@ -1,0 +1,132 @@
+/*hacker*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;clear:both}
+body{font-family:'Microsoft YaHei',arial,helvetica,sans-serif;-webkit-text-size-adjust:none;color:#333; background:#ebebeb;-webkit-text-size-adjust:none;min-width:320px;font-size:1em;line-height: 1.5}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+*{margin:0;padding:0;text-shadow: none}
+
+a:hover{ text-decoration: none}
+
+.bg-wihte{ background-color: white}
+.bg-red{ background-color: #ff4040}
+.bg-gray{ background-color: #f5f5f5}
+.bg-blue{ background-color: #0099e5}
+
+.text-white{ color: white}
+a.text-white{ color: white}
+.text-red{ color:#ff4040}
+a.text-red{ color: white}
+.text-tips{ color:#999999}
+a.text-tips{ color:#999999}
+.text-subtitle{ color:#666666}
+a.text-subtitle{ color:#666666}
+
+/**/
+.text-left{ text-align: left;}
+.text-right{ text-align: right;}
+.text-center{ text-align: center;}
+
+.f12{ font-size: 12px;}
+.f13{ font-size: 13px;}
+.f14{ font-size: 14px;}
+.f15{ font-size: 15px;}
+.f16{ font-size: 16px;}
+.f17{ font-size: 17px;}
+.f18{ font-size: 18px;}
+.f19{ font-size: 19px;}
+.f20{ font-size: 20px;}
+.f24{ font-size: 24px;}
+.f30{ font-size: 30px;}
+.f40{ font-size: 40px;}
+.f48{ font-size: 48px;}
+
+.f1_5em{ font-size: 1.5em;}
+.f2em{ font-size: 2em;}
+.f2_5em{ font-size: 2.5em;}
+.f3em{ font-size: 3em;}
+.f3_5em{ font-size: 3.5em;}
+.f4em{ font-size: 4em;}
+.f4_5em{ font-size: 4.5em;}
+.f5em{ font-size: 5em;}
+.f5_5em{ font-size: 5.5em;}
+.f6em{ font-size: 6em;}
+
+.lineheight-1{line-height: 1em}
+.lineheight-1_5{line-height: 1.5em}
+.lineheight-2{line-height: 2em}
+.lineheight-3{line-height: 3em}
+
+.padding-0_5{ padding:0.5em}
+.padding-top-0_5{ padding-top:0.5em}
+.padding-right-0_5{ padding-right:0.5em}
+.padding-bottom-0_5{ padding-bottom:0.5em}
+.padding-left-0_5{ padding-left:0.5em}
+
+.padding-1{ padding:1em}
+.padding-top-1{ padding-top:1em}
+.padding-right-1{ padding-right:1em}
+.padding-bottom-1{ padding-bottom:1em}
+.padding-left-1{ padding-left:1em}
+
+.padding-2{ padding:2em}
+.padding-top-2{ padding-top:2em}
+.padding-right-2{ padding-right:2em}
+.padding-bottom-2{ padding-bottom:2em}
+.padding-left-2{ padding-left:2em}
+
+.margin-1{ margin:1em}
+.margin-top-1{ margin-top:1em}
+.margin-right-1{ margin-right:1em}
+.margin-bottom-1{ margin-bottom:1em}
+.margin-left-1{ margin-left:1em}
+
+.margin-2{ margin:2em}
+.margin-top-2{ margin-top:2em}
+.margin-right-2{ margin-right:2em}
+.margin-bottom-2{ margin-bottom:2em}
+.margin-left-2{ margin-left:2em}
+
+.margin-p1{ margin:1%}
+.margin-top-p1{ margin-top:1%}
+.margin-right-p1{ margin-right:1%}
+.margin-bottom-p1{ margin-bottom:1%}
+.margin-left-p1{ margin-left:1%}
+
+.margin-p2{ margin:2%}
+.margin-top-p2{ margin-top:2%}
+.margin-right-p2{ margin-right:2%}
+.margin-bottom-p2{ margin-bottom:2%}
+.margin-left-p2{ margin-left:2%}
+
+.border-top-1-solid{ border-top:1px solid #dcdcdc}
+.border-bottom-1-solid{ border-bottom:1px solid #dcdcdc}
+.border-bottom-1-dashed{ border-bottom:1px dashed #dcdcdc}
+.border-bottom-1-transparent{ border-bottom:1px solid transparent}
+
+/**/
+/*.clearfix:after{ clear: both}
+.clearfix:after{ display: block;content: '';}
+:after, :before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box;box-sizing: border-box;}*/
+
+.btn-km-default{background-color:#ff4040;border-radius: 25px;  display: block; width: 80%; margin:0 auto; border-width: 0 !important;}
+
+/**/
+.kj-icons{ background: url(../images/kmjrWeixin/weixin/spring.png) left top no-repeat;display: inline-block; width: 15px; height: 15px; position: relative;
+    top: 3px;margin: 0 3px}
+.kj-icon-seconds{ background-position: left top}
+.kj-icon-accessAnyTime{ background-position: -15px top}
+.kj-icon-security{background-position: -30px top}
+.kj-icons{}
+/**/
+.wx-body{}
+.wx-content{}
+/**/
+.stages-block{ width: 47%; float: left; border-radius: 3px;}
+/*.wx-pin span{ letter-spacing: -10px; word-spacing: 0px}*/
+.wx-pin span.f4_5em span{letter-spacing: -15px; word-spacing: 0px}
+.wx-pin span.f3em span{letter-spacing: -10px; word-spacing: 0px}
+/**/
+.k-range{position: relative; overflow:hidden ; width: 100%}
+.range-fixed{ height: 50px; margin: 0 auto; width: 1px; background-color: #ff4040;}
+.range-scale{ background:url(../images/kmjrWeixin/weixin/range-scale.png) left bottom repeat-x; background-size: 4%; position: absolute; left:0; bottom: 0; height: 50px;width:500%;}

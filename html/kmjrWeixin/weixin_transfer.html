@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>购买转入爱家宝</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css" />
+    <!--<link rel="stylesheet" href="../../lib/jquerymobile/jquery.mobile-1.4.5.css" />-->
+    <link rel="stylesheet" href="../../css/kmjr.weixin.base.css" />
+    <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv.min.js"></script>
+        <script src="../../lib/respond.min.js"></script>
+    <!-- Favicons -->
+    <script src="../../lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="../../lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>-->
+</head>
+<body class="wx-body bg-gray">
+<div class="wx-content">
+    <header class="border-bottom-1-solid clearfix">
+        <div class="text-left padding-top-1 padding-left-1 col-xs-3">
+            <a  href="weixin_licai.html">
+                <img src="../../images/kmjrWeixin/weixin/icon-btn-lt.png" width="30%">
+            </a>
+        </div>
+        <div class="col-xs-6">
+            <h3 class="f2em lineheight-2 text-center">爱家宝</h3>
+        </div>
+        <div class=" ui-block-c text-right col-xs-3"></div>
+    </header>
+
+    <section class=" clearfix text-center bg-wihte text-center">
+        <div class="f2em text-subtitle padding-top-1">随存随取</div>
+        <div class="f4_5em text-red">8.18%</div>
+        <div class="border-top-1-solid">
+            <div class="f2em text-subtitle padding-top-1">我要转入</div>
+            <div><span class="text-red f3_5em border-bottom-1-dashed padding-left-0_5 padding-right-0_5" id="range-total">10000</span><span class="text-tips f3_5em border-bottom-1-transparent">元</span></div>
+            <div class="k-range">
+                <div class="range-scale" id="range-scale"></div>
+                <div class="range-fixed"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center margin-top-1">
+        <div> 本次可以购<span class="text-red">9,000.00</span>元</div>
+        <div class="text-tips">单个用户最多可以购买10万元（不含体验金）</div>
+        <div class=" margin-top-1 clearfix">
+            <div class="col-xs-6 text-center">
+                <img src="../../images/kmjrWeixin/weixin/icon-licai-profit.png" width="45%">
+                <p class="text-tips">爱家宝每月可赚(元)</p>
+                <p class="text-red f2_5em" id="range-aj-profit">33.4</p>
+            </div>
+
+            <div class="col-xs-6">
+                <img src="../../images/kmjrWeixin/weixin/icon-licai-money.png" width="45%">
+                <p class="text-tips">银行活期收益</p>
+                <p class="text-red f2_5em" id="range-bank-profit">1.43</p>
+            </div>
+        </div>
+
+        <div class="margin-top-2 margin-bottom-2 clearfix ui-grid-d">
+            <a href="javascript:;" class="btn btn-lg btn-danger btn-km-default">转入爱家宝</a>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    const _KMJR_YIELD= 0.0818;
+    const _INTEREST_RATE = 0.02;
+    var _range = {
+        touch : ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch,//是否支持touch事件
+        _range : document.getElementById('range-scale'),
+        _rangeTotal:document.getElementById('range-total'),
+        _rangeAjProfit:document.getElementById('range-aj-profit'),
+        _rangeBankProfit:document.getElementById('range-bank-profit'),
+
+        events:{
+            index:0,
+            _range:document.getElementById('range-scale'),
+            _rangePosLeft:this._range.style.left.replace(/px/g,''),
+            handleEvent:function(event){
+                'use strict';
+                var self = this;
+                if(event.type =='touchstart'){
+                    self.start(event);
+                }else if(event.type =='touchmove'){
+                    self.move(event);
+                }else if(event.type =='touchend'){
+                    self.end(event);
+                }
+            },
+            start:function(event){
+                //如果是多点触摸，取消绑定
+                if(event.targetTouches.length>1||event.scale && event.scale !== 1) return;
+                var _touch = event.targetTouches[0];
+                startPos = {x:_touch.pageX,y:_touch.pageY,time:+new Date};
+                isVertical = 0;//是否垂直滚动
+                isHorizontal = 0;//0向左，1向右
+                //rangPosLeft = this._range.style.left;
+                //this._rangePosLeft = this._range.style.left.replace(/px/g,'')
+                this._range.addEventListener('touchmove',this,false);
+                this._range.addEventListener('touchend',this,false);
+                //alert(_targetTouches.pageX);
+                //console.log(this)
+            },
+            move:function(event){
+                if(event.targetTouches.length>1||event.scale && event.scale !== 1) return;
+                var _touch = event.targetTouches[0];
+                endPos = { x:_touch.pageX-startPos.x,y:_touch.pageY-startPos.y,time:_touch.timeStamp};
+                isVertical = Math.abs(endPos.x) > Math.abs(endPos.y)?1:0;//x轴大于y轴，即垂直滑动
+                isHorizontal = endPos.x > 0 ? 1:0;
+                //rangPosLeft = this._range.style.left.replace(/px/g,'');
+                //console.log(document.getElementById('range-scale').style.left.replace(/px/g,''))
+                //console.log(this._rangePosLeft);
+                if(isVertical){
+                    console.log(this._rangePosLeft);
+                    event.preventDefault();
+                    this._range.style.left=(this._rangePosLeft+endPos.x)+'px';
+                }
+                //console.log( this._range.className);
+            },
+            end:function(event){
+                if(event.targetTouches.length>1||event.scale && event.scale !== 1) return;
+                var _targetTouches = event.targetTouches[0];
+                console.log(event)
+            }
+        },
+
+        init:function(){
+            var self = this;
+            if(!!self.touch) this._range.addEventListener('touchstart',self.events,false);//支持触摸滑动事件，增加监听
+        }
+    };
+
+    _range.init();
+
+
+</script>
+</body>
+</html>

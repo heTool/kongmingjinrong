@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>完善资料</title>
+    <link rel="stylesheet" href="../../css/kmjr.app.base.css?v=20151028" />
+    <script type="text/javascript" src="../../lib/jquery/jquery-1.11.3.min.js"></script>
+</head>
+
+
+<body>
+
+<!--页头-->
+<div class="body" >
+    <div class="title">
+        <h2>资料完善</h2>
+        <div class="progress">
+            <div class="progress-bar-num"><span>0</span>%</div>
+            <div class="progress-bar">
+                <div class="progress-bar-l">0%</div>
+                <div class="progress-bar-m">
+                    <div class="progress-bar-load">&nbsp;</div>
+                </div>
+                <div class="progress-bar-r">100%</div>
+            </div>
+            <p class="on">填写真实资料可获取最高额度</p>
+        </div>
+        <div class="title_jg fadeOut" id="notice_msg">分期审核过程中，爱家理财不会未经用户许可拨打以上联系人电话！</div>
+    </div>
+
+    <!--tab1婚姻信息-->
+    <form id="frmStep1" method="post" action="" class="kmjr-form">
+        <div class="main tab-content" id="tab1" >
+            <ul class="list">
+                <li><label>婚姻状况<span class="list-tab-icon">﹀</span><select name=""><option>已婚</option></select></label></li>
+                <li><label>有无子女<span class="list-tab-icon">﹀</span><select name=""><option>无</option></select></label></li>
+                <li><label>教育程度<select name=""><option>大专</option></select></label></li>
+                <li><label>欧美日旅行签证<select name=""><option>无</option></select></label></li>
+                <li><label>个人月收入<select name=""><option>10000</option></select></label></li>
+                <li><label>家庭年收入<select name=""><option>1000000</option></select></label></li>
+            </ul>
+        </div>
+    </form>
+    <!--tab1-->
+
+    <!--tab2房产信息-->
+    <form id="frmStep2" method="post" action="" class="kmjr-form">
+    <div class="main tab-content" id="tab2" style="display: none; ">
+        <ul class="list">
+            <li><label>房产情况<select name=""><option>租房</option></select></label></li>
+            <li><label>购入时间<input type="date" ></label></li>
+            <li><label>购入价格<select name=""><option>10万5千</option></select></label></li>
+            <li><label>房贷<select name=""><option>还贷中</option></select></label></li>
+            <li><label>每月房贷<select name=""><option>90万5千</option><option>90万5千</option><option>90万5千</option><option>90万5千</option></select></label></li>
+            <li  class="select-area">
+                <label for="province"> 现居住地址</label>
+                <label class="list-tab-icon" for="province">﹀</label>
+                <div>
+                <select name="province" id="province"><option>省</option></select>
+                <select name=""><option>市</option></select>
+                <select name=""><option>区</option></select>
+                </div>
+            </li>
+            <li class="on"><label><input type="text" name="" placeholder="详细地址"></label></li>
+            <li  class="select-area">
+                <label for="province1"> 证件地址</label>
+                <label class="list-tab-icon" for="province1">﹀</label>
+                <div>
+                    <select name="province1" id="province1"><option>省</option></select>
+                    <select name=""><option>市</option></select>
+                    <select name=""><option>区</option></select>
+                </div>
+            </li>
+            <li class="on"><label><input type="text" name="" placeholder="详细地址"></label></li>
+        </ul>
+    </div>
+        </form>
+    <!--tab2-->
+
+    <!--tab3车辆信息-->
+    <form id="frmStep3" method="post" action="" class="kmjr-form">
+    <div class="main tab-content" id="tab3" style="display: none; ">
+        <ul class="list">
+            <li><label>车辆情况<select name=""><option>还贷中</option><option>未还款</option></select></label></li>
+            <li><label>购入时间<select name=""><option>2015年10月06日</option><option>2015年11月06日</option></select></label></li>
+            <li><label>购入价格<select name=""><option>10万5千</option><option>10万8千</option></select></label></li>
+            <li><label>车贷<select name=""><option>还贷中</option><option>未还款</option></select></label></li>
+            <li><label>每月车贷<select name=""><option>90万5千</option><option>90万8千</option></select></label></li>
+        </ul>
+    </div>
+        </form>
+    <!--tab3-->
+
+    <!--tab4信息-->
+    <!--直系亲属信息-->
+    <form id="frmStep4" method="post" action="" class="kmjr-form">
+    <div id="tab4" class=" tab-content text-align-c" style="display: none;">
+        <div class="msgContact"><img src="../../images/kmjrApp/icon-contact.png" alt="爱家理财" width="40%"></div>
+        <div class="padd-1">分期审查过程中，爱家理财不会未经用户许可以上联系人电话。</div>
+        <!--<h2 class="main-bg">直系亲属信息</h2>
+        <div class="main">
+            <ul class="list">
+                <li>姓名<input type="text" class="input-inline" name="" placeholder="请输入亲属姓名"></li>
+                <li>关系<select name=""><option>兄弟</option></select></li>
+                <li>手机号码<input type="text" name="" class="input-inline" placeholder="输入手机号码"></li>
+            </ul>
+        </div>-->
+        <!--配偶信息-->
+       <!-- <h2 class="main-bg">配偶信息</h2>
+        <div class="main">
+            <ul class="list">
+                <li>姓名<input type="text" class="input-inline" name="" placeholder="请输入亲属姓名"></li>
+                <li>手机号码<input type="text" class="input-inline" name="" placeholder="输入手机号码"></li>
+            </ul>
+        </div>-->
+        <!--同事信息-->
+        <!--<h2 class="main-bg">同事联系人信息</h2>
+        <div class="main">
+            <ul class="list">
+                <li>姓名<input type="text" name="" class="input-inline" placeholder="请输入亲属姓名"></li>
+                <li>公司固话<input type="text" name="" class="input-inline" placeholder="输入固定号码"></li>
+            </ul>
+        </div>-->
+    </div>
+        </form>
+    <!--tab4-->
+
+    <!--tab5信息-->
+    <div id="tab5" class=" tab-content text-align-c" style="display: none;">
+        <div class="msgContact"><img src="../../images/kmjrApp/icon-contact-success.png" alt="爱家理财" width="40%"></div>
+        <div class="padd-1">分期审查过程中，爱家理财不会未经用户许可以上联系人电话。</div>
+    </div>
+    <!--tab4-->
+    </form>
+
+
+
+
+    <!--按钮-->
+    <div class="footer button clearfix">
+        <div id="btnTab1">
+            <a href="javascript:void(0);" class="active">下一步</a>
+        </div>
+
+        <div id="btnTab2" class="fadeOut">
+            <a href="javascript:void(0);" class="button-l">上一步</a>
+            <a href="javascript:void(0);" class="button-r active">下一步</a>
+        </div>
+
+        <div id="btnTab3" class="fadeOut">
+            <a href="javascript:void(0);" class="button-l">上一步</a>
+            <a href="javascript:void(0);" class="button-r active">下一步</a>
+        </div>
+
+        <div id="btnTab4" class="fadeOut">
+            <a href="javascript:void(0);" class="active">访问通讯录</a>
+        </div>
+        <div id="btnTab5" class="fadeOut">
+            <a href="javascript:void(0);" class="active">完成</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+
+        var barNum      = $('.progress-bar-num');
+        var barLoad     = $('.progress-bar-load');
+        //var noticeMsg   = $("#notice_msg");
+
+        $('#btnTab1>a').on('click',function(e){
+            tabSwitch(1,1);
+        });
+
+        $('#btnTab2').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(2,0);
+                console.log('TODO');
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(2,1);
+            }
+        });
+
+        $('#btnTab3').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(3,0);
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(3,1);
+            }
+        });
+
+        $('#btnTab4').find('a').on('click',function(){
+                //if contact should be get  TODO
+                tabSwitch(4,1);
+        });
+
+        function tabSwitch(step,action){
+            //step:第几步
+            //action:1 下一步 action:0 上一步
+            console.log('step1:'+step);
+            if(action>0){
+                $('.tab-content').css({'display':'none'});
+                $('#tab'+(step+1)).fadeIn(200);
+
+                $('#btnTab'+step).css({'display':'none'});
+               // $('#btnTab'+step).fadeOut(100,function(){
+                    $('#btnTab'+(step+1)).fadeIn(200);
+               // });
+                //进度条更新
+                pressBar(step);
+            }else{
+                $('.tab-content').css({'display':'none'});
+                //$('.tab-content').fadeOut(100,function(){
+                    $('#tab'+(step-1)).fadeIn(200);
+               // });
+
+                $('#btnTab'+step).css({'display':'none'});
+               // $('#btnTab'+step).fadeOut(100,function(){
+                    $('#btnTab'+(step-1)).fadeIn(200);
+               // });
+                //进度条更新
+                pressBar(step-2);
+            }
+
+            //警告框显示
+            //msgShow(step,action);
+        }
+
+
+        //进度条数据显示
+        function pressBar(step){
+            barNum.find('span').text(step*25);
+            barLoad.animate({width:step*25+'%'});
+        }
+        //警告框显示
+       /* function msgShow(step,action){
+            console.log(step);
+            if(step==3&action>0){
+                noticeMsg.fadeIn(100);
+            }else{
+                noticeMsg.fadeOut(100);
+            }
+        }*/
+
+
+    });
+</script>
+</body>
+</html>

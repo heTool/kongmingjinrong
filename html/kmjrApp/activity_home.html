@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>爱家理财-活动中心</title>
+    <!--<link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/app/Public/css/kmjr.app.activity.min.css" />-->
+    <link rel="stylesheet" href="../../css/kmjr.app.activity.css" />
+    <script type="text/javascript" src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="act-body">
+        <div class="act-list" id="act-list">
+            <!--items-1-S-->
+            <div class="act-items">
+                <div class="act-items-header clearfix">
+                    <div class="act-header-left left  padding-left-0_5 f18">
+                        爱家派送1000元红包了！
+                    </div>
+                    <div class="act-header-right right text-right padding-right-1 padding-left-1 text-yellow f14">
+                        离结束仅剩<span>1</span>天
+                    </div>
+                </div>
+                <div class="act-items-body p-relative">
+                    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/activity/banner-V1.png" width="100%">
+                </div>
+            </div>
+            <!--items-1-E-->
+
+            <!--items-2-S-->
+            <div class="act-items">
+                <div class="act-items-header clearfix">
+                    <div class="act-header-left left  padding-left-0_5 f16">
+                        爱家派送1000元红包了！
+                    </div>
+                    <div class="act-header-right right text-right padding-right-1 padding-left-1 text-yellow f14">
+                        距离开始<span>2</span>天
+                    </div>
+                </div>
+                <div class="act-items-body p-relative">
+                    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/activity/banner-V1.png" width="100%">
+                    <div class="act-items-over p-absolute f16">已经结束</div>
+                </div>
+            </div>
+            <!--items-2-E-->
+
+            <!--items-2-S-->
+            <div class="act-items">
+                <div class="act-items-header clearfix">
+                    <div class="act-header-left left  padding-left-0_5 f16">
+                        爱家派送1000元红包了！
+                    </div>
+                    <div class="act-header-right right text-right padding-right-1 padding-left-1 text-yellow f14">
+                        <!-- 距离开始<span>2</span>天-->
+                    </div>
+                </div>
+                <div class="act-items-body p-relative">
+                    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/activity/banner-V1.png" width="100%">
+                    <div class="act-items-over p-absolute f16">即将开始</div>
+                </div>
+            </div>
+            <!--items-2-E-->
+        </div>
+        <div class="act-more text-center text-subtitle lineheight-3" id="act-list-more">
+            正在加载
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function(){
+        var _setTimeout;
+        $(window).on('scroll',function(){
+            var _win_height = $(window).height();
+            var _doc_height = $(document).height();
+            var _screen_num = Math.floor(_doc_height/_win_height);
+            var _scroll_top = $(document).scrollTop();
+            if(_scroll_top==(_doc_height%_win_height+(_screen_num-1)*_win_height)&&_scroll_top>0) {
+                _setTimeout = self.setTimeout(function () {
+                    //TODO $.ajax()
+                    $('#act-list').append($('#act-list').html());
+                }, 500);
+            }
+//            }else{
+//                console.log(_setTimeout);
+//                clearTimeout(_setTimeout);
+//            }
+        });
+    });
+</script>
+</body>
+</html>
