@@ -1,0 +1,272 @@
+/*hacker*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;clear:both}
+body{font-family:'Microsoft YaHei',arial,helvetica,sans-serif;-webkit-text-size-adjust:none;color:#111; background:#ebebeb;-webkit-text-size-adjust:none;min-width:320px;font-size:1em;line-height: 1.5}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+*{margin:0;padding:0;}
+body,html{ background:#f0f0f0;}
+/*comm*/
+.clearfix{ clear: both;}
+.fadeOut{ display: none;}
+.f10{ font-size: 10px;}
+.f11{ font-size: 11px;}
+.f12{ font-size: 12px;}
+.f16{ font-size:16px;}
+.text-align-c{ text-align: center}
+.text-right{ text-align: right}
+.text-help{ color: darkred; font-size: smaller}
+.text-red{ color: #900}
+.marg-b-5{ margin-bottom: 15%}
+.padd-1{  padding: 1em; }
+.padd-r-3em{ padding-right: 1em !important;}
+
+/*完善资料*/
+.body{position:relative; border-bottom:1px solid #ccc;}
+.title{ background:#fff;padding-top:20px; text-align:center;}
+.title h2{border-bottom:1px solid #ccc;height:50px; text-align:center;}
+.title div{margin:0 auto;}
+.on{color:#999;}
+.main{background:#FFFFFF;border-bottom:1px solid #eeeeee;margin:15px 0px;padding:0px 10px;}
+.main-bg{ margin-top:20px;margin-left:10px; font-size: 80%}
+.list{}
+.list ul{margin-bottom:10px;}
+.list li{height:48px;line-height:48px;border-bottom:1px solid #eee;width:100%; list-style:none; overflow: hidden}
+/*.list li input[type="text"]{border:none;height:48px;line-height:48px;margin-left:5px; overflow:hidden;float:right; width:100%;
+  color: #999;}
+.list li input[type="date"]{border:none;margin-left:5px;margin-top:1em; overflow:hidden;float:right;color: #999;}
+.list li input[type="text"].input-inline{ width: auto !important;}
+.list li select{border:none;height:48px;line-height:48px;margin-left:5px; overflow:hidden;float:right;color: #999;}
+*/
+.list li:last-child{border-bottom:none;}
+.button{margin:35px auto; width: inherit;height: 80px;padding: 0 1em}
+.button a{border-radius:3px;border:1px #0099E5 solid;padding:10px 0;-webkit-box-flex:1;-webkit-flex:1; color:#0099E5; text-decoration:none; width: auto; display: block; text-align: center}
+.button a:hover,.button a.active{border-radius:3px;border:1px #0099E5 solid; padding:10px 0;-webkit-box-flex:1;-webkit-flex:1; background-color:#0099E5;color:#fff; text-decoration:none;}
+.button-l{ width:45% !important; float: left;}
+.button-r{ width: 45%  !important; float: right;}
+.title_jg{line-height:1.8em; padding: 1em;color:red; background:#FFF391;border-top:1px solid #ccc; border-bottom:1px solid #ccc; text-align:center; font-size: 10px}
+
+
+/*进度条*/
+
+.progress {
+  padding:20px 20px 20px 20px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-radius: 10px;
+}
+.progress-bar{position: relative}
+.progress-bar-l{position:absolute; left: 0; top: 0; font-size:1em}
+.progress-bar-m{position:absolute; left: 0; top: 6px; margin: 0 10% 0 10% !important; background: #f0f0f0; width: 78%; height: 10px; overflow:hidden}
+.progress-bar-load{background-color: #0099E5; width:0; margin: 0 !important;}
+.progress-bar-r{position:absolute; right: -0.5em; top: 0;font-size:1em}
+
+.progress > span.progress-bar-num {
+  padding: 0 8px;
+  font-size: 1em;
+  /*font-weight: bold;*/
+  color: #404040;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.progress-bar{
+  height:3em;
+  width: 100%;
+  background: white;
+}
+
+.msgContact{ padding-top: 5em; padding-bottom: 1em}
+
+/*贷款协议*/
+.loanBody{ line-height: 1.8; padding: 1em;  font-size: 0.8em;}
+.loanBody h1,.loanBody h2,.loanBody h3{ line-height: 3; font-weight: bold; word-break: keep-all; white-space: nowrap}
+.loanBody h1{ font-size: 1.25em;;text-align: center; word-break: keep-all; white-space: nowrap;}
+.loanBody h2{ font-size:1.2em}
+.loanBody h3{ font-size:1.15em}
+.loanBody p{padding:0.2em 0;}
+.loanBody table{ line-height: 1.4em; border-top: 1px solid #ccc; border-left: 1px solid #ccc; }
+.loanBody td{ padding:0.2em 0.5em;line-height: 1.4em;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.text-p{ padding-left: 2em !important;}
+.loanNotice{ color:darkred; font-weight: bold; margin-top: 2em}
+.loanNoticeCont{color:darkred; font-weight: bold; }
+.loanTr{text-align: right}
+.loanEnd{ margin-top: 2em}
+
+.loanList{  padding: 1em 0;}
+.loanList li{ border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin: 0.45em 0; list-style: none; padding:0.75em 0.5em 0.75em 2.5em; background:#fff url('../../images/step/icon-loan-list.gif') 0.5em center no-repeat; background-size: 20px; }
+.loanList li a{ display: block; text-decoration: none; color: #000; background: url('../../images/step/icon-loan-lt.gif') right center no-repeat; background-size:20px}
+.loanList li a span{ float: right}
+
+/**/
+.list select {
+  -webkit-appearance: none!important;
+  -webkit-appearance:but ;
+  -moz-appearance: none!important;
+  -webkit-border-radius: 0;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…J2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+) 100% center no-repeat #fff;
+}
+.list select:focus{border: 1px solid transparent; border-radius: 0; box-shadow: none}
+.list input[type=text],
+.list input[type=datetime],
+.list input[type=datetime-local],
+.list input[type=date],
+.list input[type=month],
+.list input[type=time],
+.list input[type=week],
+.list select,
+.kmjr-form textarea,
+.am-form-field {
+  display: block;
+  display:inline-block;
+  float: right;
+  /*width: 100%;*/
+  padding: .5em;
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 2.45;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 0px solid transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.list input[type=text]{ width: 100%;text-align: right;}
+.list .select-area select{ float: left !important; display: inline-block !important; width: 33%}
+.list .select-area>label{float: left; width: 30%}
+.list .select-area>label.list-tab-icon{ width: auto; float: right}
+.list .select-area>div{ float: right;width: 60%}
+.list input.input-inline{ width: inherit !important;}
+
+.list-tab-icon{float: right; padding-right:0.5em;color: #666;line-height: 3.45;}
+.list-tab-icon2{ line-height: 2.75 !important;}
+body, button, input, select, textarea {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga","kern";
+}
+button, select {
+  text-transform: none;
+}
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.am-btn, button, img, input:not([type=radio]):not([type=checkbox]), select {
+  vertical-align: middle;
+}
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/*circle loading*/
+.progress-loading{ padding: 2em 0;}
+.loading-circle{background-color:#ffffff; position:relative;border-radius: 50%; border: 2px #cdcdcd solid; width: 10em;height:10em; margin: auto}
+.loading-circle b:before, .loading-circle:after{
+    content: '';
+    line-height: 100%;
+    color: #fffde8;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    font-weight: 900;
+    left: 1%;
+    top: 1%;
+    width: 98%;
+    height: 98%;
+    background-color: #33b5e5;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    box-shadow: 0 0 3px rgba(99, 99, 99, 0.6);
+}
+.loading-circle:after{
+    z-index: 1;
+}
+.loading-circle b:before{
+    z-index: 99;
+}
+.loading-circle b:after{
+    z-index: 999;
+}
+
+.loading-circle b{ font-size: 2em;}
+
+.loading-circle b:after{
+    line-height: 100%; ;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    font-weight: 900;
+    left: 8%;
+    top: 8%;
+    width: 84%;
+    height: 84%;
+    background-color: #636363;
+    border-radius: 50%;
+    text-align: center;
+    line-height:3.25em ;
+    font-size: 1.25em;
+    box-shadow: 0 0 8px rgba(99, 99, 99, 0.9);
+}
+
+/*****/
+.loading-circle-0 b:after{content:'0%'}
+.loading-circle-20 b:after{content:'20%'}
+.loading-circle-35 b:after{content:'35%'}
+.loading-circle-40 b:after{content:'40%'}
+.loading-circle-50 b:after{content:'50%'}
+.loading-circle-60 b:after{content:'60%'}
+.loading-circle-70 b:after{content:'70%'}
+.loading-circle-80 b:after{content:'80%'}
+.loading-circle-90 b:after{content:'90%'}
+.loading-circle-100 b:after{content:'100%'}
+
+.loading-circle-0 b:before{background-image: linear-gradient(0deg, #fff, #fff);}
+.loading-circle-20 b:before{ background-image: linear-gradient(90deg, #fff 50%, transparent 50%, transparent),linear-gradient(-18deg, #ffffff 50%, #33b5e5 50%, #33b5e5);}
+.loading-circle-35 b:before{ background-image: linear-gradient(90deg, #fff 50%, transparent 50%, transparent),linear-gradient(36deg, #ffffff 50%, #33b5e5 50%, #33b5e5);}
+.loading-circle-40 b:before{ background-image: linear-gradient(90deg, #fff 50%, transparent 50%, transparent),linear-gradient(54deg, #ffffff 50%, #33b5e5 50%, #33b5e5);}
+.loading-circle-50 b:before{ background-image: linear-gradient(90deg, #fff 50%, transparent 50%, transparent),linear-gradient(90deg, #ffffff 50%, #33b5e5 50%, #33b5e5);}
+.loading-circle-60 b:before{ background-image: linear-gradient(126deg, transparent 50%, #33b5e5 50%, #33b5e5) ,linear-gradient(90deg, #fff 50%, transparent 50%, transparent);}
+.loading-circle-70 b:before{ background-image: linear-gradient(162deg, transparent 50%, #33b5e5 50%, #33b5e5) ,linear-gradient(90deg, #fff 50%, transparent 50%, transparent);}
+.loading-circle-80 b:before{ background-image: linear-gradient(198deg, transparent 50%, #33b5e5 50%, #33b5e5) ,linear-gradient(90deg, #fff 50%, transparent 50%, transparent);}
+.loading-circle-90 b:before{ background-image: linear-gradient(234deg, transparent 50%, #33b5e5 50%, #33b5e5) ,linear-gradient(90deg, #fff 50%, transparent 50%, transparent);}
+.loading-circle-100 b:before{}
+
+
+.step-title{text-align: center; line-height: 3.85; font-weight: bold; border-bottom: 2px solid #eee}
+
+/*qa*/
+/*贷款协议*/
+.qaBody{ line-height: 1.8; padding: 1em 0;  font-size: 0.8em;}
+.qaBody h3{ margin-top: -1px; font-size:1.25em;line-height: 3; word-break: keep-all; white-space: nowrap; background-color: #fff; padding:0 0.5em 0 1em; border-top:1px solid #ccc; border-bottom: 1px solid #ccc}
+.qaBody h3 span.toggleBtn{ background: url('../../images/step/icon-loan-lt.gif') right center no-repeat; background-size: 100%; display: inline-block; float: right; width: 15px }
+.qaBody h3 span.toggleBtnDown{  background: url('../../images/step/icon-loan-dt.gif') center center no-repeat; background-size: 100% }
+.qaContent{padding: 1em 1.5em;display: none}
+.qaBody p{padding:0.1em 0;}
+.qaBody table{ line-height: 1.4em; border-top: 1px solid #ccc; border-left: 1px solid #ccc; }
+.qaBody td{ padding:0.2em 0.5em;line-height: 1.4em;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.qaBody td{ padding:0.2em 0.5em;}
+.qaNotice{ color:darkred; font-weight: bold;}
+.text-p{ padding-left: 2em !important;}
+
+/**/
+.dialog{ background-color: transparent !important;}
+.dialog-explain{ position:absolute;font-size: 0.5em;height:100%; width: 100%; left: 0; top:0;}
+.dialog-bg{ position: absolute; width: 100%; height: 100%; background-color: black; opacity: 0.85; z-index: -1}
+.dialog-content{ padding: 5%;}
+.dialog-explain table,.dialog-explain td{ border:1px solid #fff; line-height: 1.4em; color: white}
+.dialog-explain td{ padding:0.2em 0.5em;}
+
+/**/
+.aboutBody{ background-color: #fff; height: 100%; padding: 1em 0; font-size: 26px}
+.text-about{ color: #ff4040; line-height: 1 !important; margin-top: 2em; font-weight: normal !important;}

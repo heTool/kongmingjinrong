@@ -9,7 +9,6 @@ require.config({
         'bootstrap':'lib/bootstrap/js/bootstrap.min'
     },
     shim:{
-        'bootstrap':['jquery'],
-        'jquery':{}
+        'bootstrap':['jquery']
     }
 });
