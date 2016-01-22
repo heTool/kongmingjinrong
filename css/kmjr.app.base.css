@@ -312,7 +312,24 @@ button, input, optgroup, select, textarea {
 .dialog-explain td{ padding:0.2em 0.5em;line-height: 1.4em;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;color: white}
 /**/
 .aboutBody{ background-color: #fff; height: 100%; padding-left: 1em !important;padding-right: 1em !important;padding-bottom: 1em !important; padding-top: 1px !important}
-.text-about{ color: #ff4040; line-height: 1.5em !important; margin-top: 1em; font-weight: normal !important;}
+.text-about{ color: #ff4040; line-height: 1.5em !important; margin-top: 1em; font-weight: normal !important; font-size:18px;}
+.about-block{ border-bottom: 1px dashed #ccc;padding-bottom: 1em;  }
+.about-title{ z-index: 2;
+    font-style: italic;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    background-color:#ff4040;
+    color: #fff;
+    margin-right:.5em;
+    text-align: center;
+    font-size: 24px;
+    line-height:24px;
+    height:28px;
+    padding:2px 5px;
+}
+.about-title-triangle{display:block; position:absolute; right: -10px; top: 0; width: 0; height: 0;border-bottom: 28px solid #fff; border-left:10px solid #ff4040; z-index: 1; }
+
 /**/
 .page-insurance{ padding-bottom: 2em; background-color: #fff;}
 .page-insurance img{ display:block}
