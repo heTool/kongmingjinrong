@@ -161,12 +161,14 @@ a.text-orange{ color:#0099e5}
 
 /*main*/
 /*main*/
-.wm-body{  
+.wm-body,.wm-body-app{
 	background:#575354 url('http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/wumai/wumai-bg.jpg') left top no-repeat;
 	background-size: 100%;
 	color:white;
 }
-.wm-header{left:0;top:0;}
+.wm-body-app{ background-position: left -40px;}
+.wm-header{left:0;top:0;width:100%;
+	overflow: hidden}
 .img-tips{ position: absolute;; right: 0; top: 0;}
 
 .wm-panel{border-radius: 1em;background-color: #555; background-color: rgba(0,0,0,.2);}
@@ -178,12 +180,15 @@ a.text-orange{ color:#0099e5}
 .panel-ipt-submit,
 a.panel-ipt-submit,
 a.panel-ipt-submit:hover,
+.panel-ipt-normal,
+a.panel-ipt-normal,
+a.panel-ipt-normal:hover,
 .panel-ipt-disable,
 a.panel-ipt-disable,
 a.panel-ipt-disable:hover,
 .panel-ipt-error,
 a.panel-ipt-error,
-a.panel-ipt-error:hover{ width: 100%; display: block; border-radius: 5px; font-size: 20px; padding:.488em 3%;background-color: #ffdf00;}
+a.panel-ipt-error:hover{ width: 100%; display: block; border-radius: 5px; font-size: 18px; padding:.488em 3%;background-color: #ffdf00;}
 .panel-ipt-disable,
 a.panel-ipt-disable,
 a.panel-ipt-disable:hover{background-color: #c0c0c0}
@@ -196,6 +201,8 @@ a.panel-ipt-disable,
 a.panel-ipt-disable:hover{width: 94%; color: #666;}
 a.panel-ipt-error,
 a.panel-ipt-error:hover{width: 94%; color: #fff;}
+a.panel-ipt-normal,
+a.panel-ipt-normal:hover{ width: 94%; background-color: #FD8F64;color: #fff;}
 @media screen and(max-width: 480px){
 	.panel-items-info{ font-size: 14px;line-height: 1.65;}
 }
@@ -206,9 +213,11 @@ a.panel-ipt-error:hover{width: 94%; color: #fff;}
 .wm-low-p{ padding-left:1em; position: relative;}
 .wm-low-p:before{content:' '; width: 5px; height: 5px; border-radius: 999px; background-color: #fff; position: absolute;left: .25em; top: .65em;}
 /**/
-.wm-point-box{ padding-top:20%; padding-bottom:10%;}
+.wm-point-box{ /*padding-top:20%; padding-bottom:10%;*/}
 .wm-point{ font-size: 85px; line-height: 100px; height: 100px;}
-.wm-taps .wm-taps-text{ background-color: #ff6666; border-radius: 15px; padding:.15em 1.45em;}
+.wm-taps .wm-taps-text,
+.wm-taps .wm-taps-text-no{ background-color: #ff6666; border-radius: 15px; padding:.15em 1.45em;}
+.wm-taps .wm-taps-text-no{background-color: #333}
 
 .list-items{padding:.25em .5em;}
 .list-table{}
@@ -220,3 +229,8 @@ a.panel-ipt-error:hover{width: 94%; color: #fff;}
 
 .openBrowser{width: 100%; height: 100%; left: 0; top: 0; position: fixed; z-index: 99999;display: none}
 .dialog-bg{position: fixed; width: 100%; height: 100%; left: 0; top: 0;background-color:black; background-color:rgba(0,0,0,.9); z-index:-1;}
+
+.icon-tips{}
+.tip-num{ position: absolute; top:1.6em; right: -41%; font-size: 12px; color: white; word-break: keep-all; white-space: nowrap;-webkit-transform: rotate(45deg);transform: rotate(45deg);width: 100%;height: 1em; line-height:1.2em;text-align: center}
+.text-position{background: url('http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/wumai/wumai-icon-position.png') left center no-repeat; background-size: 12px; padding-left: 1em;padding-right:0.2em;color: #ffdf00; }
+.wm-banner-app{ margin-top:-40px; }

@@ -289,7 +289,7 @@ a.button-error:hover{width: 94%; color: #fff;}
     padding-bottom: .125em !important;
 }
 .button-monky{padding-top: 1em !important; padding-bottom: 1em !important;}
-.ny-seal{ margin-bottom: 5em}
+/*.ny-seal{ padding-bottom: 60px}*/
 .seal-bun{ position: absolute; bottom:-.5em; left: -.5em}
 
 .loading{width: 100%; height: 100%; position: fixed; top: 0; left: 0; display: none; background-color:rgba(0,0,0,.6);z-index: 9999999;}
