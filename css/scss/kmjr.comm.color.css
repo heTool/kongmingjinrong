@@ -1,0 +1,98 @@
+/*color*/
+.bg-white {
+  background-color: #ffffff !important; }
+
+.text-white {
+  color: #ffffff; }
+
+a.text-white {
+  color: #ffffff; }
+
+a.text-white:hover {
+  color: #ffffff; }
+
+.bg-black {
+  background-color: #333333 !important; }
+
+.text-black {
+  color: #333333; }
+
+a.text-black {
+  color: #333333; }
+
+a.text-black:hover {
+  color: #333333; }
+
+.bg-darkblack {
+  background-color: #000000 !important; }
+
+.text-darkblack {
+  color: #000000; }
+
+a.text-darkblack {
+  color: #000000; }
+
+a.text-darkblack:hover {
+  color: #000000; }
+
+.bg-gray {
+  background-color: #999999 !important; }
+
+.text-gray {
+  color: #999999; }
+
+a.text-gray {
+  color: #999999; }
+
+a.text-gray:hover {
+  color: #999999; }
+
+.bg-darkgray {
+  background-color: #666666 !important; }
+
+.text-darkgray {
+  color: #666666; }
+
+a.text-darkgray {
+  color: #666666; }
+
+a.text-darkgray:hover {
+  color: #666666; }
+
+.bg-lightgray {
+  background-color: #f2f2f2 !important; }
+
+.text-lightgray {
+  color: #f2f2f2; }
+
+a.text-lightgray {
+  color: #f2f2f2; }
+
+a.text-lightgray:hover {
+  color: #f2f2f2; }
+
+.bg-yellow {
+  background-color: #FEF492 !important; }
+
+.text-yellow {
+  color: #FEF492; }
+
+a.text-yellow {
+  color: #FEF492; }
+
+a.text-yellow:hover {
+  color: #FEF492; }
+
+.bg-red {
+  background-color: #ff4040 !important; }
+
+.text-red {
+  color: #ff4040; }
+
+a.text-red {
+  color: #ff4040; }
+
+a.text-red:hover {
+  color: #ff4040; }
+
+/*# sourceMappingURL=kmjr.comm.color.css.map */

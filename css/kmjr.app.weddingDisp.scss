@@ -1,1 +1,123 @@
-/**/
+/*
+*hetao
+*20160124
+*style wedding discipline of base
+*/
+@import "scss/kmjr.comm.hacker";
+@import "scss/kmjr.comm.font";
+@import "scss/kmjr.comm.marging";
+@import "scss/kmjr.comm.padding";
+@import "scss/kmjr.comm.position";
+@import "scss/kmjr.comm.size";
+@import "scss/kmjr.comm.color";
+
+.fadeIn{display: block}
+.fadeOut{display: none}
+
+@mixin icon-header{
+  position: absolute;
+  width: $em1;
+  line-height: $em1;
+  height: $em1;
+  background-color: transparent;
+  font-size: $px16;
+  top: $em1;
+}
+
+@mixin icon-left{
+  left: $em0_5;
+  @include icon-header;
+}
+
+@mixin icon-right{
+  right: $em0_5;
+  @include icon-header;
+}
+
+/*all*/
+
+html,body,.kmwd-body{
+  background-color: #f4f4f4;
+  min-height: 100%;
+}
+/*header*/
+.kmwd-header{
+  position: relative;
+  text-align: $center;
+}
+.kmwd-header .btn-previous{
+  //content:'上';
+  @include icon-left;
+}
+.kmwd-header .btn-next{
+  //content:'下';
+  @include icon-right;
+}
+/*content*/
+.kmwd-content{
+}
+
+.kmwd-block{}
+.block-tit{
+  font-size: $px18;
+  line-height: $em1;
+  padding-top: $em1;
+  padding-bottom: $em0_5;
+  padding-left: $em0_5;
+}
+.block-items{
+  font-size: $px16;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-top:1px solid $lightgray;
+  border-bottom:1px solid $lightgray;
+  margin-top: -1px;
+  position: relative;
+}
+.block-items label{
+  display: inline-block;
+  font-size:$px14;
+}
+.block-items input{
+  font-size: $px16;
+  display: inline-block;
+  min-width: 50%;
+  width: auto;
+  float: right;
+  border: none;
+}
+.block-items input::-webkit-input-placeholder{
+  text-align: right;
+}
+.block-items input:focus{
+  text-shadow: none;
+  box-shadow: none;
+}
+.block-items .error{
+  position: absolute;
+  right:$em0_5;
+  top:$em3;
+  font-size: $px14;
+  color: $red;
+  z-index: 2;
+  display: none;
+}
+.btn-submit-info,
+a.btn-submit-info{
+  display: block;
+  width: $per100;
+  padding-top: $em0_5;
+  padding-bottom: $em0_5;
+  text-align: $center;
+  color: $white;
+  background-color: $red;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  border: 0;
+  font-size: $px20;
+  text-decoration: none;
+}
+a.btn-submit-info:hover{
+  opacity: .9;
+}

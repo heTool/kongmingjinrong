@@ -1,25 +1,38 @@
-/**/
-.bg-wihte{ background-color: white !important;}
-.bg-black{ background-color: black !important;}
-.bg-red{ background-color: #ff4040 !important;}
-.bg-gray{ background-color: #f2f2f2 !important;}
-.bg-blue{ background-color: #0099e5 !important;}
-.bg-yellow{ background-color: #FEF492 !important;}
+/*color*/
+$white:#ffffff;
+$black:#333333;
+$darkblack:#000000;
+$gray:#999999;
+$darkgray:#666666;
+$lightgray:#f2f2f2;
+$yellow:#FEF492;
+$red:#ff4040;
 
 /**/
-.text-white{ color: white !important;}
-a.text-white{ color: white}
-.text-red{ color:#ff4040}
-a.text-red{ color: #ff4040}
-.text-tips{ color:#999999}
-a.text-tips{ color:#999999}
-.text-subtitle{ color:#666666}
-a.text-subtitle{ color:#666666}
-.text-blue{ color:#0099e5}
-a.text-blue{ color:#0099e5}
-.text-orange{ color:#ff610c}
-a.text-orange{ color:#0099e5}
-.text-yellow{color:#ff9000}
-a.text-yellow{color:#ff9000}
+$color:(white:#ffffff,
+        black:#333333,
+        darkblack:#000000,
+        gray:#999999,
+        darkgray:#666666,
+        lightgray:#f2f2f2,
+        yellow:#FEF492,
+        red:#ff4040);
 
-/**/
+@each $getStyle,$getColor in $color{
+    .bg-#{$getStyle}{
+      background-color: $getColor !important;
+    };
+    .text-#{$getStyle}{
+      color:$getColor;
+    }
+    a.text-#{$getStyle}{
+      color:$getColor;
+      text-decoration: none;
+    }
+    a.text-#{$getStyle}:hover{
+      color:$getColor;
+      text-decoration: none;
+    }
+}
+
+
