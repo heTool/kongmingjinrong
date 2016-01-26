@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn" style="background-color: #000000">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>多笔代付使用说明</title>
+    <link rel="stylesheet" href="../../css/kmjr.app.base.css?v=20151019" />
+    <script type="text/javascript" src="../../lib/jquery/jquery-1.11.3.min.js"></script>
+</head>
+<body class="dialog">
+<div class="dialog-explain">
+    <div class="dialog-content">
+            <table cellspacing="0" cellpadding="2" class="dialog-table border-no">
+                <tr>
+                    <td rowspan="4" class="border-no">
+                        <div class="lineheight-1">
+                            <p class="line-p">1.装修频道可根据用户需求最多分3次进行代付（金额可由用户自定义）。</p>
+                            <p class="line-p">2.多笔代付还款日期合并原则：以第一笔代付为基准，第二笔代付还款日与第一笔的合并，还款金额进行累加。（例如：某君6月1日申请第一笔3000x3期的代付，7月25日申请第二笔2000x3期的代付，分期方式均按照3期计算）</p>
+                            <p class="text-align-c padd-1">
+                                <img src="../../images/kmjrApp/explain-Mutiplepay.png" width="100%">
+                            </p>
+
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+
+    </div>
+</div>
+<script>
+    $('.dialog-table').css({'width':window.innerWidth+'px'})
+</script>
+</body>
+</html>

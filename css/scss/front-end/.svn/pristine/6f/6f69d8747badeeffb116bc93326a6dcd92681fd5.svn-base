@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>产品介绍</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="apple-touch-icon-precomposed" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+    <link rel="bookmark" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/kmjrMobile1.0.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/jquery.mobile.icons.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile.structure-1.4.5.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/wap/Public/css/kmjr.mobile.base.css" />
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body class="wx-body bg-wihte">
+<div class="wx-content ">
+    <header data-role="header" class=" ui-header ui-bar-inherit ui-kmjr">
+        <a href="#" class="ui-btn ui-icon-left ui-icon-carat-l ui-btn-icon-notext ui-btn-corner-all"></a>
+        <h1>产品介绍</h1>
+    </header>
+
+    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/about-ajb-t.png" width="100%">
+    <section class="padding-1">
+        <h2 class="text-red f1em">一、什么是爱家宝？</h2>
+        <p class="margin-top-0">爱家宝是爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家宝的资金可立即获得收益，按秒付息，投资本金及其收益可随时转出。</p>
+        <h2 class="text-red f1em padding-top-1">二、什么是10000元体验金？</h2>
+        <p lass="margin-top-0">注册后首次投资成功即可获得10000元理财体验金，体验金的组成如下：</p>
+        <div class="f1em lineheight-1_5">
+            <table cellpadding="0" cellspacing="0" width="80%">
+                <tr>
+                    <td>体验金</td>
+                    <td class="text-right">持续付息时间</td>
+                </tr>
+                <tr>
+                    <td>9000元体验金</td>
+                    <td class="text-right">持续付息1天</td>
+                </tr>
+                <tr>
+                    <td>900元体验金</td>
+                    <td class="text-right">持续付息10天</td>
+                </tr>
+                <tr>
+                    <td>100元体验金</td>
+                    <td class="text-right">持续付息365天</td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="text-red f1em padding-top-1">三、转入爱家宝的资金投向何处？</h2>
+        <p class="margin-top-0">您将资金转入爱家宝后，爱家理财将根据您的委托，秉承“安全第一、兼顾收益、标的透明、风险分散“的原则，通过系统集合竞购的方式，点对点购买信用风险低、收益波动小的各类优质金融资产。</p>
+        <p><img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/about-ajb.png" width="100%"> </p>
+        <h2 class="text-red f1em padding-top-1">四、为什么爱家宝比其他“宝宝”收益高？</h2>
+        <p class="margin-top-0">目前银行的活期利率是0.3%，各类“宝宝”们的收益普遍已跌破3%，而爱家宝的活期收益高达8.18%。这是因为爱家宝对接了诸如政府PPP项目、信托收益权质押、家庭消费金融、供应链金融等收益更高的优质资产端，
+            通过先进的点对点集合竞购算法，自动为投资者匹配投资资产。分散化、高精度靶向投资模式使投资者在享受活期存款随心安全优势的同时，还能获得高收益。</p>
+        <h2 class="text-red f1em padding-top-1">五、投资爱家宝安全吗？</h2>
+        <p class="margin-top-0"> 1、无平台跑路风险</p>
+        <p class="margin-top-0">您投资的资金全程由第三方支付公司存管，与爱家理财自有资金完全分离，避免了平台挪用资金带给投资人的风险，杜绝了平台卷款跑路的可能。</p>
+        <p class="margin-top-0">2、无资金被盗风险</p>
+        <p class="margin-top-0">投资爱家宝的资金将采用同卡进出原则（您用x卡转入的资金，转出时只能回到x卡），即使您的手机或身份证丢失造成他人冒名登陆您的爱家理财帐户，转出资金亦只能回到您投资时使用的银行卡中，杜绝了资金被盗风险。</p>
+        <p class="margin-top-0">3、阳光保险承保</p>
+        <p class="margin-top-0">阳光保险为爱家理财平台投资者的资金帐户安全承保。</p>
+        <p class="margin-top-0">4、风险准备金保障</p>
+        <p class="margin-top-0">为最大程度保障您的利益，爱家理财设立了独立的风险准备金帐户，当融资方出现逾期时，爱家理财将从风险准备金帐户中先行偿付投资者的本金及收益，保证投资者本金安全。</p>
+        <p class="margin-top-0">5、专业法律保障</p>
+        <p class="marg-b-5">浙江泽大律师事务所提供全程法律支持，专业互联网金融在线合同缔约保证投资人与爱家理财签署的合同真实有效。</p>
+        <h2 class="text-red f1em padding-top-1">六、投资后什么时候产生收益？</h2>
+        <p class="margin-top-0">当资金转入爱家宝后，您投入的资金将当天获得收益，法定节假日也有收益，收益按秒付息，透明可见。</p>
+        <h2 class="text-red f1em padding-top-1">七、转入与转出是否需要手续费吗？</h2>
+        <p class="margin-top-0">您的转入和转出均无需任何手续费，爱家理财将为您承担第三方支付公司所收取的所有费用。</p>
+        <h2 class="text-red f1em padding-top-1">八、转入与转出是否有限制？</h2>
+        <p class="margin-top-0">转入单笔最低100元最高50万，次数不限；转出单笔最低100元，单日限3次，单笔限额5万，单日限额10万（不同银行可能造成单笔单日限额有差异，详情见第九条）。为防止恶意套现，如果用户的转入转出操作太过频繁，在返回本金及收益后，账户将有可能被封锁。</p>
+        <h2 class="text-red f1em padding-top-1">九、转出资金何时到账？</h2>
+        <p class="margin-top-0">您转入爱家宝的资金可随时赎回，工作日15:00前转出当天到账；工作日15:00后或法定假日转出，下一个工作日到账。 </p>
+        <h2 class="text-red f1em padding-top-1">十、支持哪些银行卡？</h2>
+        <p class="margin-top-0">目前支持的银行卡及具体银行充值限额如下：</p>
+        <div class="f15 text-center" id="table-border">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td class="text-center" width="45%">银行</td>
+                    <td class="text-center"  width="55%">单笔/单日/单月额度</td>
+                </tr>
+                <tr>
+                    <td>中国银行</td>
+                    <td>2万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>浦发银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>交通银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>工商银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>邮储银行</td>
+                    <td>0.5万/0.5万/15万</td>
+                </tr>
+                <tr>
+                    <td>广发银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>民生银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>平安银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>招商银行</td>
+                    <td>1万/1万/20万</td>
+                </tr>
+                <tr>
+                    <td>中兴银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>建设银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>光大银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>兴业银行</td>
+                    <td>2万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>中信银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+                <tr>
+                    <td>华夏银行</td>
+                    <td>5万/5万/20万</td>
+                </tr>
+            </table>
+        </div>
+        <p class="margin-top-0 padding-1 f12">注：此限额为第三方支付平台限额，以个人银行卡限额最低为准</p>
+    </section>
+</div>
+</body>
+</html>

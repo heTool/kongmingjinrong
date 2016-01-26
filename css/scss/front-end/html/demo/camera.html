@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="人人爱家金融">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>摄像头调用DEMO</title>
+    <!--<link rel="stylesheet" href="../../css/kmjr.app.base.css?v=20151019" />-->
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/app/Public/css/kmjr.app.base.css" />
+    <style>
+        html,body{ height: 100%}
+    </style>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/require.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/app/Public/js/kmjr.app.config.js"></script>
+</head>
+<body>
+    <div class="upload-container" id="upload-container" style="position: relative; display: block; height:100%; width: 100%; text-align: center;line-height: 100%;overflow: hidden">
+        <div type="file" id="upload-bg"   style=" width: 80%; height: 80%; position:absolute;z-index: 1; top: 10%; left: 10%;background-color:darkred" /></div>
+
+        <div class="upload-viewer" id="upload-viewer" style="display: table; width: 100%; height: 100%;z-index: 2;position: relative">
+            <div class="upload-viewer-cell" id="upload-viewer-cell" style="display: table-cell;  height: 100%; width: 100%; text-align: center;vertical-align: middle; ">
+                    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/blank.png"  id="upload-img" />
+            </div>
+        </div>
+        <div class="upload-loading" id="upload-loading" style=" position: absolute; width: 8%; top: 45%; left: 45%;background-color: #666666; padding: 1%; border-radius: 10px; opacity: .9; display:none;z-index: 3 ">
+            <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/loader02.gif" width="100%">
+        </div>
+        <canvas id="upload-canvas"  style=" border: 2px solid darkblue; position: absolute; z-index: 4; top: 10%; left: 10%;"></canvas>
+        <!--<input type="file" id="getPicture" accept="video/*;capture=camcorder">-->
+        <!--<input type="file" accept="audio/*;capture=microphone">-->
+        <!--<input type="file" accept="image/*;capture=camera">直接调用相机-->
+        <input type="file" id="upload-getPicture" accept="image/*,image.gif,image.jpg,image.jpeg,image.png" r style="opacity:0; width: 80%; height: 80%; position:absolute;z-index: 4; top: 10%; left: 10%;background-color:#c0c0c0" />
+        <a href="javascript:;" id="upload-re-choose" style="display: block; height: 2em;line-height: 2em; width: 50%; position: absolute; bottom: 0; left: 0; background-color: rgba(0,0,0,.5); text-align: center;color: #fff; z-index: 5;">重新选择</a>
+        <a href="javascript:;" id="upload-re-submit" style="display: block; height: 2em;line-height: 2em; width: 50%;position: absolute; bottom: 0; left: 50%; background-color: rgba(0,125,0,.5);text-align: center;color: #fff;z-index: 6;">确定提交</a>
+    </div>
+<script>
+    require(['jquery','http://192.168.1.186:8091/kongmingjinrong/javascripts/webApp/kmjr.uploadimg.js'],function(){
+        //TODO
+    });
+
+
+
+</script>
+</body>
+</html>

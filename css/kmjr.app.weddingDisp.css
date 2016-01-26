@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
+/**/
 .f10 {
   font-size: 10px; }
 
@@ -76,6 +77,24 @@ h1, h2, h3, h4, h5, h6 {
 .f48 {
   font-size: 48px; }
 
+.text-h1 {
+  font-size: 24px; }
+
+.text-h2, .d-panel-head {
+  font-size: 20px; }
+
+.text-normal, .d-panel-content {
+  font-size: 16px; }
+
+.text-normal-min {
+  font-size: 14px; }
+
+.text-normal-max {
+  font-size: 18px; }
+
+.text-tips, .panel-items input::-webkit-input-placeholder {
+  font-size: 12px; }
+
 .f1em {
   font-size: 1em; }
 
@@ -112,10 +131,10 @@ h1, h2, h3, h4, h5, h6 {
 .lineheight-1 {
   line-height: 1em; }
 
-.lineheight-1_5 {
+.lineheight-1_5, .block-items label, .panel-items input::-webkit-input-placeholder, .panel-items button.btn-submit-dialog {
   line-height: 1.5em; }
 
-.lineheight-2 {
+.lineheight-2, .d-panel-head, .stepbar-tit, .items-verify-code button.btn-submit-dialog {
   line-height: 2.5em; }
 
 .lineheight-2_5 {
@@ -678,17 +697,31 @@ a.text-yellow:hover {
   text-decoration: none; }
 
 .bg-red {
-  background-color: #ff4040 !important; }
+  background-color: #ff705e !important; }
 
 .text-red {
-  color: #ff4040; }
+  color: #ff705e; }
 
 a.text-red {
-  color: #ff4040;
+  color: #ff705e;
   text-decoration: none; }
 
 a.text-red:hover {
-  color: #ff4040;
+  color: #ff705e;
+  text-decoration: none; }
+
+.bg-green {
+  background-color: #00cc33 !important; }
+
+.text-green {
+  color: #00cc33; }
+
+a.text-green {
+  color: #00cc33;
+  text-decoration: none; }
+
+a.text-green:hover {
+  color: #00cc33;
   text-decoration: none; }
 
 .fadeIn {
@@ -697,10 +730,24 @@ a.text-red:hover {
 .fadeOut {
   display: none; }
 
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-nowarp, .panel-items button.btn-submit-dialog, .stepbar-tit, .items-verify-code button.btn-submit-dialog, .block-items-b, .upload-reset {
+  white-space: nowrap;
+  word-break: keep-all; }
+
 /*all*/
 html, body, .kmwd-body {
   background-color: #f4f4f4;
-  min-height: 100%; }
+  min-height: 100%;
+  height: 100%; }
 
 /*header*/
 .kmwd-header {
@@ -733,54 +780,68 @@ html, body, .kmwd-body {
   line-height: 1em;
   padding-top: 1em;
   padding-bottom: 0.5em;
-  padding-left: 0.5em; }
+  padding-left: 16px; }
 
 .block-items {
   font-size: 16px;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   margin-top: -1px;
   position: relative; }
 
+.block-items::after {
+  clear: both;
+  content: ' '; }
+
 .block-items label {
   display: inline-block;
   font-size: 14px; }
 
-.block-items input {
+.item-form-control, .block-items input, .block-items button,
+.block-items a.item-button, .block-items select, .panel-items input, .panel-items button.btn-submit-dialog, .circle-items input, .items-verify-code button.btn-submit-dialog {
   font-size: 16px;
   display: inline-block;
   min-width: 50%;
   width: auto;
   float: right;
-  border: none; }
+  border: none;
+  background-color: transparent;
+  text-align: right; }
+
+.block-items a.item-button {
+  color: #333333;
+  text-decoration: none; }
+
+.block-items select {
+  min-width: inherit;
+  width: inherit;
+  text-align: right; }
 
 .block-items input::-webkit-input-placeholder {
   text-align: right; }
-
-.block-items input:focus {
-  text-shadow: none;
-  box-shadow: none; }
 
 .block-items .error {
   position: absolute;
   right: 0.5em;
   top: 3em;
   font-size: 14px;
-  color: #ff4040;
+  color: #ff705e;
   z-index: 2;
   display: none; }
 
 .btn-submit-info,
-a.btn-submit-info {
+a.btn-submit-info,
+.btn-submit-circle,
+a.btn-submit-circle {
   display: block;
   width: 100%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.33333em;
+  padding-bottom: 0.33333em;
   text-align: center;
   color: #ffffff;
-  background-color: #ff4040;
+  background-color: #ff705e;
   position: fixed;
   bottom: 0;
   z-index: 3;
@@ -788,7 +849,376 @@ a.btn-submit-info {
   font-size: 20px;
   text-decoration: none; }
 
-a.btn-submit-info:hover {
+a.btn-submit-info:hover,
+a.btn-submit-circle:hover {
   opacity: .9; }
+
+.btn-submit-circle,
+a.btn-submit-circle {
+  position: static;
+  border-radius: 50px;
+  font-size: 18px; }
+
+.dialog-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000000;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  z-index: 4; }
+
+.dialog-panel {
+  border-radius: 8px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 5;
+  top: 30%;
+  left: 10%;
+  width: 80%; }
+
+.d-panel-head {
+  text-align: center;
+  position: relative; }
+
+.d-panel-close {
+  position: absolute;
+  right: 1em;
+  top: 16px;
+  background: url("../images/kmjrApp/weddingDisp/icon-close.png") left top no-repeat;
+  background-size: 100%;
+  height: 16px;
+  width: 16px; }
+
+.d-panel-content {
+  padding: 5%; }
+
+.d-panel-foot {
+  border-top: 1px solid #dddddd;
+  text-align: center; }
+
+a.btn-dialog-foot {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #ff705e;
+  padding: 8px 0; }
+
+a.btn-dialog-foot.cell {
+  width: 49%; }
+
+a.btn-dialog-foot.cell:last-child {
+  border-left: 1px solid #dddddd; }
+
+a.btn-dialog-foot.cell.default {
+  color: #999999; }
+
+.panel-items input {
+  border: 1px solid #ff705e;
+  width: 45%;
+  min-width: 45%;
+  float: none;
+  border-radius: 20px;
+  text-align: left;
+  padding: 5px 10px; }
+
+.panel-items button.btn-submit-dialog {
+  font-size: 12px;
+  width: 42%;
+  text-align: center;
+  border-radius: 20px;
+  float: none;
+  min-width: 42%;
+  background-color: #999999;
+  padding-top: 7px;
+  padding-bottom: 4px;
+  border: 1px solid #999999;
+  color: #ffffff; }
+
+.panel-items button.btn-submit-dialog.success {
+  background-color: #ff705e;
+  border-color: #ff705e; }
+
+/**/
+.kmwd-stepbar {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 2.5em;
+  position: relative; }
+
+.kmwd-stepbar::before {
+  content: ' ';
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #c6c2bd;
+  display: block;
+  box-shadow: 1px 1px 0 #999999 inset; }
+
+.stepbar-num,
+.stepbar-num2 {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 999px;
+  background-color: #c6c2bd;
+  position: absolute;
+  left: 25%;
+  top: -5px;
+  box-shadow: 0 1px 0 #999999 inset;
+  padding-top: 2px;
+  padding-left: 2px; }
+
+.stepbar-num2 {
+  left: 65%; }
+
+.stepbar-num::before,
+.stepbar-num2::before {
+  content: '1';
+  background-color: transparent;
+  border: 1px solid #c6c2bd;
+  color: #ffffff;
+  border-radius: 999px;
+  height: 16px;
+  width: 16px;
+  display: block;
+  line-height: 16px;
+  font-size: 14px; }
+
+.stepbar-num2::before {
+  content: '2'; }
+
+.stepbar-tit {
+  position: absolute; }
+
+.stepbar-num .stepbar-tit {
+  left: -2em; }
+
+.stepbar-num2 .stepbar-tit {
+  left: -3.5em; }
+
+.stepbar-num.active::before,
+.stepbar-num2.active::before {
+  background-color: #ff705e;
+  border: 1px solid #ff2020; }
+
+.status-icon {
+  position: relative; }
+
+.status-icon-success:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 35%;
+  bottom: 10px;
+  background-color: #00cc33;
+  background-image: url("../images/kmjrApp/weddingDisp/icon-contact-success.png");
+  background-size: 100%;
+  border-radius: 999px;
+  padding: 4px;
+  width: 18px;
+  height: 18px; }
+
+.circle-items {
+  border: 1px solid #f2f2f2;
+  border-radius: 30px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+.circle-items.active {
+  border-color: #ff705e; }
+
+.circle-items label {
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+  border-right: 1px solid #999999;
+  padding-left: 5%; }
+
+.circle-items input {
+  float: none;
+  width: 65%;
+  text-align: left;
+  padding-left: 2%; }
+
+.circle-items-space {
+  position: relative;
+  left: 1em; }
+
+.circle-items-verify .circle-items {
+  width: 60%;
+  display: inline-block; }
+
+.circle-items input.ipt-verify-code {
+  width: 80%;
+  padding-left: 1.5em; }
+
+.items-verify-code {
+  width: 30%;
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+.img-verify-code {
+  vertical-align: middle;
+  width: 100%;
+  height: 30px; }
+
+.items-verify-code button.btn-submit-dialog {
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  float: none;
+  background-color: #999999;
+  border: 1px solid #999999;
+  color: #ffffff; }
+
+/**/
+.kmwd-ins-body {
+  border-top: 1px solid #dddddd;
+  padding: 1em; }
+
+.info-items {
+  border-top: 1px solid #dddddd;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1em 0.5em; }
+
+.info-items:first-child {
+  border-top: none; }
+
+.info-item-label {
+  display: block;
+  margin-bottom: 8px; }
+
+.info-item-label input {
+  border: 1px solid #ff705e; }
+
+/**/
+.block-items-border {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd; }
+
+.block-items-a {
+  width: 78%;
+  display: inline-block; }
+
+.block-items-a img {
+  display: inline-block;
+  width: 20%;
+  max-width: 48px; }
+
+.block-items-info {
+  display: inline-block;
+  width: 78%;
+  vertical-align: top; }
+
+.block-items-b {
+  width: 19%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top; }
+
+/**/
+.upload-body {
+  height: 100%;
+  width: 100%; }
+
+.kmwd-upload {
+  height: 30%; }
+
+.upload-container {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  text-align: center;
+  line-height: 100%;
+  overflow: hidden;
+  left: 5%; }
+
+.upload-loading {
+  position: absolute;
+  width: 8%;
+  top: 45%;
+  left: 45%;
+  padding: 1%;
+  border-radius: 10px;
+  opacity: .9;
+  display: none;
+  z-index: 3; }
+
+.upload-bg {
+  width: 90%;
+  height: 97%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 5%;
+  background: url("../images/kmjrApp/weddingDisp/icon-add.png") center no-repeat;
+  background-size: 20%;
+  border: 1px dashed #dddddd; }
+
+.upload-viewer {
+  display: table;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative; }
+
+.upload-viewer-cell {
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle; }
+
+.upload-getPicture {
+  opacity: 0;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 5%;
+  background-color: #c0c0c0; }
+
+.kmwd-bottom {
+  background-color: #ffffff;
+  text-align: center;
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #dddddd; }
+
+.upload-re-choose {
+  margin: 1em auto;
+  text-align: center;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 80%;
+  background-color: #ff705e;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none; }
+
+.upload-reset {
+  font-size: 12px;
+  background-size: 100%;
+  position: absolute;
+  right: 5%;
+  top: 1px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 20px;
+  line-height: 20px;
+  z-index: 3;
+  display: none;
+  color: #ffffff; }
 
 /*# sourceMappingURL=kmjr.app.weddingDisp.css.map */

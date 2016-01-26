@@ -1,0 +1,145 @@
+/*comm*/
+.clearfix{ clear: both;}
+.fadeOut{ display: none;}
+.fadeIn{ display: block}
+.visiOut{ visibility: hidden}
+.visiIn{ visibility: visible}
+
+.f10{ font-size: 10px;}
+.f11{ font-size: 11px;}
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size:16px;}
+.f20{ font-size:20px;}
+.f24{ font-size:24px;}
+.f26{ font-size:26px;}
+
+.marg-b-8{ margin-bottom: 8px !important;}
+.marg-b-20{ margin-bottom: 20px !important;}
+.marg-t-20{ margin-top: 20px;}
+.marg-l-no{ margin-left: 0}
+.padd-1{  padding: 1em; }
+.padd-t-5{  padding-top: 5em; }
+
+
+.text-title{color:#333}
+.text-item{color: #666;}
+.text-advantage{color:#ff4040}
+.text-white{ color: white;}
+.text-homehelp{ color:#666;}
+
+.text-left{text-align: left}
+.text-right{ text-align: right}
+.text-center{ text-align: center}
+
+.text-nowrap{ white-space: nowrap; text-wrap: none}
+.line-hieght-1{ line-height: 1em}
+.line-hieght-2{ line-height: 2em}
+.line-hieght-3{ line-height: 3em}
+.line-hieght-4{ line-height: 4em}
+.line-hieght-5{ line-height: 5em}
+
+.bd-transparent{-webkit-box-shadow:none; border-width:0}
+.bd-radius-none{ border-radius: 0 !important;}
+.bg-transparent{ background-color: transparent}
+
+input.input-control,textarea.input-control{ *padding: 0 16px;_padding: 0px 16px; font-size: 18px; line-height: 46px; height:46px; font-family: 'Microsoft YaHei', arial, helvetica, sans-serif}
+textarea.input-control{ height: 120px; *padding: 10px 16px; line-height: 26px}
+.form-group{ position: relative;}
+.form-group-lable{ position:absolute; top:15px; left:10px;color: #666;font-size: 18px}
+
+/**/
+.kmjr-home{ min-width: 780px !important;font-family: 'Microsoft YaHei', arial, helvetica, sans-serif; }
+.section-t-pl{ left: -3000px; position: relative}
+.section-t-pr{ right: -3000px; position: relative}
+.section-t-p-l{ animation-name: moveLeft; animation-duration: 1s; position: relative}
+.section-t-p-r{ animation-name: moveRight; animation-duration: 1s; position: relative}
+/*header*/
+.k-h-header{ padding: 45px 0;}
+/*section a*/
+.k-h-section-a{ background-color:#0a90e2;position: relative;}
+.section-a-edge{background: url('http://statics.aijialicai.com.cn/CDN/web/public/images/default/kmjr-default_bg_block01a_ie.png') left bottom no-repeat; }
+.sec-a-p1{padding: 10px; margin-top: 3em;margin-bottom: 8em; *margin-bottom: 5em; _margin-bottom: 5em}
+.sec-a-p1>span{ background-color: white; font-size: 24px;color: #0099cc;padding: 2px 1em;}
+.sec-a-down{padding-top:120px;padding-bottom:60px;*padding-top:200px;_padding-top:200px;padding-bottom:100px;*padding-bottom:0px;_padding-bottom:0px;width: 480px}
+a.btn-homedown{ width: 160px; margin: 10px 0 14px 20px; display: block}
+a.btn-homedown,a.btn-homedown:visited{ background-color: transparent }
+a.btn-homedown:hover,a.btn-homedown:active{ opacity: 0.91}
+.sec-a-sqrl{ float: left; width: 150px}
+.sec-a-sqrr{ float: left; width: 190px; text-align: center;}
+.sec-a-phone{ overflow: hidden; position: relative;height: 366px}
+.img{ left: 20%;  top:0px;  position: absolute;  animation: moveTop 1s; }
+
+/*section b*/
+.k-h-section-b{ margin-top: 2em}
+.section-b-p{ animation-name: moveLeft; animation-duration: 1s; position: relative}
+.thumbnail-b{ animation-name: fadeIn;}
+.section-row-b{}
+    /*section c*/
+.k-h-section-c{ background:#464646 url('http://statics.aijialicai.com.cn/CDN/web/public/images/default/kmjr-default_bg_block01.png') center top repeat-x; height: 249px; margin-top: 3em}
+/*section d*/
+.k-h-section-d{ margin-top: 2em;}
+.sec-d-advantage{ padding-top: 5em;}
+.sec-d-report{ }
+.sec-d-pin{ position: absolute; left:80px;top:10px;}
+.sec-d-pin-act{ animation-name: fadeIn; position: absolute; left:80px;top:10px;}
+/*section e*/
+.k-h-section-e{margin-top: 2em; background-color: #ff6464; padding-top: 1em}
+.sec-d-rate{ font-size: 62px;color:#666666}
+.sec-d-rate-edge{background: url('http://statics.aijialicai.com.cn/CDN/web/public/images/default/kmjr-default_bg_num.png') center top no-repeat; height: 88px;width: 598px; margin: 0 auto;position: relative}
+span.rate-unit{position: absolute;text-align: center; display: block; width:50px; font-family: Arial; height: 90px; line-height: 90px}
+span.rate-wan{left:0px;}
+span.rate-qian{left:59px}
+span.rate-bai{left:134px}
+span.rate-shi{left:191px}
+span.rate-yuan{left:246px}
+span.rate-jiao{left:322px}
+span.rate-fen{left:379px}
+span.rate-li{left:435px}
+span.rate-hao{left:492px}
+span.rate-si{left:548px}
+.sec-d-sendGold{ color:white;margin:3em 0 2em;}
+a.btn-sendGold{color:white;border:1px solid white; padding:10px 12px; border-radius:3px; text-decoration: none; font-size: 22px; cursor:default}
+/*section f*/
+.k-h-section-f .row-fluid .offset1{ _margin-left: 1.51063829787234%}
+.sec-f-1{ background-color:#fe706f;}
+.sec-f-2{ background-color:#34cc99;}
+.sec-f-3{ background-color:#00b3f5;}
+.sec-f-4{ background-color:#face49;}
+.sec-f-5{ background-color:#c9c9c9;}
+
+
+/*section g*/
+.k-h-section-g{  background:#fed71a url('http://statics.aijialicai.com.cn/CDN/web/public/images/default/kmjr-default_bg_block05.png') center top no-repeat; height: 250px; margin-top: 3em}
+/*section h*/
+.section-h-row{}
+.k-h-section-h{ margin-top: 2em}
+
+/*section i*/
+.k-h-section-i{  margin-top: 2em;background-color: #1569b1; padding:3em 0 2em}
+.k-h-section-i img{ margin: 10px; text-align: center}
+/*section j*/
+.section-j-row{}
+.k-h-section-i{  margin-top: 2em;background-color: #1569b1; padding:3em 0 2em}
+
+/*section k*/
+.k-h-section-k{  margin-top: 2em;background: #000000 url('http://statics.aijialicai.com.cn/CDN/web/public/images/default/kmjr-default_bg_block04.png') center top no-repeat; height: 286px}
+
+/*section o*/
+.k-h-section-o{ background-color: #2e2e2e; padding-bottom: 3em}
+button.btn-feedback{background-color: #ff4040; color: white; font-size: 20px; border-radius: 0; padding:12px 0; border: 0; margin-left: 0}
+button.btn-feedback:hover{color:white; background-color: #ff1010}
+.sec-o-info{ margin-left: 20%}
+.sec-o-pl,.sec-o-pp,.sec-o-qq{ background: transparent url('http://statics.aijialicai.com.cn/CDN/web/public/images/default/kmjr-default_icon_addr.png') left center no-repeat; padding:5px 0 5px 2em;}
+.sec-o-pp{ background-image: url('http://statics.aijialicai.com.cn/CDN/web/public/images/default/kmjr-default_icon_tel.png');}
+.sec-o-qq{ background-image: url('http://statics.aijialicai.com.cn/CDN/web/public/images/default/kmjr-default_icon_qq.png');}
+
+.form-group {
+    position: relative;
+    z-index: 0;
+}
+label.error{position:absolute; left:0; top: -24px; background-color:darkred; color: #fff; font-size: 14px;z-index: 99; padding:2px 10px; border-radius: 5px;}
+
+/**/
+.k-h-footer{ background-color:#232323; color: #fff; font-size: 14px; padding: 1em 0 3em;}
+.k-h-footer img{ margin: 0 10px}

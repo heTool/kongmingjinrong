@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>完善资料</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="apple-touch-icon-precomposed" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+    <link rel="bookmark" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/kmjrMobile1.0.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/jquery.mobile.icons.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile.structure-1.4.5.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/wap/Public/css/kmjr.mobile.base.css" />
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://statics.aijialicai.com.cn/CDN/lib/appSelectArea/mobile-select-area.min.css">
+    <script type="text/javascript" src="http://statics.aijialicai.com.cn/CDN/lib/appSelectArea/dialog.min.js"></script>
+    <script type="text/javascript" src="http://statics.aijialicai.com.cn/CDN/lib/appSelectArea/mobile-select-area.min.js"></script>
+    <style>
+        .ui-alert{ background-color: #fff !important;}
+    </style>
+</head>
+<body class="wx-body bg-wihte">
+<!--header--->
+<header data-role="header" class="bg-wihte border-bottom-1-transparent ui-header ui-bar-inherit ui-kmjr">
+    <a href="#" class="ui-btn ui-icon-left ui-icon-carat-l ui-btn-icon-notext ui-btn-corner-all"></a>
+    <h1>完善资料</h1>
+</header>
+
+<!--主体-->
+<section class="bg-wihte clearfix text-center">
+        <!--资料完成进度-->
+        <div class="info-progress">
+            <div class="progress-loading">
+                <div class="loading-circle loading-circle-55">
+                    <b></b>
+                </div>
+            </div>
+            <div class="f12 fadeOut bg-yellow text-red padding-1 text-nowarp info-progress-msg" id="notice_msg">分期审核过程中，爱家理财不会未经用户许可拨打以上联系人电话！</div>
+        </div>
+
+        <!--tab1个人信息-->
+        <form id="frmStep1" method="post" action="" class="kmjr-form">
+            <div class="ui-kmjr" id="tab1">
+                <h3 class="step-title">个人信息</h3>
+                <ul data-role="listview">
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="selectMarry" class="ui-slider-lable">混应状况</label>
+                            <select  name="selectMarry" id="selectMarry" data-mini="true">
+                                <option value="0">未婚</option>
+                                <option value="1" selected>已婚</option>
+                                <option value="2">离异</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="selectEdu" class="ui-slider-lable">教育程度</label>
+                            <select  name="selectEdu" id="selectEdu" data-mini="true">
+                                <option value="0">大专</option>
+                                <option value="1" selected>本科</option>
+                                <option value="2">硕士</option>
+                                <option value="3">博士</option>
+                                <option value="4">其他</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li  class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr ui-kmjr-list ui-kmjr-list-auto">
+                            <label for="txt_area" class="ui-slider-lable">现居住地址</label>
+                            <input type="text" id="txt_area" value="" placeholder="选择省市区县" data-value="12,124,3268"/>
+                            <input type="hidden" id="hd_area" value="12,124,3268"/>
+                        </div>
+                        <script>
+                            var selectArea = new MobileSelectArea();
+                            selectArea.init({trigger:'#txt_area',value:$('#hd_area').val(),data:'data.json'});
+                        </script>
+                    </li>
+
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr ui-kmjr-list ui-kmjr-list-cross">
+                            <label for="selectEdu" class="ui-hidden-accessible">详细地址</label>
+                            <input type="text" name="" placeholder="详细地址" data-clear-btn="true">
+                        </div>
+                    </li>
+
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="selectEdu" class="ui-slider-lable">是否有房</label>
+                            <select name="" data-mini="true" data-role="slider">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="selectEdu" class="ui-slider-lable">是否有房车</label>
+                            <select name="" data-mini="true" data-role="slider">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="selectEdu" class="ui-slider-lable">是否有欧美日签证</label>
+                            <select name="" data-mini="true" data-role="slider">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <!--tab1-->
+
+        <!--tab2房产信息-->
+        <form id="frmStep2" method="post" action="" class="kmjr-form">
+            <div class="main tab-content" id="tab2">
+                <h3 class="step-title">房产信息</h3>
+                <ul data-role="listview">
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr  ui-kmjr-list ui-kmjr-list-auto">
+                            <label for="txt_area1" class="ui-slider-lable">房产地址</label>
+                            <input type="text" id="txt_area1" value="" placeholder="选择省市区县" data-value="12,124,3268"/>
+                            <input type="hidden" id="hd_area1" value="12,124,3268"/>
+                            <script>
+                                var selectArea = new MobileSelectArea();
+                                selectArea.init({trigger:'#txt_area1',value:$('#hd_area1').val(),data:'data.json'});
+                            </script>
+                        </div>
+                    </li>
+
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr  ui-kmjr-list ui-kmjr-list-auto">
+                            <label for="txt_area1" class="ui-hidden-accessible">房产详细地址</label>
+                            <input type="text" name="" placeholder="详细地址">
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr  ui-kmjr-list ui-kmjr-list-auto ui-kmjr-list-unit">
+                            <label for="" class="ui-slider-lable">购入价格</label>
+                            <input type="number"  class="input-inline" placeholder="例如:150.8">
+                            <span class="ui-li-count border-none f16">万元</span>
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">是否按揭</label>
+                            <select name="" data-mini="true" data-role="slider">
+                                <option value="0">否</option>
+                                <option value="1" selected>是</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">最近一期按揭还款金额</label>
+                            <select name="" data-mini="true">
+                                <option>90万5千</option>
+                                <option>90万5千</option>
+                                <option>90万5千</option>
+                                <option>90万5千</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <!--tab2-->
+
+        <!--tab3车辆信息-->
+        <form id="frmStep3" method="post" action="" class="kmjr-form">
+            <div class="main tab-content" id="tab3" style=" ">
+                <h3 class="step-title">车辆信息</h3>
+                <ul data-role="listview">
+                    <li  class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr ui-kmjr-list ui-kmjr-list-auto">
+                            <label for="" class="ui-slider-lable">车辆品牌型号</label>
+                            <input type="text" class="input-inline" placeholder="具体品牌和型号">
+                        </div>
+                    </li>
+                    <li  class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr ui-kmjr-list ui-kmjr-list-auto">
+                            <label for="" class="ui-slider-lable">车牌号码</label>
+                            <input type="tel" class="input-inline" placeholder="车牌号码">
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr  ui-kmjr-list ui-kmjr-list-auto ui-kmjr-list-unit">
+                            <label for="" class="ui-slider-lable">购入价格</label>
+                            <input type="number"  class="input-inline" placeholder="例如:16.8">
+                            <span class="ui-li-count border-none f16">万元</span>
+                        </div>
+                    </li>
+                    <li  class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">是否按揭</label>
+                            <select name="" data-mini="true" data-role="slider">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">最近一期按揭还款金额</label>
+                            <select name="" data-mini="true">
+                                <option>90万5千</option>
+                                <option>90万5千</option>
+                                <option>90万5千</option>
+                                <option>90万5千</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <!--tab3-->
+
+        <!--tab4工作信息-->
+        <form id="frmStep4" method="post" action="" class="kmjr-form">
+            <div class="main tab-content" id="tab4">
+                <h3 class="step-title">工作信息</h3>
+                <ul data-role="listview">
+                    <li  class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">是否在职</label>
+                            <select name="" data-mini="true" data-role="slider">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li  class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr ui-kmjr-list ui-kmjr-list-auto">
+                            <label for="" class="ui-slider-lable">工作单位</label>
+                            <input type="text" class="input-inline" placeholder="单位名称">
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">单位性质</label>
+                            <select name="" data-mini="true">
+                                <option>国企</option>
+                                <option>政府机关</option>
+                                <option>事业单位</option>
+                                <option>民企</option>
+                                <option>其他</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">职位</label>
+                            <select name="" data-mini="true">
+                                <option>普通员工</option>
+                                <option>中层</option>
+                                <option>高管/股东</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">月收入</label>
+                            <select name="" data-mini="true">
+                                <option>5K以下</option>
+                                <option>5K-10K</option>
+                                <option>10K-15K</option>
+                                <option>15K-20K</option>
+                                <option>20K以上</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <!--tab4-->
+
+        <!--tab5配偶工作信息-->
+        <form id="frmStep5" method="post" action="" class="kmjr-form">
+            <div class="main tab-content" id="tab5" style="display: none; ">
+                <h3 class="step-title">配偶工作信息</h3>
+                <ul class="list">
+                    <li  class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">是否在职</label>
+                            <select name="" data-mini="true" data-role="slider">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li  class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr ui-kmjr-list ui-kmjr-list-auto">
+                            <label for="" class="ui-slider-lable">工作单位</label>
+                            <input type="text" class="input-inline" placeholder="单位名称">
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">单位性质</label>
+                            <select name="" data-mini="true">
+                                <option>国企</option>
+                                <option>政府机关</option>
+                                <option>事业单位</option>
+                                <option>民企</option>
+                                <option>其他</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">职位</label>
+                            <select name="" data-mini="true">
+                                <option>普通员工</option>
+                                <option>中层</option>
+                                <option>高管/股东</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0_5 bg-wihte">
+                        <div class="clearfix ui-kmjr">
+                            <label for="" class="ui-slider-lable">月收入</label>
+                            <select name="" data-mini="true">
+                                <option>5K以下</option>
+                                <option>5K-10K</option>
+                                <option>10K-15K</option>
+                                <option>15K-20K</option>
+                                <option>20K以上</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <!--tab5-->
+
+        <!--tab6通讯录-->
+        <form id="frmStep6" method="post" action="" class="kmjr-form">
+            <div id="tab6" class="text-center padding-1">
+                <div class="msgContact"><img src="../../images/kmjrApp/icon-contact.png" alt="爱家理财" width="28%"></div>
+                <div class=" padding-1 f14">分期审查过程中，爱家理财不会未经用户许可以上联系人电话。</div>
+            </div>
+        </form>
+        <!--tab6-->
+
+        <!--tab7通讯录导入成功信息-->
+        <div id="tab7" class="text-center padding-1" >
+            <div class="msgContact"><img src="../../images/kmjrApp/icon-contact-success.png" alt="爱家理财" width="28%"></div>
+            <div class=" padding-1 f14">分期审查过程中，爱家理财不会未经用户许可以上联系人电话。</div>
+        </div>
+        <!--tab7-->
+
+        <!--按钮-->
+        <div class="clearfix ui-kmjr-infobtn">
+            <div class="ui-grid-solo" id="btnTab1">
+                <div class="ui-block-a">
+                    <a href="javascript:void(0);" class="ui-btn">下一步</a>
+                </div>
+            </div>
+
+            <div id="btnTab2" class="fadeOut ui-grid-a">
+                <div class="ui-block-a"><a href="javascript:void(0);" class="ui-btn button-l">上一步</a></div>
+                <div class="ui-block-b"><a href="javascript:void(0);" class="ui-btn button-r active">下一步</a></div>
+            </div>
+
+            <div id="btnTab3" class="fadeOut ui-grid-a">
+                <div class="ui-block-a"><a href="javascript:void(0);" class="ui-btn button-l">上一步</a></div>
+                <div class="ui-block-b"><a href="javascript:void(0);" class="ui-btn button-r active">下一步</a></div>
+            </div>
+
+            <div id="btnTab4" class="fadeOut ui-grid-a">
+                <div class="ui-block-a"><a href="javascript:void(0);" class="ui-btn button-l">上一步</a></div>
+                <div class="ui-block-b"><a href="javascript:void(0);" class="ui-btn button-r active">下一步</a></div>
+            </div>
+
+            <div id="btnTab5" class="fadeOut ui-grid-a">
+                <div class="ui-block-a"><a href="javascript:void(0);" class="ui-btn button-l">上一步</a></div>
+                <div class="ui-block-b"><a href="javascript:void(0);" class="ui-btn button-r active">下一步</a></div>
+            </div>
+
+            <div id="btnTab6" class="fadeOut ui-grid-solo">
+                <div class="ui-block-a"><a href="javascript:void(0);" class="ui-btn active">访问通讯录</a></div>
+            </div>
+            <div id="btnTab7" class="fadeOut ui-grid-solo">
+                <div class="ui-block-a"><a href="javascript:void(0);" class="ui-btn active">完成</a></div>
+            </div>
+        </div>
+
+</section>
+<script>
+    $(document).ready(function(){
+
+        var barNum      = $('.progress-bar-num');
+        var barLoad     = $('.progress-bar-load');
+        var loadCircle  = $('.loading-circle');
+        //var noticeMsg   = $("#notice_msg");
+
+        $('#btnTab1 a').on('click',function(e){
+            tabSwitch(1,1);
+        });
+
+        $('#btnTab2').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(2,0);
+
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(2,1);
+            }
+        });
+
+        $('#btnTab3').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(3,0);
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(3,1);
+            }
+        });
+
+        $('#btnTab4').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(4,0);
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(4,1);
+            }
+        });
+
+        $('#btnTab5').find('a').on('click',function(){
+            if($(this).hasClass('button-l')){
+                tabSwitch(5,0);
+            }else if($(this).hasClass('button-r')){
+                tabSwitch(5,1);
+            }
+        });
+        $('#btnTab6').find('a').on('click',function(){
+            //if contact should be get  TODO
+            tabSwitch(6,1);
+        });
+
+
+        function tabSwitch(step,action){
+            //step:第几步
+            //action:1 下一步 action:0 上一步
+            if(action>0){
+                $('.tab-content').css({'display':'none'});
+                $('#tab'+(step+1)).fadeIn(200);
+
+                $('#btnTab'+step).css({'display':'none'});
+                // $('#btnTab'+step).fadeOut(100,function(){
+                $('#btnTab'+(step+1)).fadeIn(200);
+                // });
+                //进度条更新
+                //pressBar(step);
+                doLoadCircle(step);
+            }else{
+                $('.tab-content').css({'display':'none'});
+                //$('.tab-content').fadeOut(100,function(){
+                $('#tab'+(step-1)).fadeIn(200);
+                // });
+
+                $('#btnTab'+step).css({'display':'none'});
+                // $('#btnTab'+step).fadeOut(100,function(){
+                $('#btnTab'+(step-1)).fadeIn(200);
+                // });
+                //进度条更新
+                //pressBar(step-2);
+                doLoadCircle(step-2);
+            }
+
+            //警告框显示
+            //msgShow(step,action);
+        }
+
+
+        //进度条数据显示
+        /*function pressBar(step){
+         barNum.find('span').text(step*20);
+         barLoad.animate({width:step*20+'%'});
+         }*/
+
+        function doLoadCircle(step){
+            if(step<6){
+                loadCircle.removeClass();
+                loadCircle.addClass('loading-circle loading-circle-'+step*20)
+            }
+        }
+        //警告框显示
+        /* function msgShow(step,action){
+         console.log(step);
+         if(step==3&action>0){
+         noticeMsg.fadeIn(100);
+         }else{
+         noticeMsg.fadeOut(100);
+         }
+         }*/
+
+
+    });
+</script>
+</body>
+</html>

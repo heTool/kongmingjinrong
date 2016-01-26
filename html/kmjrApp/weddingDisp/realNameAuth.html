@@ -13,56 +13,83 @@
     <script src="http://statics.aijialicai.com.cn/CDN/app/Public/js/kmjr.app.config.js"></script>
 </head>
 <body>
-    <div class="kmwd-body">
-        <!--header-->
-        <div class="kmwd-header bg-white lineheight-3">
-            <a href="#" class="btn-previous text-red">&lt;</a>
-            <h1 class="kmwd-h-tit">实名认证</h1>
-            <a href="#" class="btn-next text-red">&gt;</a>
+<div class="kmwd-body">
+    <!--header-->
+    <div class="kmwd-header bg-white lineheight-3">
+        <a href="#" class="btn-previous text-red">&lt;</a>
+        <h1 class="kmwd-h-tit">实名认证</h1>
+        <a href="#" class="btn-next text-red">&gt;</a>
+    </div>
+    <!--container-->
+    <div class="kmwd-content">
+        <!--blcok1-->
+        <div class="kmwd-block padding-bottom-1em">
+            <h2 class="block-tit">身份信息</h2>
+            <div class="block-items bg-white padding-left-1em padding-right-1em">
+                <label for="name">姓名</label>
+                <input id="name" value="" type="text" placeholder="请输入真实姓名">
+                <div class="error">你填写的信息错误</div>
+            </div>
+            <div class="block-items bg-white padding-left-1em padding-right-1em">
+                <label for="name">身份证</label>
+                <input id="身份证" value="" type="tel" placeholder="请输入真实身份证号码">
+                <div class="error">你填写的信息错误</div>
+            </div>
         </div>
-        <!--container-->
-        <div class="kmwd-content">
-            <!--blcok1-->
-            <div class="kmwd-block padding-bottom-1em">
-                <h2 class="block-tit">身份信息</h2>
-                <div class="block-items bg-white padding-left-0_5em padding-right-0_5em">
-                    <label for="name">姓名</label>
-                    <input id="name" value="" type="text" placeholder="请输入真实姓名">
-                    <div class="error">你填写的信息错误</div>
-                </div>
-                <div class="block-items bg-white padding-left-0_5em padding-right-0_5em">
-                    <label for="name">身份证</label>
-                    <input id="身份证" value="" type="tel" placeholder="请输入真实身份证号码">
-                    <div class="error">你填写的信息错误</div>
-                </div>
-            </div>
 
-            <!--blcok2-->
-            <div class="kmwd-block padding-bottom-1em">
-                <h2 class="block-tit">银行卡</h2>
-                <div class="block-items bg-white padding-left-0_5em padding-right-0_5em">
-                    <label for="name">所属银行</label>
-                    <input id="name" value="" type="text" placeholder="所属银行">
-                    <div class="error">错误信息</div>
-                </div>
-                <div class="block-items bg-white padding-left-0_5em padding-right-0_5em">
-                    <label for="name">银行卡号</label>
-                    <input id="code" value="" type="tel" placeholder="请输入真实银行卡号">
-                    <div class="error">你填写的信息错误</div>
-                </div>
-                <div class="block-items bg-white padding-left-0_5em padding-right-0_5em">
-                    <label for="name">预留手机</label>
-                    <input id="code" value="" type="tel" placeholder="请输入预留手机号">
-                    <div class="error">你填写的信息错误</div>
-                </div>
+        <!--blcok2-->
+        <div class="kmwd-block padding-bottom-1em">
+            <h2 class="block-tit">银行卡</h2>
+            <div class="block-items bg-white padding-left-1em padding-right-1em">
+                <label for="name">所属银行</label>
+                <!--<input id="name" value="" type="text" placeholder="所属银行">-->
+                <select>
+                    <option>请选择银行</option>
+                    <option>中国银行</option>
+                    <option>农业银行</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <div class="error">错误信息</div>
             </div>
-            <a href="jacascript:;" class="btn-submit-info">确定</a>
+            <div class="block-items bg-white padding-left-1em padding-right-1em">
+                <label for="name">银行卡号</label>
+                <input id="code" value="" type="tel" placeholder="请输入真实银行卡号">
+                <div class="error">你填写的信息错误</div>
+            </div>
+            <div class="block-items bg-white padding-left-1em padding-right-1em">
+                <label for="name">预留手机</label>
+                <input id="code" value="" type="tel" placeholder="请输入预留手机号">
+                <div class="error">你填写的信息错误</div>
+            </div>
+        </div>
+        <a href="jacascript:;" class="btn-submit-info" data-btn="dialog" data-event="start-countdown">确定</a>
+    </div>
+</div>
+
+<div class="dialog" data-elem="dialog">
+    <div class="dialog-bg"></div>
+    <div class="dialog-panel">
+        <div class="d-panel-head">
+            安全验证
+            <span class="d-panel-close" data-btn="close-dialog"></span>
+        </div>
+        <div class="d-panel-content">
+            <div class="lineheight-2">发送验证码至152****1234</div>
+            <div class="panel-items">
+                <input name="code" type="tel" placeholder="请输入短信验证码">
+                <button  class="btn-submit-dialog success" data-btn="countdown">确定提交(<span data-elem="showSeconds">3</span>)</button>
+            </div>
+        </div>
+        <div class="d-panel-foot" data-btn="close-dialog">
+            <a href="javascript:;" class="btn-dialog-foot">确定</a>
         </div>
     </div>
-    <script>
-        require([],function(){
-            //TODO
-        });
-    </script>
+</div>
+<script>
+    require(['jquery','http://192.168.1.186:8091/kongmingjinrong/javascripts/webApp/kmjr.app.weddingDisp.js'],function(){
+        //TODO 倒计时
+    });
+</script>
 </body>
 </html>

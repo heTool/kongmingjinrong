@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>常见问题</title>
+    <link rel="stylesheet" href="../../css/kmjr.app.base.css?v=20151019" />
+    <script type="text/javascript" src="../../lib/jquery/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="qaBody">
+        <div class="qaItems">
+             <h3 class="clearfix">爱家宝有什么优势？ <span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>爱家宝是收益高达8.18%的活期理财产品。爱家宝的投资资金由第三方支付全程托管，
+                    为平台客户充值、提现、申购、赎回等过程提供账户资金交易安全保障，
+                    是一款等同银行安全级别的理财产品。爱家宝具备高超灵活性，随存随取，
+                    提现最快1分钟到账，同时产品按秒付息，无前后免息期。</p>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">注册时获取不到验证码怎么办? <span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>1)、检查手机是否由于短信拦截</p>
+                <p>2)、重试之后若依旧接收不到，请联系客服400-667-0571</p>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">购买爱家宝是否有限额条件？<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>每个ID账号最低100元起购，最高限购10万元。</p>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">体验金的期限以及如何收益？<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>每位用户首次注册成功后可获赠1万元体验金（包括：9000元计息12小时，900元计息3天，100元计息365天），过期体验金将停止付息，所获得的全部利息归用户所有。</p>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">目前爱家宝支持哪些银行卡支付？<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent text-center">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="text-center" width="40%">银行</td>
+                        <td class="text-center"  width="60%">单笔/单日/单月额度</td>
+                    </tr>
+                    <tr>
+                        <td>工商银行</td>
+                        <td>5万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>农业银行</td>
+                        <td>5万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>中国银行</td>
+                        <td>10万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>建设银行</td>
+                        <td>10万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>招商银行</td>
+                        <td>5万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>中信银行</td>
+                        <td>10万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>广发银行</td>
+                        <td>10万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>交通银行</td>
+                        <td>10万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>邮储银行</td>
+                        <td>5万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>民生银行</td>
+                        <td>10万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>浦发银行</td>
+                        <td>5万/5万/150万</td>
+                    </tr>
+                    <tr>
+                        <td>光大银行</td>
+                        <td>10万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>兴业银行</td>
+                        <td>5万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>平安银行</td>
+                        <td>10万/50万/1500万</td>
+                    </tr>
+                    <tr>
+                        <td>华夏银行</td>
+                        <td>0.5万/5万/5万</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">什么叫做同卡进出？<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>为保障用户资金安全，使用快捷支付的用户需遵循同卡进出的规则。同卡进出是指使用支付的用户，充值的本金提现时将返回到原卡。</p>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">转出需要多久到账？<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>每日8:00-17:00间申请转出（包括部分节假日），平均两小时内到账，最快3分钟到账。17:00-次日08:00申请转出，于次日10:00前到账
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">转入转出爱家宝是否需要手续费？<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>第三方支付公司将对转入和转出收取手续费。转入时，
+                    第三方支付公司将收取您转入金额的2‰作为手续费（如您转入10000元，手续费为20元），
+                    前人人爱家金融将为您全额承担此费用；转出时，第三方支付公司将收取手续费2元／每笔，
+                    人人爱家金融将为您再承担每月2次转出费用，超出2次则需要用支付手续费。</p>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">忘记支付密码怎么办？<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>1、<strong>已添加银行卡，忘记支付密码：</strong>点击“家”进入“资金安全”进入交易密码忘记密码”后选择银行卡，点击进入验证身份信息页面，
+                    输入“银行卡及身份信息”后，点击“下一步”获取验证码并输入验证码后，进行重新设置支付密码。</p>
+                <p>2、<strong>未添加银行卡，忘记支付密码：</strong>点击“家”进入“资金安全”进入交易密码忘记密码”，获取验证码并输入验证码后，进行重新设置支付密码。</p>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">忘记手势密码怎么办？<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>点击“家”进入“管理手势密码”点击进入手势密码管理界面，点击“忘记手势密码”重新登录账号后即可清除手势密码。</p>
+            </div>
+        </div>
+        <div class="qaItems">
+            <h3 class="clearfix">资金安全保障<span class="toggleBtn">&nbsp;</span> </h3>
+            <div class="qaContent">
+                <p>资金由第三方支付平台全程托管。资金同卡进出，保证用户投资同卡返回，杜绝资金被盗风险。</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.qaItems').on('click',function(){
+                var _this = $(this);
+               if($(this).find('.toggleBtn').hasClass('toggleBtnDown')){
+                    $(this).find('.qaContent').slideUp(100);
+                    $(this).find('.toggleBtn').removeClass('toggleBtnDown');
+                }else{
+                    $(this).find('.qaContent').slideDown(100,function(){
+                        var _index  = $(this).parents('.qaItems').index();
+                        var _height = $(this).parent('.qaItems').height();
+                        if(_index>5){
+                            $('body').scrollTop((_index-4)*_height);
+                        }
+                    });
+                    $(this).siblings('.qaItems').find('.qaContent').slideUp(100);
+                    $(this).find('.toggleBtn').addClass('toggleBtnDown');
+                    $(this).siblings('.qaItems').find('.toggleBtn').removeClass('toggleBtnDown');
+               }
+            });
+        });
+    </script>
+</body>
+</html>

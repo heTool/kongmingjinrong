@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>产品介绍</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/kmjr.weixin.base.css" />
+
+    <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv.min.js"></script>
+        <script src="../../lib/respond.min.js"></script>
+    <!-- Favicons -->
+    <script src="../../lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="wx-body bg-wihte">
+<div class="wx-content ">
+    <header class="bg-red clearfix">
+        <div class="col-xs-3 text-left padding-top-1">
+            <a  href="weixin_licai.html" class="text-white">
+                <img src="../../images/kmjrWeixin/weixin/icon-btn-lt-white.png" width="30%">
+            </a>
+        </div>
+        <div class="col-xs-6">
+            <h3 class="f2em lineheight-2 text-center text-white">产品介绍</h3>
+        </div>
+        <div class="col-xs-3 text-right padding-top-1"></div>
+    </header>
+
+    <section class="padding-1 f1_5em">
+        <h2 class="text-red padding-top-1">爱家宝  实时年化收益8.18%</h2>
+        <p>人人必备的高收益活期理财产品</p>
+        <h2 class="text-red padding-top-1">什么是10000元体验金？</h2>
+        <p>注册后首次投资成功即可获得10000元理财体验金，体验金的组成如下：</p>
+        <div class="padd-t-1 f1em lineheight-1_5">
+            <table cellpadding="0" cellspacing="0" width="80%">
+                <tr>
+                    <td>体验金</td>
+                    <td class="text-right">持续付息时间</td>
+                </tr>
+                <tr>
+                    <td>9000元体验金</td>
+                    <td class="text-right">持续付息1天</td>
+                </tr>
+                <tr>
+                    <td>900元体验金</td>
+                    <td class="text-right">持续付息10天</td>
+                </tr>
+                <tr>
+                    <td>100元体验金</td>
+                    <td class="text-right">持续付息365天</td>
+                </tr>
+            </table>
+        </div>
+        <h2  class="text-red padding-top-1">什么是爱家宝？</h2>
+        <p>爱家宝是爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家宝的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。</p>
+        <h2 class="text-red padding-top-1">加入爱家宝的资金投向何处？</h2>
+        <p class="marg-b-5">投资人加入爱家宝的资金，将由爱家理财秉承“安全第一、兼顾收益”的原则，分散投资于信用风险低、收益波动小的各类优质金融产品</p>
+        <p class=" padding-top-1"><img src="../../images/kmjrApp/about-ajb.png" width="100%"> </p>
+    </section>
+</div>
+</body>
+</html>

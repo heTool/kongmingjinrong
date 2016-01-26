@@ -5,8 +5,14 @@ $darkblack:#000000;
 $gray:#999999;
 $darkgray:#666666;
 $lightgray:#f2f2f2;
+$bordergray:#dddddd;
+
 $yellow:#FEF492;
-$red:#ff4040;
+$red:#ff705e;
+$lightRed:#ff2020;
+$darkRed:darken($red,20%);
+$barGray:#c6c2bd;
+$green:#00cc33;
 
 /**/
 $color:(white:#ffffff,
@@ -16,7 +22,8 @@ $color:(white:#ffffff,
         darkgray:#666666,
         lightgray:#f2f2f2,
         yellow:#FEF492,
-        red:#ff4040);
+        red:#ff705e,
+        green:#00cc33);
 
 @each $getStyle,$getColor in $color{
     .bg-#{$getStyle}{

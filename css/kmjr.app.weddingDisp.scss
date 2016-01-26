@@ -11,8 +11,14 @@
 @import "scss/kmjr.comm.size";
 @import "scss/kmjr.comm.color";
 
-.fadeIn{display: block}
-.fadeOut{display: none}
+.fadeIn{display: block;}
+.fadeOut{display: none;}
+
+.text-center{ text-align: center}
+.text-left{ text-align: left}
+.text-right{ text-align: right}
+
+.text-nowarp{ white-space: nowrap; word-break: keep-all;}
 
 @mixin icon-header{
   position: absolute;
@@ -39,6 +45,7 @@
 html,body,.kmwd-body{
   background-color: #f4f4f4;
   min-height: 100%;
+  height: 100%;
 }
 /*header*/
 .kmwd-header{
@@ -46,11 +53,11 @@ html,body,.kmwd-body{
   text-align: $center;
 }
 .kmwd-header .btn-previous{
-  //content:'上';
+
   @include icon-left;
 }
 .kmwd-header .btn-next{
-  //content:'下';
+
   @include icon-right;
 }
 /*content*/
@@ -63,36 +70,59 @@ html,body,.kmwd-body{
   line-height: $em1;
   padding-top: $em1;
   padding-bottom: $em0_5;
-  padding-left: $em0_5;
+  padding-left: $px16;
 }
 .block-items{
   font-size: $px16;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: $px10;
+  padding-bottom: $px10;
   border-top:1px solid $lightgray;
   border-bottom:1px solid $lightgray;
   margin-top: -1px;
   position: relative;
 }
+.block-items::after{
+  clear: both;
+  content: ' ';
+
+}
 .block-items label{
   display: inline-block;
   font-size:$px14;
+  @extend .lineheight-1_5;
 }
-.block-items input{
+.item-form-control{
   font-size: $px16;
   display: inline-block;
   min-width: 50%;
   width: auto;
   float: right;
   border: none;
+  background-color: transparent;
+  text-align: right;
+  //padding: $px5 $px10;
+}
+.block-items input{
+  @extend .item-form-control;
+}
+.block-items button,
+.block-items a.item-button{
+  @extend .item-form-control;
+}
+.block-items a.item-button{
+  color: $black;
+  text-decoration: none;
+}
+.block-items select{
+  @extend .item-form-control;
+  min-width: inherit;
+  width: inherit;
+  text-align: right;
 }
 .block-items input::-webkit-input-placeholder{
   text-align: right;
 }
-.block-items input:focus{
-  text-shadow: none;
-  box-shadow: none;
-}
+
 .block-items .error{
   position: absolute;
   right:$em0_5;
@@ -103,11 +133,13 @@ html,body,.kmwd-body{
   display: none;
 }
 .btn-submit-info,
-a.btn-submit-info{
+a.btn-submit-info,
+.btn-submit-circle,
+a.btn-submit-circle{
   display: block;
   width: $per100;
-  padding-top: $em0_5;
-  padding-bottom: $em0_5;
+  padding-top: $em0_5/1.5;
+  padding-bottom: $em0_5/1.5;
   text-align: $center;
   color: $white;
   background-color: $red;
@@ -118,6 +150,410 @@ a.btn-submit-info{
   font-size: $px20;
   text-decoration: none;
 }
-a.btn-submit-info:hover{
+a.btn-submit-info:hover,
+a.btn-submit-circle:hover{
   opacity: .9;
+}
+.btn-submit-circle,
+a.btn-submit-circle{
+  position: static;
+  border-radius: 50px;
+  font-size: $px18
+}
+
+.dialog{}
+.dialog-bg{
+  position:fixed;
+  left: 0;
+  top:0;
+  background-color:$darkblack;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.dialog-panel{
+  border-radius: $px8;
+  background-color: $white;
+  position: fixed;
+  z-index: 5;
+  top: $per30;
+  left:$per10;
+  width: $per80;
+}
+
+.d-panel-head{
+  text-align: center;
+  @extend .text-h2;
+  @extend .lineheight-2;
+  position: relative;
+}
+.d-panel-close{
+  position: absolute;
+  right: $em1;
+  top:$px16;
+  background: url('../images/kmjrApp/weddingDisp/icon-close.png') left top no-repeat;
+  background-size: 100%;
+  height:$px16;
+  width: $px16;
+}
+.d-panel-content{
+  padding: $per5;
+  @extend .text-normal
+}
+.d-panel-foot{
+  border-top:1px solid $bordergray;
+  text-align: center;
+}
+a.btn-dialog-foot{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: $red;
+  padding:$px8 0;
+}
+a.btn-dialog-foot.cell{
+  width: 49%;
+}
+a.btn-dialog-foot.cell:last-child{
+  border-left: 1px solid $bordergray;
+}
+a.btn-dialog-foot.cell.default{
+  color: $gray;
+}
+.panel-items input{
+  @extend .item-form-control;
+  border:1px solid $red;
+  width: $per45;
+  min-width: $per45;
+  float: none;
+  border-radius: $px20;
+  text-align: left;
+  padding: $px5 $px10;
+}
+.panel-items input::-webkit-input-placeholder{
+ @extend .text-tips;
+ @extend .lineheight-1_5;
+}
+.panel-items button.btn-submit-dialog{
+  @extend .item-form-control;
+  @extend .lineheight-1_5;
+  @extend .text-nowarp;
+  //@extend .text-tips;
+  font-size: 12px;
+  width: 42%;
+  text-align: center;
+  border-radius: $px20;
+  float: none;
+  min-width: 42%;
+  background-color: $gray;
+  padding-top:$px7;
+  padding-bottom:$px4;
+  border: 1px solid $gray;
+  color: $white;
+}
+
+.panel-items button.btn-submit-dialog.success{
+  background-color: $red;
+  border-color: $red;
+}
+/**/
+.kmwd-stepbar{
+  padding-left:$em3;
+  padding-right:$em3;
+  margin-top:$em2_5;
+  position: relative;
+}
+.kmwd-stepbar::before{
+  content: ' ';
+  width: 100%;
+  height:$px10;
+  border-radius:$px10/2;
+  background-color: $barGray;
+  display: block;
+  box-shadow: 1px 1px 0 $gray inset;
+}
+.stepbar-num,
+.stepbar-num2{
+  width: $px20;
+  height: $px20;
+  display: block;
+  border-radius: 999px;
+  background-color:$barGray;
+  position: absolute;
+  left: $per25;
+  top:-$px5;
+  box-shadow: 0 1px 0 $gray inset;
+  padding-top: $px2;
+  padding-left: $px2;
+}
+.stepbar-num2{
+  left:$per65;
+}
+.stepbar-num::before,
+.stepbar-num2::before{
+  content: '1';
+  background-color: transparent;
+  border:1px solid $barGray;
+  color: $white;
+  border-radius: 999px;
+  height: $px16;
+  width: $px16;
+  display: block;
+  line-height: $px16;
+  font-size:$px14;
+}
+.stepbar-num2::before{
+  content: '2';
+}
+.stepbar-tit{
+  position: absolute;
+  @extend .text-nowarp;
+  @extend .lineheight-2
+}
+.stepbar-num .stepbar-tit{
+  left: -$em2;
+}
+.stepbar-num2 .stepbar-tit{
+  left:  -$em3_5;
+}
+.stepbar-num.active::before,
+.stepbar-num2.active::before{
+  background-color: $red;
+  border:1px solid $lightRed;
+}
+.status-icon{
+  position: relative;
+}
+.status-icon-success:before{
+  content: '';
+  display: block;
+  position: absolute;
+  right: $per35;
+  bottom:$px10;
+  background-color: $green;
+  background-image: url("../images/kmjrApp/weddingDisp/icon-contact-success.png");
+  background-size: 100%;
+  border-radius: 999px;
+  padding:$px4;
+  width:$px18;
+  height: $px18;
+}
+
+.circle-items{
+  border:1px solid $lightgray;
+  border-radius: $px30;
+  padding-top:$em0_5;
+  padding-bottom:$em0_5;
+}
+.circle-items.active{
+  border-color: $red;
+}
+.circle-items label{
+  display: inline-block;
+  width: $per20;
+  text-align: left;
+  border-right: 1px solid $gray;
+  padding-left:$per5 ;
+}
+.circle-items input{
+  @extend .item-form-control;
+  float: none;
+  width: $per65;
+  text-align: left;
+  padding-left:$per2;
+}
+.circle-items-space{
+  position: relative;
+  left:1em;
+}
+.circle-items-verify .circle-items{
+  width: $per60;
+ display: inline-block;
+}
+.circle-items input.ipt-verify-code{
+  width: $per80;
+  padding-left: $em1_5;
+}
+.items-verify-code{
+  width: $per30;
+  display: inline-block;
+  padding-top: $em0_5;
+  padding-bottom: $em0_5;
+}
+.img-verify-code{
+  vertical-align: middle;
+  width: $per100;
+  height: $px30;
+}
+
+.items-verify-code button.btn-submit-dialog{
+  @extend .item-form-control;
+  @extend .lineheight-2;
+  @extend .text-nowarp;
+  font-size: $px12;
+  width: $per100 ;
+  text-align: center;
+  border-radius: $px20;
+  float: none;
+  background-color: $gray;
+  border: 1px solid $gray;
+  color: $white;
+}
+
+/**/
+.kmwd-ins-body{
+  border-top:$px1 solid $bordergray;
+  padding:$em1;
+}
+.info-items{
+  border-top: $px1 solid $bordergray;
+  margin-left:$em1;
+  margin-right:$em1;
+  padding:$em1 $em0_5;
+}
+.info-items:first-child{
+  border-top: none;
+}
+.info-item-label{
+  display: block;
+  margin-bottom: $px8;
+}
+.info-item-label input{
+  border: 1px solid $red;
+}
+
+/**/
+.block-items-border{
+  border-top:1px solid $bordergray;
+  border-bottom:1px solid $bordergray;
+
+}
+.block-items-a{
+  width: $per78;
+  display: inline-block;
+}
+.block-items-a img{
+  display: inline-block;
+  width: $per20;
+  max-width: 48px
+}
+.block-items-info{
+  display: inline-block;
+  width: $per78;
+  vertical-align: top;
+}
+.block-items-b{
+  width: $per19;
+  display: inline-block;
+  text-align: right;
+  @extend .text-nowarp;
+  vertical-align: top;
+}
+
+/**/
+.upload-body{
+  height: 100%;
+  width: 100%;
+}
+.kmwd-upload{
+  height: 30%;
+}
+.upload-container{
+  position: relative;
+  display: block;
+  height:100%;
+  width: 90%;
+  text-align: center;
+  line-height: 100%;
+  overflow: hidden;
+  left: 5%;
+}
+
+.upload-loading{
+  position: absolute;
+  width: 8%;
+  top: 45%;
+  left: 45%;
+  //background-color: #666666;
+  padding: 1%;
+  border-radius: 10px;
+  opacity: .9;
+  display:none;
+  z-index: 3
+}
+.upload-bg{
+  width: 90%;
+  height: 97%;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  left: 5%;
+  //background-color:darkred;
+  background: url('../images/kmjrApp/weddingDisp/icon-add.png') center no-repeat;
+  background-size: 20% ;
+  border:$px1 dashed $bordergray;
+  //border-radius: $em0_5;
+}
+.upload-viewer{
+  display: table;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+
+}
+.upload-viewer-cell{
+  display: table-cell;
+  height:100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.upload-getPicture{
+  opacity:0;
+  width: 90%;
+  height: 100%;
+  position:absolute;
+  z-index: 4;
+  top: 0;
+  left: 5%;
+  background-color:#c0c0c0
+}
+.kmwd-bottom{
+  background-color: $white;
+  text-align: center;
+  z-index: 5;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid $bordergray;
+}
+.upload-re-choose{
+  margin: $em1 auto;
+  text-align: center;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 80%;
+  background-color:$red;
+  text-align: center;
+  color: $white;
+  border-radius:20px;
+  text-decoration: none;
+}
+.upload-reset{
+ @extend .text-nowarp;
+  font-size: $px12;
+  background-size: 100%;
+  position: absolute;
+  right:5%;
+  top:1px;
+  width: 50px;
+  background-color: rgba(0,0,0,.5);
+  height: 20px;
+  line-height: 20px;
+  z-index: 3;
+  display: none;
+  color: $white;
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>购买转入爱家宝</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="apple-touch-icon-precomposed" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+    <link rel="bookmark" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/kmjrMobile1.0.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/jquery.mobile.icons.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile.structure-1.4.5.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/wap/Public/css/kmjr.mobile.base.css" />
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <header data-role="header" class="bg-wihte border-bottom-1-transparent ui-header ui-bar-inherit ui-kmjr">
+        <a href="#" class="ui-btn ui-icon-left ui-icon-carat-l ui-btn-icon-notext ui-btn-corner-all"></a>
+        <h1>买入爱家宝</h1>
+    </header>
+
+
+    <section class=" clearfix text-center bg-wihte text-center">
+        <div class="f16 text-subtitle padding-top-1">随存随取</div>
+        <div class="f3em text-red">8.18%</div>
+        <div class="border-top-1-solid">
+            <div class="f16 padding-top-1 text-tips">我要转入</div>
+            <div class="range-block">
+                <input type="number" class="f3em text-red range-total" id="range-total" value="10000" data-role="none"/>
+                <span class="text-tips f3em border-bottom-1-transparent range-unit-yuan">元</span>
+            </div>
+            <div class="k-range">
+                <!--data-balance 为还可以购买余额-->
+                <div class="range-scale" id="range-scale" style="left: -100px;" data-balance-max="100000" data-balance-min="99" data-default="1000"></div>
+                <div class="range-fixed"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center margin-top-2">
+
+        <div class="f12"> 本次最多可以购<span class="text-red">9,0000.00</span>元</div>
+        <div class="text-tips f12">单个用户最多可以购买10万元（不含体验金）</div>
+        <div class=" margin-top-1 clearfix ui-grid-a">
+            <div class="ui-block-a text-center">
+                <img src="../../images/kmjrWeixin/weixin/icon-licai-profit.png" width="30%">
+                <div class="text-tips f12">爱家宝每月可赚(元)</div>
+                <div class="text-orange f18" id="range-aj-profit">-</div>
+            </div>
+
+            <div class="ui-block-b">
+                <img src="../../images/kmjrWeixin/weixin/icon-licai-money.png" width="30%">
+                <div class="text-tips f12">银行活期收益</div>
+                <div class="text-orange f18" id="range-bank-profit">-</div>
+            </div>
+        </div>
+
+        <div class="margin-top-2 margin-bottom-2 clearfix ui-grid-d">
+            <a href="javascript:;" class=" ui-btn-default">转入爱家宝</a>
+        </div>
+    </section>
+
+<script src="../../javascripts/webMobile/kmjr.mobile.main.js"></script>
+<script>
+    (function(){
+        km.rangeSlide({
+            unit:   'yuan',
+            type:0
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

@@ -14,26 +14,32 @@ define(['jquery'],function(require){
     var _container  = document.getElementById('upload-container');
     var _loading    = document.getElementById('upload-loading');
     var _submit     = document.getElementById('upload-re-submit');
+    var _reset      = document.getElementById('upload-reset');
     var _packImgSize= 620;
     var _errorocb = function(){
         console.log('thr error !');
     };
 
+    //元素存在否
+    //function elemIs(elem,callback){
+    //    if(elem&&elem!='undefined'){
+    //        return callback;
+    //    }
+    //}
     //
     _getPic.addEventListener('change',chooseImg,false);
     //选择图片
     function chooseImg(e){
-        console.log(e)
-        loadingToggle();
         //将本地图片写入内存
         var _file = e.currentTarget.files[0];
         //将文件读取为DataUrl
         if(_file && _file.typeOf!='undefined'){
             //debugger
+            loadingToggle();
             var _reader =  new FileReader();
             _reader.readAsDataURL(_file);
         }else{
-            alert('图片读取失败，请重新选择图片！');
+            //alert('图片读取失败，请重新选择图片！');
             return;
         }
         //从内存获取图片位置
@@ -47,10 +53,22 @@ define(['jquery'],function(require){
     }
 
     //
-    _reChoose.addEventListener('click',reChooseImg,false);
+    if(_getPic) {
+        _reChoose.addEventListener('click', reChooseImg, false);
+    }
+
     //rechoose
     function reChooseImg(){
-        _getPic.click();
+        if(_getPic){
+            _getPic.click();
+        }
+    }
+
+    //reset
+    function reSet(){
+        if(_reset){
+            _reset.style.display = 'block';
+        }
     }
 
     //设置图片位置
@@ -65,19 +83,21 @@ define(['jquery'],function(require){
         var _contWidth    = _container.clientWidth;
         var _contHeight   = _container.clientHeight;
         //debugger;
-
         //由容器高宽比，确定图片以高还是宽显示
         if((_contWidth/_contHeight)>=(_imgWidth/_imgHeight)){
             _img.style.width='';
-            _img.style.height= _contHeight*0.8+'px';
+            _img.style.height= _contHeight*.96 + 'px';
             //debugger;
         }else{
-            _img.style.width= _contWidth*0.8+'px';
+            _img.style.width= _contWidth*.86+'px';
             _img.style.height='';
             //debugger;
         }
-        //
+        //隐藏加载图标
         loadingToggle();
+        //显示重新选择图标
+        reSet();
+        //压缩图片
         compressImg(_img,_imgWidth/_imgHeight);
     };
 
@@ -101,12 +121,11 @@ define(['jquery'],function(require){
         _context.drawImage(_img,0,0,_canvas.clientWidth,_canvas.clientHeight);
         var _getImg = _canvas.toDataURL('image/jpeg');
         //console.log(_canvas.toDataURL('image/jpeg'))
-        window.open(_canvas.toDataURL('image/jpeg'))
+        //window.open(_canvas.toDataURL('image/jpeg'))
     };
 
     //send img
     var sendImg = function(){
-
     };
 
     //清除事件监听

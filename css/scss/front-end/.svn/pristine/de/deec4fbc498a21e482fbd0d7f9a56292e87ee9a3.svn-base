@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>分期申请</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="apple-touch-icon-precomposed" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+    <link rel="bookmark" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/kmjrMobile1.0.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/jquery.mobile.icons.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile.structure-1.4.5.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/wap/Public/css/kmjr.mobile.base.css" />
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div role="dialog" data-close-btn="right" class="ui-dialog-contain-full ui-overlay-shadow ui-corner-all">
+    <header data-role="header" class="bg-wihte border-bottom-1-transparent ui-header ui-bar-inherit ui-kmjr">
+        <a href="#"  data-rel="back" class="ui-btn  ui-btn-corner-all ui-btn-icon-notext ui-icon-carat-l">
+            <img src="../../images/kmjrMobile/icon-btn-lt.png" width="18">
+        </a>
+        <h1>搜索</h1>
+    </header>
+   <!--
+       <div data-role="header" data-theme="c" role="banner" class="ui-header ui-bar-b">
+            &lt;!&ndash;<a href="#" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left" data-rel="back">Close</a>&ndash;&gt;
+            <h1 class="ui-title" role="heading" aria-level="1">编辑申请信息</h1>
+            &lt;!&ndash;<a href="#" class="ui-btn ui-corner-all  ui-btn-right ui-btn-money" data-rel="back">确定</a>&ndash;&gt;
+        </div>
+    -->
+    <div role="main" class="ui-content padding-top-0">
+        <!--header-->
+        <form class="ui-filterable">
+            <fieldset>
+                <!--main start-->
+                <div class="ui-kmjr-search ui-kmjr-search-plugin bg-gray">
+                    <label for="filterBasic" class="ui-hidden-accessible">选择区域</label>
+                    <input id="filterBasic" data-type="search"  placeholder="搜索"  />
+                </div>
+                <div class="ui-kmjr-search ui-kmjr-search-plugin">
+                    <label for="select-area" class="ui-hidden-accessible">选择区域</label>
+                    <select name="select-area" id="select-area">
+                        <option value="all" selected>全部区域</option>
+                        <option>市辖区</option>
+                        <option>上城区</option>
+                        <option>下城区</option>
+                        <option>江干区</option>
+                        <option>拱墅区</option>
+                        <option>西湖区</option>
+                        <option>滨江区</option>
+                        <option>萧山区</option>
+                        <option>余杭区</option>
+                        <option>桐庐县</option>
+                        <option>淳安县</option>
+                        <option>建德市</option>
+                        <option>富阳市</option>
+                        <option>临安市</option>
+                    </select>
+                </div>
+                <div class="ui-kmjr-search">
+
+                    <ul data-role="listview" data-filter="true" data-input="#filterBasic">
+                        <li><a href="">这是个酒店</a> </li>
+                        <li><a href="">这是个酒店1</a> </li>
+                        <li><a href="">这是个酒店2</a> </li>
+                        <li><a href="">这是个酒店3</a> </li>
+                        <li><a href="">这是个酒店</a> </li>
+                        <li><a href="">这是个酒店1</a> </li>
+                        <li><a href="">这是个酒店2</a> </li>
+                        <li><a href="">这是个酒店3</a> </li>
+                    </ul>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+
+<script>
+    /*$(document).bind('pagehide',function(event,data){
+        console.log(data)
+    })*/
+</script>
+</body>
+</html>

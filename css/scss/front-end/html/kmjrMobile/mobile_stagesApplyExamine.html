@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>分期申请</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="apple-touch-icon-precomposed" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+    <link rel="bookmark" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/kmjrMobile1.0.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/jquery.mobile.icons.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile.structure-1.4.5.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/wap/Public/css/kmjr.mobile.base.css" />
+    <!--<link rel="stylesheet" href="../../css/kmjr.mobile.base.css" />-->
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body class="km-body">
+<!--header-->
+<header data-role="header" class="bg-wihte border-bottom-1-transparent ui-header ui-bar-inherit ui-kmjr">
+    <a href="mobile_stages.html" class="ui-btn ui-icon-left ui-icon-carat-l ui-btn-icon-notext ui-btn-corner-all"></a>
+    <h1>分期申请</h1>
+    <a href="javascript:;" class="ui-btn ui-icon-right ui-btn-corner-all"  data-open-name="cancelDialog" data-open-btn="open-dialog">取消申请</a>
+</header>
+
+<!--<a href="mobile_stagesApply.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop">Open dialog</a>
+
+<a href="mobile_stages.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop">Open dialog</a>-->
+
+<section class="ui-grid-a padding-0_5 bg-wihte margin-top-1 border-top-1-solid border-bottom-1-solid">
+    <div class="ui-block-a f15">我的分期申请</div>
+    <div class="ui-block-b text-right padding-right-1">
+        <!--修改额度按钮-->
+        <a href="mjavascript:;" data-open-name="modifyAmountDialog" data-open-btn="open-dialog">
+            <img src="../../images/kmjrMobile/icon-edit.png" width="16">
+        </a>
+    </div>
+</section>
+
+<!--apply info start-->
+<section class="bg-wihte text-center border-bottom-1-solid padding-top-1 padding-bottom-1">
+    <p class="lineheight-1_5 f14">
+        本人将选择<span  class="text-blue">圣都家装
+        <a href="javascript:;" data-open-name="listDialog" data-open-btn="open-dialog">
+            <img src="../../images/kmjrMobile/icon-stages-contact.png" width="18" class="img-rel-top-4">
+        </a>
+        </span>进行装修。<br>
+        需要申请额度为<span class="text-blue">100,000</span>元的分期付款，<br>
+        分期方式为首期<span class="text-blue">5980.66X12期</span>。
+    </p>
+</section>
+
+<!--user date-->
+<section class="text-center margin-top-1">
+    <ul data-role="listview">
+        <li class="padding-top-0 padding-bottom-0 padding-left-0_5 padding-right-0 bg-wihte">
+            <div class="clearfix ui-kmjr">
+                <label for="repayTime" class="ui-select-lable">预计使用时间</label>
+                <select name="selectCompany" id="repayTime" data-count-theme="" data-mini="true">
+                    <option value="15">15天内</option>
+                    <option value="30">一个月内</option>
+                    <option value="90">三个月内</option>
+                    <option value="180">半年内</option>
+                    <option value="360">半年以上</option>
+                </select>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!--authentication-->
+<section class="margin-top-1 ui-kmjr">
+    <ul data-role="listview">
+        <li class="bg-wihte ui-listview-li">
+            <a href="http://www.baidu.com"><img src="../../images/kmjrMobile/icon-realname.png" class="ui-li-icon ui-corner-none">实名认证</a>
+        </li>
+        <li class="bg-wihte ui-listview-li">
+            <a href="http://www.baidu.com"><img src="../../images/kmjrMobile/icon-info.png" class="ui-li-icon">完善资料</a>
+        </li>
+    </ul>
+
+    <div class="margin-top-2 margin-bottom-2 clearfix ui-grid-d text-center">
+        <a href="javascript:;" class=" ui-btn-stages">提交申请</a>
+    </div>
+</section>
+
+<footer  class="km-footer">
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#" data-icon="ajb"> 爱家宝</a>
+                </li>
+                <li>
+                    <a href="#" data-icon="fenqi" class="ui-btn-active"> 爱分期</a>
+                </li>
+                <li>
+                    <a href="#" data-icon="baoxian"> 爱保险</a>
+                </li>
+                <li>
+                    <a href="#" data-icon="jia"> 家</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<!--弹出对话框-->
+<div class="msg-dialog fadeOut" data-name="msg-dialog" id="listDialog">
+    <!--背景-->
+    <div class="msg-dialog-bg"></div>
+    <!--内容-->
+
+    <div class="ui-dialog-contain-full ui-overlay-shadow ui-corner-all">
+        <!--头部信息-->
+        <header data-role="header" class="bg-wihte border-bottom-1-transparent ui-header ui-bar-inherit ui-kmjr">
+            <a href="javascript:;" class="ui-btn ui-btn-corner-all ui-btn-icon-notext ui-icon-carat-l" data-close-btn="close-dialog">
+                <img src="../../images/kmjrMobile/icon-btn-lt.png" width="18">
+            </a>
+            <h1>搜索</h1>
+        </header>
+
+        <!--列表--select样式-->
+        <!--
+        <div class="ui-content padding-top-0">
+            <form class="ui-filterable">
+                <fieldset>
+                    <div class="ui-kmjr-search ui-kmjr-search-plugin bg-gray">
+                        <label for="filterBasic" class="ui-hidden-accessible">选择区域</label>
+                        <input id="filterBasic" data-type="search"  placeholder="搜索"  />
+                    </div>
+                    <div class="ui-kmjr-search ui-kmjr-search-plugin">
+                        <label for="select-area" class="ui-hidden-accessible">选择区域</label>
+                        <select name="select-area" id="select-area">
+                            <option value="all" selected>全部区域</option>
+                            <option>市辖区</option>7
+                            <option>上城区</option>
+                            <option>下城区</option>
+                            <option>江干区</option>
+                            <option>拱墅区</option>
+                            <option>西湖区</option>
+                            <option>滨江区</option>
+                            <option>萧山区</option>
+                            <option>余杭区</option>
+                            <option>桐庐县</option>
+                            <option>淳安县</option>
+                            <option>建德市</option>
+                            <option>富阳市</option>
+                            <option>临安市</option>
+                        </select>
+                    </div>
+                    <div class="ui-kmjr-search">
+                        <ul data-role="listview" data-filter="true" data-input="#filterBasic">
+                            <li><a href="">这是个酒店</a> </li>
+                            <li><a href="">这是个酒店1</a> </li>
+                            <li><a href="">这是个酒店2</a> </li>
+                            <li><a href="">这是个酒店3</a> </li>
+                            <li><a href="">这是个酒店</a> </li>
+                            <li><a href="">这是个酒店1</a> </li>
+                            <li><a href="">这是个酒店2</a> </li>
+                            <li><a href="">这是个酒店3</a> </li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        -->
+
+        <!--列表--tab样式-->
+        <div class="ui-content padding-top-0">
+            <!--header-->
+            <form class="ui-filterable">
+                <fieldset>
+                    <!--main start-->
+                    <div class="ui-kmjr-search ui-kmjr-search-plugin bg-gray">
+                        <label for="filterBasic" class="ui-hidden-accessible">选择区域</label>
+                        <input id="filterBasic" data-type="search"  placeholder="搜索"  />
+                    </div>
+
+                    <section class="ui-kmjr-profile ui-kmjr-search margin-left--1 margin-right--1">
+                        <div data-role="tabs" id="tabs">
+                            <div data-role="navbar">
+                                <ul>
+                                    <!--现象卡项-->
+                                    <li aria-selected="true" class="ui-block-a ui-state-default ui-corner-top ui-state-hover ui-tabs-active ui-state-active">
+                                        <a href="#fd-one" data-ajax="false" tabindex="-1" class="ui-link ui-btn ui-tabs-anchor ui-btn-active">早期教育</a>
+                                    </li>
+                                    <li><a href="#fd-two" data-ajax="false" tabindex="-1">成人教育</a> </li>
+                                </ul>
+                            </div>
+                            <!--选项卡1-->
+                            <div id="fd-one" class="ui-body-d ui-content padding-top-0">
+                                <div class="ui-kmjr-search">
+                                    <ul data-role="listview" data-filter="true" data-input="#filterBasic">
+                                        <li><a href="">这是个酒店</a> </li>
+                                        <li><a href="">这是个酒店1</a> </li>
+                                        <li><a href="">这是个酒店2</a> </li>
+                                        <li><a href="">这是个酒店3</a> </li>
+                                        <li><a href="">这是个酒店</a> </li>
+                                        <li><a href="">这是个酒店1</a> </li>
+                                        <li><a href="">这是个酒店2</a> </li>
+                                        <li><a href="">这是个酒店3</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--选项卡2-->
+                            <div id="fd-two" class="ui-body-d ui-content padding-top-0">
+                                <div class="ui-kmjr-search">
+                                    <ul data-role="listview" data-filter="true" data-input="#filterBasic">
+                                        <li><a href="">这是个机构</a> </li>
+                                        <li><a href="">这是个机构1</a> </li>
+                                        <li><a href="">这是个机构2</a> </li>
+                                        <li><a href="">这是个机构3</a> </li>
+                                        <li><a href="">这是个机构</a> </li>
+                                        <li><a href="">这是个机构1</a> </li>
+                                        <li><a href="">这是个机构2</a> </li>
+                                        <li><a href="">这是个机构3</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--修改申请额度-->
+<div class="msg-dialog fadeOut" data-name="msg-dialog" id="modifyAmountDialog">
+    <!--背景-->
+    <div class="msg-dialog-bg-black"></div>
+    <!--内容-->
+    <div class="ui-kmjr-dialog-contain ui-overlay-shadow ui-corner-all">
+        <!--头部信息-->
+        <header data-role="header" class="bg-wihte border-top-none  border-bottom-none ui-header ui-bar-inherit ui-kmjr ui-kmjr-icon">
+            <a href="javascript:;" class="ui-btn ui-btn-corner-all ui-btn-icon-notext ui-icon-delete" data-close-btn="close-dialog">
+                <img src="../../images/kmjrMobile/icon-btn-lt.png" width="18">
+            </a>
+            <h1>编辑申请信息</h1>
+            <a href="javascript:;" class="ui-btn ui-btn-corner-all f16" data-close-btn="close-dialog">
+                确定
+            </a>
+        </header>
+
+        <!--列表--tab样式-->
+        <div class="ui-content padding-0">
+            <!--header-->
+            <section class=" clearfix text-center bg-wihte text-center">
+                <div class="border-top-1-solid">
+                    <div class="f16 padding-top-1 text-tips">委托爱家理财代付金额（万元）</div>
+                    <div class="range-block-base">
+                        <span class="f2em text-red range-total" id="range-total">10.0</span>
+                    </div>
+                    <div class="k-range">
+                        <div class="range-scale" id="range-scale" style="left: -100px;" data-balance-max="1000" data-balance-min="30" data-default="100"></div>
+                        <input type="hidden" value="" id="range-scale-value">
+                        <div class="range-fixed"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--select Items-->
+            <section class="text-center margin-top-1 margin-bottom-1 ui-kmjr-stages-items">
+                <!--分期方式titile-->
+                <div class=" margin-top-1 clearfix ui-grid-a margin-left-1 margin-right-1" data-stage="normal">
+                    <div class="ui-block-a f12 text-left lineheight-2">
+                        分期方式
+                    </div>
+                    <div class="ui-block-b text-right" >
+                        <img src="http://statics.aijialicai.com.cn/CDN/wap/Public/images/icon-stages-gt-nianhuainfo@3x.png" width="16">
+                    </div>
+                </div>
+
+                <!--分期方式items-->
+                <div class=" text-center ui-kmjr-stageActive" >
+                    <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                        <input type="radio" name="type" id="type1" value="0">
+                        <label for="type1">婚礼后用礼金一次性还款</label>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a text-center  ui-kmjr-stageActive" data-stage-type="3" data-stage-radio="wedding">
+                        <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                            <input type="radio" name="type" id="type2" value="1">
+                            <label for="type2">2000.00X3期</label>
+                        </div>
+                    </div>
+
+                    <div class="ui-block-b text-center  ui-kmjr-stageActive" data-stage-type="6" data-stage-radio="wedding">
+                        <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                            <input type="radio" name="type" id="type3" value="2">
+                            <label for="type3">2000.00X6期</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--取消申请-->
+<div class="msg-dialog fadeOut" data-name="msg-dialog" id="cancelDialog">
+    <!--背景-->
+    <div class="msg-dialog-bg-black"></div>
+    <!--内容-->
+    <div class="ui-kmjr-dialog-contain ui-overlay-shadow ui-corner-all">
+        <!--头部信息-->
+        <header data-role="header" class="bg-wihte border-top-none ui-header ui-bar-inherit ui-kmjr ui-kmjr-icon">
+            <h1 class="ui-title margin-left-1 margin-right-1">完善资料即可申请，确认取消？</h1>
+        </header>
+        <!--列表--tab样式-->
+        <div class="ui-content padding-0">
+            <div data-role="controlgroup">
+                <input type="checkbox" name="checkbox-1a" id="checkbox-1a" value="0">
+                <label for="checkbox-1a">分期费率太高了</label>
+                <input type="checkbox" name="checkbox-1a" id="checkbox-2a" value="1">
+                <label for="checkbox-2a">要填写的资料太多</label>
+                <input type="checkbox" name="checkbox-1a" id="checkbox-3a" value="2">
+                <label for="checkbox-3a">就是不想要了</label>
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a class="ui-shadow ui-btn ui-corner-all  margin-0" data-close-btn="close-dialog">取消</a>
+            </div>
+            <div class="ui-block-b">
+                <a class="ui-shadow ui-btn ui-corner-all  margin-0" data-close-btn="close-dialog">确定</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="http://statics.aijialicai.com.cn/CDN/wap/Public/js/kmjr.mobile.config.js"></script>
+<script src="http://statics.aijialicai.com.cn/CDN/wap/Public/js/kmjr.mobile.main.js"></script>
+<script>
+    (function(){
+        //初始化拨盘
+        km.rangeSlide({
+            unit:   'wan',
+            type:1
+        });
+
+        //
+        km.dailog();
+    })(jQuery);
+</script>
+
+</body>
+</html>

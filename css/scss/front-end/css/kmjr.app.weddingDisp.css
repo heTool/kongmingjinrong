@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE4"
+        on line 49 of kmjr.app.weddingDisp.scss
+
+44: .kmwd-header{
+45:   position: relative;
+46:   text-align: $center;
+47: }
+48: .kmwd-header .btn-previous{
+49:   //content:'上';
+50:   @include icon-left;
+51: }
+52: .kmwd-header .btn-next{
+53:   //content:'下';
+54:   @include icon-right;
+
+Backtrace:
+kmjr.app.weddingDisp.scss:49
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1296:in `rescue in block in find_encoding_error'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1293:in `block in find_encoding_error'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1292:in `each'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1292:in `each_with_index'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:1292:in `find_encoding_error'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util.rb:901:in `check_sass_encoding'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:433:in `check_encoding!'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:389:in `_to_tree'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+d:/devTool/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/scss:13:in `<top (required)>'
+d:/devTool/Ruby22/bin/scss:23:in `load'
+d:/devTool/Ruby22/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE4\"\A         on line 49 of kmjr.app.weddingDisp.scss\A \A 44: .kmwd-header{\A 45:   position: relative;\A 46:   text-align: $center;\A 47: }\A 48: .kmwd-header .btn-previous{\A 49:   //content:'上';\A 50:   @include icon-left;\A 51: }\A 52: .kmwd-header .btn-next{\A 53:   //content:'下';\A 54:   @include icon-right;"; }

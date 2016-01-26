@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>车险</title>
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/app/Public/css/kmjr.app.base.css" />
+    <!-- <link rel="stylesheet" href="../../css/kmjr.app.base.css" /> -->
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div class="cx-body">
+    <!--banner-->
+    <div class="cx-banner">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_01.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_02.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_03.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_04.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_05.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_06.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_07.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_08.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_09.png" width="100%">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_10.png" width="100%">
+    </div>
+    <!--block 专属服务-->
+    <div class="cx-block">
+        <div class="cx-block-inline">
+            <h2 class="f20 text-darkYellow text-center font-bolder cx-block-tit cx-btit-line">
+                <div class="cx-btit-text">专属服务</div>
+            </h2>
+            <h3 class="f18 font-bolder text-darkYellow marg-t-0_5em cx-icon-dot">响应快</h3>
+            <p class="f16">7X24小时无休接报案，享受网销客户专属服务。</p>
+            <h3 class="f18 font-bolder text-darkYellow marg-t-0_5em cx-icon-dot">到畅快</h3>
+            <p> 10分钟内专职理赔人员联系客户，迅速到达现场。</p>
+            <h3 class="f18 font-bolder text-darkYellow marg-t-0_5em cx-icon-dot">定损快</h3>
+            <p>5千元以下案件30分钟内定损。</p>
+            <h3 class="f16 font-bolder text-darkYellow marg-t-0_5em cx-icon-dot">赔付快</h3>
+            <p>5千元以下（非人伤案件），免单证，24小时限时赔付，可以选择非合作的4S店直赔。</p>
+            <h3 class="f18 font-bolder text-darkYellow marg-t-0_5em cx-icon-dot">回访快</h3>
+            <p>结案后2天内100%回访，确保客户服务满意度。</p>
+        </div>
+    </div>
+    <!--block road-->
+    <div class="text-left">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_12.png" width="25%">
+    </div>
+    <!--block 增值服务-->
+    <div class="cx-block">
+        <div class="cx-block-inline">
+            <h2 class="f20 text-darkYellow text-center font-bolder cx-block-tit  cx-btit-line">
+                <div class="cx-btit-text">增值服务</div>
+            </h2>
+            <p class="f16 cx-icon-dot marg-t-0_5em">无限次非事故道路救援：现场维修、拖车、换轮胎、电瓶充电，应急加水等现场维修。</p>
+            <p class="f16 cx-icon-dot  marg-t-0_5em">旅行医疗救援服务：事故现场紧急医疗救缓服务、紧急救缓指导、履行期间保障性救缓服务。</p>
+
+        </div>
+    </div>
+    <!--block road-->
+    <div class="text-right">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_16.png" width="35%">
+    </div>
+    <!--block step-->
+    <div class="cx-block-step text-center">
+        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/chexian/chexian_17.png" width="96%">
+    </div>
+
+    <div class="cx-block-action" id="btn-cx-action">
+        <a href="#" class="btn-cx-action btn-cx-action-fixed">我要最省车险</a>
+    </div>
+</div>
+</body>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>分期申请</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="爱家理财，活期理财，消费分析，家庭保险">
+    <meta name="description" content="爱家理财为投资人及合作机构提供的居间信息服务产品。投资人加入爱家理财的资金可即刻获得收益，按秒付息，投资本金及其收益可随时转出。爱家理财实时年化收益8.18%，是人人必备的高收益活期理财产品。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="爱家理财">
+    <meta name="robots" content="all">
+    <link rel="apple-touch-icon-precomposed" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+    <link rel="bookmark" href="http://statics.aijialicai.com.cn/CDN/comm/images/kmjrWeb/ico/favicon.png">
+
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/kmjrMobile1.0.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/themes/jquery.mobile.icons.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile.structure-1.4.5.min.css?v=2015117" />
+    <link rel="stylesheet" href="http://statics.aijialicai.com.cn/CDN/wap/Public/css/kmjr.mobile.base.css" />
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div role="dialog" data-close-btn="right" class="ui-dialog-contain ui-overlay-shadow ui-corner-all">
+    <div data-role="header" data-theme="c" role="banner" class="ui-header ui-bar-b">
+        <a href="#" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-left" data-rel="back">X</a>
+        <h1 class="ui-title" role="heading" aria-level="1">编辑申请信息</h1>
+       <a href="#" class="ui-btn ui-corner-all  ui-btn-right ui-btn-money" data-rel="back">确定</a>
+    </div>
+
+    <div role="main" class="ui-content padding-0">
+        <form>
+            <fieldset>
+                <!--main start-->
+                <section class=" clearfix text-center bg-wihte text-center">
+                    <div class="border-top-1-solid">
+                        <div class="f16 padding-top-1 text-tips">委托爱家理财代付金额（万元）</div>
+                        <div class="range-block-base">
+                            <span class="f2em text-red range-total" id="range-total">10.0</span>
+                        </div>
+                        <div class="k-range">
+                            <div class="range-scale" id="range-scale" style="left: -100px;" data-balance-max="1000" data-balance-min="30" data-default="100"></div>
+                            <input type="hidden" value="" id="range-scale-value">
+                            <div class="range-fixed"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="text-center margin-top-1">
+                    <!--分期方式items-->
+                    <div class=" text-center ui-kmjr-stageActive" >
+                        <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                            <input type="radio" name="type" id="type1" value="0">
+                            <label for="type1">婚礼后用礼金一次性还款</label>
+                        </div>
+                    </div>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a text-center  ui-kmjr-stageActive" data-stage-type="3" data-stage-radio="wedding">
+                            <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                                <input type="radio" name="type" id="type2" value="1">
+                                <label for="type2">2000.00X3期</label>
+                            </div>
+                        </div>
+
+                        <div class="ui-block-b text-center  ui-kmjr-stageActive" data-stage-type="6" data-stage-radio="wedding">
+                            <div data-role="controlgroup" data-mini="true" data-type="horizontal">
+                                <input type="radio" name="type" id="type3" value="2">
+                                <label for="type3">2000.00X6期</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="margin-top-2 margin-bottom-2 clearfix ui-grid-d">
+                        <a href="javascript:;" class=" ui-btn-stages">提交申请</a>
+                    </div>
+                </section>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<script>
+    /*$(document).bind('pagehide',function(event,data){
+        console.log(data)
+    })*/
+</script>
+</body>
+</html>
