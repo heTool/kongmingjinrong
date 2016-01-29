@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="人人爱家金融">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>瞬时授信</title>
+    <!--<link rel="stylesheet" href="../../css/kmjr.app.base.css?v=20151019" />-->
+    <link href="../../../css/kmjr.app.weddingDisp.css" rel="stylesheet"/>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/require.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/app/Public/js/kmjr.app.config.js"></script>
+</head>
+<body>
+<div class="kmwd-body">
+    <!--header-->
+    <div class="kmwd-header bg-white lineheight-3">
+        <a href="#" class="btn-previous text-red">&lt;</a>
+        <h1 class="kmwd-h-tit">瞬时授信</h1>
+        <a href="#" class="btn-next text-red">&gt;</a>
+    </div>
+    <!--container-->
+    <div class="kmwd-content">
+        <!--info-->
+        <div class="bg-red text-white padding-left-1em padding-top-1em padding-bottom-1em padding-right-1em text-center f14">
+            <div class="f24 lineheight-2">瞬时授信额度：<span class="f30" id="">0</span> 元</div>
+            <div class="lineheight-1_5">人人爱家将根据您提供的信息，瞬时提升
+                您在婚礼纪的信用消费额度。</div>
+        </div>
+
+        <!--pass information-->
+        <div class="kmwd-block padding-bottom-1em margin-top-0_5em">
+            <div class="block-items bg-white padding-left-0_5em padding-right-0_5em">
+                <label for="name">预留手机</label>
+                <a href="javascript:;" class="item-button">
+                    验证未通过 &gt;
+                </a>
+                <!--<button class="item-btn" id="name">-->
+                   <!--验证未通过 &gt;-->
+                <!--</button>-->
+            </div>
+        </div>
+
+        <!--step bar-->
+        <div class="kmwd-stepbar">
+            <div class=" stepbar-num active text-center">
+                <div class="stepbar-tit">访问通讯录</div>
+            </div>
+            <div class=" stepbar-num2 text-center">
+                <div class="stepbar-tit fadeOut">提交个人征信报告</div>
+            </div>
+        </div>
+        <!--contact-->
+        <div class="text-center padding-left-2em padding-right-2em margin-top-3em">
+            <div class="status-icon">
+                <img src="../../../images/kmjrApp/weddingDisp/icon-contact.png" class="margin-top-1em margin-bottom-1em" width="25%">
+            </div>
+            <div class="padding-top-1em text-gray text-nowarp">请允许访问通讯录，瞬时获得信用额度</div>
+        </div>
+        <div class=" margin-left-1em margin-right-1em margin-top-2_5em margin-bottom-2_5em">
+            <a href="jacascript:;" class="btn-submit-circle">确定</a>
+        </div>
+
+        <!--contact success-->
+        <div class="text-center padding-left-2em padding-right-2em margin-top-1em">
+            <div class="status-icon status-icon-success">
+                <img src="../../../images/kmjrApp/weddingDisp/icon-contact.png" class="margin-top-1em margin-bottom-1em" width="25%">
+            </div>
+        </div>
+        <div class=" margin-left-1em margin-right-1em margin-top-2_5em margin-bottom-2_5em">
+            <a href="jacascript:;" class="btn-submit-circle">下一步</a>
+        </div>
+
+        <!--information get-->
+        <div class="text-center padding-left-2em padding-right-2em margin-top-1em">
+            <div class="status-icon">
+                <img src="../../../images/kmjrApp/weddingDisp/icon-info.png" class="margin-top-1em margin-bottom-1em" width="25%">
+            </div>
+        </div>
+        <div class=" margin-left-1em margin-right-1em margin-top-2_5em margin-bottom-2_5em">
+            <a href="jacascript:;" class="btn-submit-circle">人民银行个人征信查寻</a>
+        </div>
+
+        <!--register-->
+        <div class="circle-block padding-bottom-1em margin-top-0_5em padding-left-1em padding-right-1em">
+            <div class="circle-items active bg-white padding-left-0_5em padding-right-0_5em margin-top-0_5em">
+                <label for="username">姓<span class="circle-items-space">名</span></label>
+                <input type="text" id="username">
+            </div>
+
+            <div class="circle-items bg-white padding-left-0_5em padding-right-0_5em margin-top-0_5em">
+                <label for="code1">身份证</label>
+                <input type="text" id="code1">
+            </div>
+
+            <div class="circle-items-verify">
+                <div class="circle-items bg-white padding-left-0_5em padding-right-0_5em margin-top-0_5em">
+                    <label for="code" class="fadeOut">验证码</label>
+                    <input type="text" id="code" class="ipt-verify-code">
+                </div>
+                <div class="margin-top-0_5em items-verify-code">
+                    <img src="../../../images/kmjrApp/weddingDisp/icon-info.png" class="img-verify-code">
+                </div>
+            </div>
+        </div>
+        <div class=" margin-left-1em margin-right-1em margin-top-2_5em margin-bottom-2_5em">
+            <a href="jacascript:;" class="btn-submit-circle">下一步</a>
+        </div>
+
+        <!--get verify code-->
+        <div class="circle-block padding-bottom-1em margin-top-0_5em padding-left-1em padding-right-1em">
+            <div class="circle-items active bg-white padding-left-0_5em padding-right-0_5em margin-top-0_5em">
+                <label for="mobile">手机号</label>
+                <input type="text" id="mobile">
+            </div>
+
+
+            <div class="circle-items-verify">
+                <div class="circle-items bg-white padding-left-0_5em padding-right-0_5em margin-top-0_5em">
+                    <label for="code" class="fadeOut">验证码</label>
+                    <input type="text" id="code" class="ipt-verify-code">
+                </div>
+                <div class="margin-top-0_5em items-verify-code">
+                    <button class="btn-submit-dialog" data-btn="countdown">确定提交(<span data-elem="showSeconds">3</span>)</button>
+                </div>
+            </div>
+        </div>
+        <div class=" margin-left-1em margin-right-1em margin-top-2_5em margin-bottom-2_5em">
+            <a href="jacascript:;" class="btn-submit-circle">下一步</a>
+        </div>
+
+        <!--supper info-->
+        <!--info-->
+        <div class="bg-lightgray padding-left-1em padding-top-1em padding-bottom-1em padding-right-1em text-center f14">
+            <div class="f16 lineheight-2">提交审查申请，需先验证本人身份</div>
+            <div class="f16 lineheight-1">请在10分钟内回答问题，您还有<span class="text-red">9分58秒</span>的回答时间</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="dialog fadeOut" data-elem="dialog">
+    <div class="dialog-bg"></div>
+    <div class="dialog-panel">
+        <div class="d-panel-head">
+            提示
+        </div>
+        <div class="d-panel-content">
+            <div class="lineheight-2 text-center">答题时间到，请重新申请</div>
+        </div>
+        <div class="d-panel-foot" data-btn="close-dialog">
+            <a href="javascript:;" class="btn-dialog-foot">确定</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    require(['jquery','http://192.168.1.186:8091/kongmingjinrong/javascripts/webApp/kmjr.app.weddingDisp.js'],function(){
+        //TODO
+    });
+</script>
+</body>
+</html>

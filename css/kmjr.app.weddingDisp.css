@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-h2, .d-panel-head {
   font-size: 20px; }
 
-.text-normal, .d-panel-content {
+.text-normal, .d-panel-content, .block-items.repay-instal-items label {
   font-size: 16px; }
 
 .text-normal-min {
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-normal-max {
   font-size: 18px; }
 
-.text-tips, .panel-items input::-webkit-input-placeholder {
+.text-tips, .panel-items input::-webkit-input-placeholder, [ui-checkbox="repay"] + label:before {
   font-size: 12px; }
 
 .f1em {
@@ -256,6 +256,18 @@ h1, h2, h3, h4, h5, h6 {
 .margin-bottom-4_5em {
   margin-bottom: 4.5em; }
 
+.margin-left-5em {
+  margin-left: 5em; }
+
+.margin-right-5em {
+  margin-right: 5em; }
+
+.margin-top-5em {
+  margin-top: 5em; }
+
+.margin-bottom-5em {
+  margin-bottom: 5em; }
+
 /**/
 .margin-left-1 {
   margin-left: 1px; }
@@ -364,6 +376,138 @@ h1, h2, h3, h4, h5, h6 {
 
 .margin-bottom-9 {
   margin-bottom: 9px; }
+
+.margin-left-10 {
+  margin-left: 10px; }
+
+.margin-right-10 {
+  margin-right: 10px; }
+
+.margin-top-10 {
+  margin-top: 10px; }
+
+.margin-bottom-10 {
+  margin-bottom: 10px; }
+
+.margin-left-11 {
+  margin-left: 11px; }
+
+.margin-right-11 {
+  margin-right: 11px; }
+
+.margin-top-11 {
+  margin-top: 11px; }
+
+.margin-bottom-11 {
+  margin-bottom: 11px; }
+
+.margin-left-12 {
+  margin-left: 12px; }
+
+.margin-right-12 {
+  margin-right: 12px; }
+
+.margin-top-12 {
+  margin-top: 12px; }
+
+.margin-bottom-12 {
+  margin-bottom: 12px; }
+
+.margin-left-13 {
+  margin-left: 13px; }
+
+.margin-right-13 {
+  margin-right: 13px; }
+
+.margin-top-13 {
+  margin-top: 13px; }
+
+.margin-bottom-13 {
+  margin-bottom: 13px; }
+
+.margin-left-14 {
+  margin-left: 14px; }
+
+.margin-right-14 {
+  margin-right: 14px; }
+
+.margin-top-14 {
+  margin-top: 14px; }
+
+.margin-bottom-14 {
+  margin-bottom: 14px; }
+
+.margin-left-15 {
+  margin-left: 15px; }
+
+.margin-right-15 {
+  margin-right: 15px; }
+
+.margin-top-15 {
+  margin-top: 15px; }
+
+.margin-bottom-15 {
+  margin-bottom: 15px; }
+
+.margin-left-16 {
+  margin-left: 16px; }
+
+.margin-right-16 {
+  margin-right: 16px; }
+
+.margin-top-16 {
+  margin-top: 16px; }
+
+.margin-bottom-16 {
+  margin-bottom: 16px; }
+
+.margin-left-17 {
+  margin-left: 17px; }
+
+.margin-right-17 {
+  margin-right: 17px; }
+
+.margin-top-17 {
+  margin-top: 17px; }
+
+.margin-bottom-17 {
+  margin-bottom: 17px; }
+
+.margin-left-18 {
+  margin-left: 18px; }
+
+.margin-right-18 {
+  margin-right: 18px; }
+
+.margin-top-18 {
+  margin-top: 18px; }
+
+.margin-bottom-18 {
+  margin-bottom: 18px; }
+
+.margin-left-19 {
+  margin-left: 19px; }
+
+.margin-right-19 {
+  margin-right: 19px; }
+
+.margin-top-19 {
+  margin-top: 19px; }
+
+.margin-bottom-19 {
+  margin-bottom: 19px; }
+
+.margin-left-20 {
+  margin-left: 20px; }
+
+.margin-right-20 {
+  margin-right: 20px; }
+
+.margin-top-20 {
+  margin-top: 20px; }
+
+.margin-bottom-20 {
+  margin-bottom: 20px; }
 
 /*padding*/
 /**/
@@ -596,6 +740,138 @@ h1, h2, h3, h4, h5, h6 {
 .padding-bottom-9 {
   padding-bottom: 9px; }
 
+.padding-left-10 {
+  padding-left: 10px; }
+
+.padding-right-10 {
+  padding-right: 10px; }
+
+.padding-top-10 {
+  padding-top: 10px; }
+
+.padding-bottom-10 {
+  padding-bottom: 10px; }
+
+.padding-left-11 {
+  padding-left: 11px; }
+
+.padding-right-11 {
+  padding-right: 11px; }
+
+.padding-top-11 {
+  padding-top: 11px; }
+
+.padding-bottom-11 {
+  padding-bottom: 11px; }
+
+.padding-left-12 {
+  padding-left: 12px; }
+
+.padding-right-12 {
+  padding-right: 12px; }
+
+.padding-top-12 {
+  padding-top: 12px; }
+
+.padding-bottom-12 {
+  padding-bottom: 12px; }
+
+.padding-left-13 {
+  padding-left: 13px; }
+
+.padding-right-13 {
+  padding-right: 13px; }
+
+.padding-top-13 {
+  padding-top: 13px; }
+
+.padding-bottom-13 {
+  padding-bottom: 13px; }
+
+.padding-left-14 {
+  padding-left: 14px; }
+
+.padding-right-14 {
+  padding-right: 14px; }
+
+.padding-top-14 {
+  padding-top: 14px; }
+
+.padding-bottom-14 {
+  padding-bottom: 14px; }
+
+.padding-left-15 {
+  padding-left: 15px; }
+
+.padding-right-15 {
+  padding-right: 15px; }
+
+.padding-top-15 {
+  padding-top: 15px; }
+
+.padding-bottom-15 {
+  padding-bottom: 15px; }
+
+.padding-left-16 {
+  padding-left: 16px; }
+
+.padding-right-16 {
+  padding-right: 16px; }
+
+.padding-top-16 {
+  padding-top: 16px; }
+
+.padding-bottom-16 {
+  padding-bottom: 16px; }
+
+.padding-left-17 {
+  padding-left: 17px; }
+
+.padding-right-17 {
+  padding-right: 17px; }
+
+.padding-top-17 {
+  padding-top: 17px; }
+
+.padding-bottom-17 {
+  padding-bottom: 17px; }
+
+.padding-left-18 {
+  padding-left: 18px; }
+
+.padding-right-18 {
+  padding-right: 18px; }
+
+.padding-top-18 {
+  padding-top: 18px; }
+
+.padding-bottom-18 {
+  padding-bottom: 18px; }
+
+.padding-left-19 {
+  padding-left: 19px; }
+
+.padding-right-19 {
+  padding-right: 19px; }
+
+.padding-top-19 {
+  padding-top: 19px; }
+
+.padding-bottom-19 {
+  padding-bottom: 19px; }
+
+.padding-left-20 {
+  padding-left: 20px; }
+
+.padding-right-20 {
+  padding-right: 20px; }
+
+.padding-top-20 {
+  padding-top: 20px; }
+
+.padding-bottom-20 {
+  padding-bottom: 20px; }
+
 /*color*/
 /**/
 .bg-white {
@@ -724,10 +1000,24 @@ a.text-green:hover {
   color: #00cc33;
   text-decoration: none; }
 
+.bg-orange {
+  background-color: #FC7E4C !important; }
+
+.text-orange {
+  color: #FC7E4C; }
+
+a.text-orange {
+  color: #FC7E4C;
+  text-decoration: none; }
+
+a.text-orange:hover {
+  color: #FC7E4C;
+  text-decoration: none; }
+
 .fadeIn {
   display: block; }
 
-.fadeOut {
+.fadeOut, .circle-items label.fadeOut {
   display: none; }
 
 .text-center {
@@ -739,9 +1029,48 @@ a.text-green:hover {
 .text-right {
   text-align: right; }
 
-.text-nowarp, .panel-items button.btn-submit-dialog, .stepbar-tit, .items-verify-code button.btn-submit-dialog, .block-items-b, .upload-reset {
+.right {
+  float: right; }
+
+.left {
+  float: right; }
+
+.right:after {
+  content: '';
+  clear: both; }
+
+.left:after {
+  content: '';
+  clear: both; }
+
+.clearfix::after {
+  content: '';
+  clear: both; }
+
+.va-top {
+  vertical-align: top; }
+
+.va-middle {
+  vertical-align: middle; }
+
+.va-bottom {
+  vertical-align: bottom; }
+
+.text-nowarp, .panel-items button.btn-submit-dialog, .stepbar-tit, .items-verify-code button.btn-submit-dialog, .block-items-b, .block-items-b-min, .upload-reset {
   white-space: nowrap;
   word-break: keep-all; }
+
+.relative {
+  position: relative; }
+
+.absolute, .items-cell-rel:last-child {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
+
+.block {
+  display: block; }
 
 /*all*/
 html, body, .kmwd-body {
@@ -791,6 +1120,13 @@ html, body, .kmwd-body {
   margin-top: -1px;
   position: relative; }
 
+.block-items.repay-items {
+  border-top: none;
+  border-bottom: 1px dotted #ffffff; }
+
+.block-items.repay-items:last-child {
+  border-bottom: none; }
+
 .block-items::after {
   clear: both;
   content: ' '; }
@@ -798,6 +1134,9 @@ html, body, .kmwd-body {
 .block-items label {
   display: inline-block;
   font-size: 14px; }
+
+.repay-total-items {
+  border-top: 1px solid #ffffff; }
 
 .item-form-control, .block-items input, .block-items button,
 .block-items a.item-button, .block-items select, .panel-items input, .panel-items button.btn-submit-dialog, .circle-items input, .items-verify-code button.btn-submit-dialog {
@@ -894,6 +1233,18 @@ a.btn-submit-circle {
 .d-panel-content {
   padding: 5%; }
 
+.d-panel-content.dialog-content {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.block-items.dialog-items {
+  border-top: none;
+  border-bottom: 1px dotted #dddddd; }
+
+.block-items.dialog-items:last-child {
+  border-top: none;
+  border-bottom: none; }
+
 .d-panel-foot {
   border-top: 1px solid #dddddd;
   text-align: center; }
@@ -902,11 +1253,10 @@ a.btn-dialog-foot {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #ff705e;
   padding: 8px 0; }
 
 a.btn-dialog-foot.cell {
-  width: 49%; }
+  width: 48.5%; }
 
 a.btn-dialog-foot.cell:last-child {
   border-left: 1px solid #dddddd; }
@@ -1097,29 +1447,134 @@ a.btn-dialog-foot.cell.default {
   border: 1px solid #ff705e; }
 
 /**/
+[ui-checkbox="circle"] {
+  display: none !important; }
+
+[ui-checkbox="circle"] + label {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 999px;
+  background-color: #ff705e; }
+
+[ui-checkbox="circle"]:checked + label {
+  background: #ff705e url("../images/kmjrApp/weddingDisp/icon-select.png") center no-repeat;
+  background-size: 70%; }
+
+/**/
+[ui-radio='circle'] {
+  display: none !important; }
+
+[ui-radio='circle'] + label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ff705e;
+  border-radius: 999px;
+  background-color: #ffffff; }
+
+[ui-radio='circle']:checked + label:after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 80%;
+  background-color: #ff705e;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 99px; }
+
+/**/
+.arrow-right {
+  background: url(../images/kmjrApp/weddingDisp/icon-gt.png) right center no-repeat; }
+
 .block-items-border {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd; }
 
-.block-items-a {
+.block-items-border-top {
+  border-top: 1px solid #dddddd; }
+
+.block-items-border-right {
+  border-right: 1px solid #dddddd; }
+
+.block-items-border-bottom {
+  border-bottom: 1px solid #dddddd; }
+
+.block-items-a,
+.block-items-a-min {
+  line-height: 1;
   width: 78%;
   display: inline-block; }
 
-.block-items-a img {
+.block-items-a img,
+.block-items-a-min img {
   display: inline-block;
   width: 20%;
   max-width: 48px; }
+
+.block-items-a-min {
+  width: 55%;
+  vertical-align: middle; }
+
+.block-items-a-min img {
+  width: 15%;
+  max-width: 24px; }
 
 .block-items-info {
   display: inline-block;
   width: 78%;
   vertical-align: top; }
 
-.block-items-b {
+.block-items-b, .block-items-b-min {
+  line-height: 1;
   width: 19%;
   display: inline-block;
   text-align: right;
   vertical-align: top; }
+
+.block-items-b-min {
+  width: 40%;
+  text-align: right;
+  vertical-align: middle; }
+
+.block-items-b-min a {
+  display: block;
+  background-size: 8px;
+  text-decoration: none; }
+
+.items-cell {
+  display: inline-block;
+  width: 49%;
+  line-height: 1em; }
+
+.items-cell:first-child {
+  text-align: left; }
+
+.items-cell:last-child {
+  text-align: right; }
+
+.dialog-items .items-cell:first-child {
+  width: 40%; }
+
+.dialog-items .items-cell:last-child {
+  width: 58%; }
+
+.items-cell .btn-submit-circle {
+  width: 60%;
+  font-size: 16px;
+  float: right;
+  margin-bottom: -5px; }
+
+.items-cell-rel:last-child {
+  left: 0;
+  top: 9px;
+  padding-left: 9em;
+  line-height: 1; }
+
+/**/
+.repay-select {
+  left: -1.5em;
+  top: 12px; }
 
 /**/
 .upload-body {
@@ -1220,5 +1675,426 @@ a.btn-dialog-foot.cell.default {
   z-index: 3;
   display: none;
   color: #ffffff; }
+
+/**/
+.kmwd-loading {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  width: 10%;
+  z-index: 999; }
+
+.kmwd-loading-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  z-index: 9999; }
+
+.loading-circle {
+  border-radius: 10px;
+  padding: 25%;
+  background-color: #666666;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+.loading-circle img {
+  display: inherit; }
+
+/**/
+.block-rep-last {
+  border-radius: 10px;
+  border-top: 4px solid #ff705e; }
+
+/**/
+[ui-checkbox="repay"] {
+  display: none !important; }
+
+.repay-instal-items .block-items-b-min img {
+  vertical-align: bottom; }
+
+[ui-checkbox="repay"] + label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ff705e;
+  border-radius: 999px;
+  background-color: #ffffff;
+  position: relative;
+  top: 2px; }
+
+[ui-checkbox="repay"] + label:before {
+  content: '';
+  color: #ff705e;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  vertical-align: top;
+  text-align: center;
+  line-height: 1;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url(../images/kmjrApp/weddingDisp/icon-select-is.png) center no-repeat;
+  background-size: 8px 8px; }
+
+[ui-checkbox="repay"]:checked + label:after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 99px;
+  z-index: 2;
+  box-shadow: 0 0 1px #ff705e;
+  background: #ff705e url(../images/kmjrApp/weddingDisp/icon-select.png) center no-repeat;
+  background-size: 8px 8px; }
+
+[ui-checkbox="repay"] + label.label-1:before {
+  content: "1";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-2:before {
+  content: "2";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-3:before {
+  content: "3";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-4:before {
+  content: "4";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-5:before {
+  content: "5";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-6:before {
+  content: "6";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-7:before {
+  content: "7";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-8:before {
+  content: "8";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-9:before {
+  content: "9";
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-10:before {
+  content: "10";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-10 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-10:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-11:before {
+  content: "11";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-11 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-11:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-12:before {
+  content: "12";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-12 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-12:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-13:before {
+  content: "13";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-13 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-13:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-14:before {
+  content: "14";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-14 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-14:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-15:before {
+  content: "15";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-15 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-15:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-16:before {
+  content: "16";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-16 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-16:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-17:before {
+  content: "17";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-17 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-17:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-18:before {
+  content: "18";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-18 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-18:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-19:before {
+  content: "19";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-19 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-19:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-20:before {
+  content: "20";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-20 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-20:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-21:before {
+  content: "21";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-21 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-21:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-22:before {
+  content: "22";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-22 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-22:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-23:before {
+  content: "23";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-23 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-23:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-24:before {
+  content: "24";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-24 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-24:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-25:before {
+  content: "25";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-25 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-25:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-26:before {
+  content: "26";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-26 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-26:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-27:before {
+  content: "27";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-27 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-27:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-28:before {
+  content: "28";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-28 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-28:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-29:before {
+  content: "29";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-29 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-29:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-30:before {
+  content: "30";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-30 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-30:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-31:before {
+  content: "31";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-31 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-31:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-32:before {
+  content: "32";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-32 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-32:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-33:before {
+  content: "33";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-33 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-33:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-34:before {
+  content: "34";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-34 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-34:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-35:before {
+  content: "35";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-35 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-35:after {
+  width: 20px; }
+
+[ui-checkbox="repay"] + label.label-36:before {
+  content: "36";
+  width: 20px;
+  background-image: none; }
+
+[ui-checkbox="repay"] + label.label-36 {
+  width: 20px; }
+
+[ui-checkbox="repay"]:checked + label.label-36:after {
+  width: 20px; }
+
+.block-items.repay-bottom-items {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  border-top: none;
+  margin-top: 0; }
+
+.repay-bottom-items .upload-re-choose {
+  margin: 0.5em auto; }
 
 /*# sourceMappingURL=kmjr.app.weddingDisp.css.map */

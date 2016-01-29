@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="人人爱家金融">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <title>上传资料</title>
+    <link href="../../../css/kmjr.app.weddingDisp.css" rel="stylesheet"/>
+    <script src="http://statics.aijialicai.com.cn/CDN/lib/require.min.js"></script>
+    <script src="http://statics.aijialicai.com.cn/CDN/app/Public/js/kmjr.app.config.js"></script>
+</head>
+<body>
+<div class="kmwd-body">
+    <!--header-->
+    <div class="kmwd-header bg-white lineheight-3">
+        <a href="#" class="btn-previous text-red">&lt;</a>
+        <h1 class="kmwd-h-tit">提升额度</h1>
+        <a href="#" class="btn-next text-red">&gt;</a>
+    </div>
+    <!--container-->
+    <div class="kmwd-content upload-body">
+        <div class="bg-red text-white padding-left-1em padding-top-1em padding-bottom-1em padding-right-1em text-center f14">
+            <div class="f24 lineheight-2">瞬时授信额度：<span class="f30" id="">0</span> 元</div>
+            <div class="lineheight-1_5">人人爱家将根据您提供的信息，瞬时提升
+                您在婚礼纪的信用消费额度。</div>
+        </div>
+        <div class="text-center lineheight-3 margin-top-2_5em">
+            请上传你的照片
+        </div>
+        <!--upload-->
+        <div class="kmwd-upload">
+            <div class="upload-container" id="upload-container">
+                <div type="file" id="upload-bg" class="upload-bg"></div>
+                <div class="upload-viewer" id="upload-viewer">
+                    <div class="upload-viewer-cell" id="upload-viewer-cell">
+                        <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/blank.png"  id="upload-img" />
+                    </div>
+                </div>
+
+                <div class="upload-loading" id="upload-loading" style="display: none">
+                    <img src="http://statics.aijialicai.com.cn/CDN/app/Public/images/kmjrApp/loader02.gif" width="100%">
+                </div>
+                <div class="upload-reset" id="upload-reset">重选</div>
+                <canvas id="upload-canvas" class="fadeOut"></canvas>
+                <input type="file" id="upload-getPicture" class="upload-getPicture" accept="image/*,image.gif,image.jpg,image.jpeg,image.png"  />
+            </div>
+        </div>
+        <div class="kmwd-bottom">
+            <a href="javascript:;" id="upload-re-choose" class="upload-re-choose">确认提交</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    require(['jquery','http://192.168.1.186:8091/kongmingjinrong/javascripts/webApp/kmjr.uploadimg.js'],function(){
+        //TODO 倒计时
+    });
+</script>
+</body>
+</html>

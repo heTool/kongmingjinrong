@@ -7,18 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
     <meta content="telephone=no" name="format-detection" />
-    <title>瞬时授信</title>
+    <title>授信信息</title>
     <!--<link rel="stylesheet" href="../../css/kmjr.app.base.css?v=20151019" />-->
     <link href="../../../css/kmjr.app.weddingDisp.css" rel="stylesheet"/>
-    <script src="http://statics.aijialicai.com.cn/CDN/lib/require.min.js"></script>
+    <script data-main="jquery" src="http://statics.aijialicai.com.cn/CDN/lib/require.min.js"></script>
     <script src="http://statics.aijialicai.com.cn/CDN/app/Public/js/kmjr.app.config.js"></script>
 </head>
-<body>
+
+
+<body style="background-color:#FFE993">
 <div class="kmwd-body">
     <!--header-->
     <div class="kmwd-header bg-white lineheight-3">
         <a href="#" class="btn-previous text-red">&lt;</a>
-        <h1 class="kmwd-h-tit">瞬时授信</h1>
+        <h1 class="kmwd-h-tit">授信信息</h1>
         <a href="#" class="btn-next text-red">&gt;</a>
     </div>
     <!--container-->
@@ -33,22 +35,27 @@
 
         <div class="bg-white kmwd-ins-body">
            <div class="info-items">
-               <div class="lineheight-1_5 padding-bottom-1em">1.您在2013年12月办理的贷款额度是多少？</div>
+               <div class="lineheight-1_5 padding-bottom-1em" id="show-laoding">1.您在2013年12月办理的贷款额度是多少？</div>
                <label class="info-item-label">
-                   <input type="radio" name="ques1">
+                   <input type="radio" name="ques1" id="qa-1-1" ui-radio="circle">
+                   <label for="qa-1-1"></label>
                    1500-1999
                </label>
                <label class="info-item-label">
-                   <input type="radio" name="ques1">
+                   <input type="radio" name="ques1" id="qa-1-2"  ui-radio="circle">
+                   <label for="qa-1-2"></label>
                    2000-4999
                </label>
                <label class="info-item-label">
-                   <input type="radio" name="ques1">
+                   <input type="radio" name="ques1" id="qa-1-3" ui-radio="circle">
+                   <label for="qa-1-3"></label>
                    5000-10000
                </label>
            </div>
         </div>
-
+    </div>
+    <div class="kmwd-bottom">
+        <a href="javascript:;" id="upload-re-choose" class="upload-re-choose">确认提交</a>
     </div>
 </div>
 
@@ -68,9 +75,15 @@
     </div>
 </div>
 
+
 <script>
-    require(['jquery','http://192.168.1.186:8091/kongmingjinrong/javascripts/webApp/kmjr.app.weddingDisp.js'],function(){
+    require(['jquery','loading'],function($,loading){
         //TODO
+        //显示加载框  loadingShow() 隐藏 loadingHide()
+        var loadingShow = document.getElementById('show-laoding');
+        loadingShow.addEventListener('click',function(){
+            loading.loadingShow();
+        });
     });
 </script>
 </body>

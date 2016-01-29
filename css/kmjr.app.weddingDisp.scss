@@ -18,7 +18,29 @@
 .text-left{ text-align: left}
 .text-right{ text-align: right}
 
+.right{ float: right}
+.left{ float: right}
+.right:after{
+  content: '';
+  clear:both;
+}
+.left:after{
+  content: '';
+  clear:both;
+}
+.clearfix::after{
+  content: '';
+  clear: both;
+}
+.va-top{ vertical-align: top}
+.va-middle{ vertical-align: middle}
+.va-bottom{ vertical-align: bottom}
 .text-nowarp{ white-space: nowrap; word-break: keep-all;}
+.relative{position: relative}
+.absolute{position: absolute}
+.fixed{position: fixed}
+
+.block{ display: block}
 
 @mixin icon-header{
   position: absolute;
@@ -76,21 +98,32 @@ html,body,.kmwd-body{
   font-size: $px16;
   padding-top: $px10;
   padding-bottom: $px10;
-  border-top:1px solid $lightgray;
-  border-bottom:1px solid $lightgray;
+  border-top:$px1 solid $lightgray;
+  border-bottom:$px1 solid $lightgray;
   margin-top: -1px;
   position: relative;
+}
+.block-items.repay-items{
+  border-top:none;
+  border-bottom: $px1 dotted $white;
+}
+.block-items.repay-items:last-child{
+  border-bottom: none;
 }
 .block-items::after{
   clear: both;
   content: ' ';
-
 }
 .block-items label{
   display: inline-block;
   font-size:$px14;
   @extend .lineheight-1_5;
 }
+
+.repay-total-items{
+  border-top:$px1 solid $white;
+}
+
 .item-form-control{
   font-size: $px16;
   display: inline-block;
@@ -201,6 +234,20 @@ a.btn-submit-circle{
   padding: $per5;
   @extend .text-normal
 }
+.d-panel-content.dialog-content{
+  padding-top:0;
+  padding-bottom: 0;
+}
+.block-items.dialog-items{
+  border-top:none;
+  border-bottom: $px1 dotted $bordergray;
+}
+
+.block-items.dialog-items:last-child{
+  border-top:none;
+  border-bottom: none;
+}
+
 .d-panel-foot{
   border-top:1px solid $bordergray;
   text-align: center;
@@ -209,11 +256,10 @@ a.btn-dialog-foot{
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: $red;
   padding:$px8 0;
 }
 a.btn-dialog-foot.cell{
-  width: 49%;
+  width: 48.5%;
 }
 a.btn-dialog-foot.cell:last-child{
   border-left: 1px solid $bordergray;
@@ -356,6 +402,9 @@ a.btn-dialog-foot.cell.default{
   border-right: 1px solid $gray;
   padding-left:$per5 ;
 }
+.circle-items label.fadeOut{
+  @extend .fadeOut;
+}
 .circle-items input{
   @extend .item-form-control;
   float: none;
@@ -424,33 +473,152 @@ a.btn-dialog-foot.cell.default{
 }
 
 /**/
+[ui-checkbox="circle"]{
+  display: none !important;
+}
+
+[ui-checkbox="circle"] + label{
+  width: $px15;
+  height: $px15;
+  border:$px1 solid $white;
+  border-radius: 999px;
+  background-color: $red;
+}
+[ui-checkbox="circle"]:checked+label{
+  background: $red url("../images/kmjrApp/weddingDisp/icon-select.png") center no-repeat ;
+  background-size: 70%;
+}
+/**/
+[ui-radio='circle']{
+  display: none !important;
+}
+[ui-radio='circle'] + label{
+  display:inline-block;
+  width: $px10;
+  height: $px10;
+  border:$px1 solid $red;
+  border-radius: 999px;
+  background-color: $white;
+  //position: relative;
+  //top: $px1
+}
+[ui-radio='circle']:checked + label:after{
+  content: '';
+  display: block;
+  width: $per80;
+  height:$per80;
+  background-color: $red;
+  margin-left: $per10;
+  margin-top:$per10;
+  border-radius: 99px;
+}
+/**/
+.arrow-right{
+  background: url(../images/kmjrApp/weddingDisp/icon-gt.png) right center no-repeat;
+}
 .block-items-border{
   border-top:1px solid $bordergray;
   border-bottom:1px solid $bordergray;
-
 }
-.block-items-a{
+.block-items-border-top{
+  border-top:1px solid $bordergray;
+}
+
+.block-items-border-right{
+  border-right:1px solid $bordergray;
+}
+.block-items-border-bottom{
+  border-bottom:1px solid $bordergray;
+}
+.block-items-a,
+.block-items-a-min{
+  line-height: 1;
   width: $per78;
   display: inline-block;
 }
-.block-items-a img{
+.block-items-a img,
+.block-items-a-min img{
   display: inline-block;
   width: $per20;
-  max-width: 48px
+  max-width: 48px;
+
 }
+.block-items-a-min{
+  width: $per55;
+  vertical-align: middle;
+}
+.block-items-a-min img{
+  width: $per15;
+  max-width: 24px
+}
+
 .block-items-info{
   display: inline-block;
   width: $per78;
   vertical-align: top;
 }
 .block-items-b{
+  @extend .text-nowarp;
+  line-height: 1;
   width: $per19;
   display: inline-block;
   text-align: right;
-  @extend .text-nowarp;
   vertical-align: top;
 }
+.block-items-b-min{
+  @extend .block-items-b;
+  width: $per40;
+  text-align: right;
 
+  vertical-align: middle;
+}
+.block-items-b-min a{
+  display: block;
+  background-size:$px8;
+  text-decoration: none;
+}
+
+.items-cell{
+  display: inline-block;
+  width: $per50*.98;
+  line-height: $em1;
+}
+.items-cell:first-child{
+  text-align: left;
+}
+
+.items-cell:last-child{
+  text-align: right;
+}
+
+.dialog-items .items-cell:first-child{
+  width:$per1*40
+}
+
+.dialog-items .items-cell:last-child{
+  width:$per1*58
+}
+
+.items-cell .btn-submit-circle{
+  width: $per60;
+  font-size: $px16;
+  float: right;
+  margin-bottom: -$px5;
+}
+
+.items-cell-rel{}
+.items-cell-rel:last-child{
+  @extend .absolute;
+  left: 0;
+  top:$px9;
+  padding-left: $em1*9;
+  line-height: 1;
+}
+/**/
+.repay-select{
+  left:-$em1_5;
+  top:$px12
+}
 /**/
 .upload-body{
   height: 100%;
@@ -556,4 +724,116 @@ a.btn-dialog-foot.cell.default{
   z-index: 3;
   display: none;
   color: $white;
+}
+/**/
+.kmwd-loading{
+  position: fixed;
+  top:45%;
+  left: 45%;
+  width: 10%;
+  z-index: 999;
+
+}
+.kmwd-loading-bg{
+  position: fixed;
+  width: $per1*100;
+  height: $per1*100;
+  opacity: 0;
+  left: 0;
+  top:0;
+  z-index: 9999;
+}
+.loading-circle{
+  border-radius: $px10;
+  padding: $per25;
+  background-color: #666666;
+  box-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+.loading-circle img{
+  display: inherit;
+}
+/**/
+.block-rep-last{ border-radius: $px10;border-top:$px4 solid $red}
+/**/
+[ui-checkbox="repay"]{
+  display: none !important;
+}
+.block-items.repay-instal-items label{
+  @extend .text-normal;
+}
+.repay-instal-items .block-items-b-min img{
+  vertical-align: bottom;
+}
+[ui-checkbox="repay"]+label{
+  display:inline-block;
+  width: $px12;
+  height: $px12;
+  border:$px1 solid $red;
+  border-radius: 999px;
+  background-color: $white;
+  position: relative;
+  top:2px;
+}
+[ui-checkbox="repay"]+label:before{
+  content: '';
+  @extend .text-tips;
+  color: $red;
+  display:inline-block;
+  width: $px12;
+  height: $px12;
+  position: absolute;
+  vertical-align: top;
+  text-align: center;
+  line-height: 1;
+  left: 0;
+  top:0;
+  z-index: 1;
+  background:url(../images/kmjrApp/weddingDisp/icon-select-is.png) center no-repeat ;
+  background-size: 8px 8px;
+}
+[ui-checkbox="repay"]:checked+label:after{
+  content: '';
+  display:inline-block;
+  width: $px12;
+  height: $px12;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: $px1*99;
+  z-index: 2;
+  box-shadow: 0 0 1px $red;
+  background:$red url(../images/kmjrApp/weddingDisp/icon-select.png) center no-repeat;
+  background-size: 8px 8px;
+
+}
+@for $i from 1 through 36 {
+  @if $i>9{
+    [ui-checkbox="repay"]+label.label-#{$i}:before{
+      content: '#{$i}';
+      width: $px20;
+      background-image: none;
+    };
+    [ui-checkbox="repay"]+label.label-#{$i}{
+      width: $px20;
+    };
+    [ui-checkbox="repay"]:checked+label.label-#{$i}:after{
+      width: $px20;
+    }
+  }@else{
+    [ui-checkbox="repay"]+label.label-#{$i}:before{
+      content: '#{$i}';
+      background-image: none;
+    };
+  }
+}
+
+.block-items.repay-bottom-items{
+  padding-top:0;
+  padding-bottom: 0;
+  border-bottom: none;
+  border-top:none;
+  margin-top: 0;
+}
+.repay-bottom-items .upload-re-choose {
+  margin: $em0_5 auto;
 }
