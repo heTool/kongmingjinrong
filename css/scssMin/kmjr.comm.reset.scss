@@ -1,0 +1,31 @@
+.fadeIn{display: block;}
+.fadeOut{display: none;}
+
+.text-center{ text-align: center}
+.text-left{ text-align: left}
+.text-right{ text-align: right}
+
+.right{ float: right}
+.left{ float: right}
+.right:after{
+  content: '';
+  clear:both;
+}
+.left:after{
+  content: '';
+  clear:both;
+}
+.clearfix::after{
+  content: '';
+  clear: both;
+}
+.va-top{ vertical-align: top}
+.va-middle{ vertical-align: middle}
+.va-bottom{ vertical-align: bottom}
+.text-nowarp{ white-space: nowrap; word-break: keep-all;}
+.relative{position: relative}
+.absolute{position: absolute}
+.fixed{position: fixed}
+
+.block{ display: block}
+.block{ display: block}

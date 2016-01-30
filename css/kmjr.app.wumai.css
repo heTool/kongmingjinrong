@@ -14,9 +14,7 @@ body,html{ background:#585256;}
 {text-shadow: none;font-weight:normal !important; color:#555; font-family: 'Microsoft YaHei', arial, helvetica, sans-serif; }
 *,*:hover,*:focus,*:visited{ -webkit-box-shadow:none !important; -moz-box-shadow:none !important;box-shadow: none !important; font-weight: normal}
 @font-face {
-    font-family: 'fzlth';
-    /*src:url('../fonts/fzltxhGBK.TTF');
-    src:url('../fonts/fzltxhGBK.TTF')\9;*/
+
 }
 .img-block{ display: block}
 
